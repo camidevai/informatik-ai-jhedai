@@ -139,6 +139,60 @@
   width: 23vw;
 }
 
+/* ══════════════════════════════════════════
+   VIDEO LOADER — pantalla de carga
+══════════════════════════════════════════ */
+.video-loader {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: #020810;
+  animation: loaderFadeOut 0.6s ease forwards;
+  animation-play-state: paused; /* se activa cuando videoReady */
+}
+
+.video-loader__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(16px, 4vw, 40px);
+}
+
+.video-loader__logo {
+  height: clamp(40px, 8vh, 70px);
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.video-loader__bar-wrap {
+  width: clamp(200px, 40vw, 360px);
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.video-loader__bar {
+  height: 100%;
+  background: linear-gradient(to right, #00D4C8, #4A9EFF);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 212, 200, 0.6);
+}
+
+.video-loader__pct {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(0, 212, 200, 0.7);
+}
+
 /* ── CTA Escena 1 — Agendar reunión ── */
 .scene1-cta {
   opacity: 0;
@@ -259,7 +313,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 32%;
+  height: 18%;
   background: linear-gradient(
     to bottom,
     transparent 0%,
@@ -272,7 +326,7 @@
 
 @media (max-width: 1024px) {
   .keyboard-cover {
-    height: 38%;
+    height: 18%;
     background: linear-gradient(
       to bottom,
       transparent 0%,
@@ -285,7 +339,7 @@
 
 @media (max-width: 480px) {
   .keyboard-cover {
-    height: 36%;
+    height: 18%;
     background: linear-gradient(
       to bottom,
       transparent 0%,
@@ -338,6 +392,90 @@
   text-align: center;
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.7);
   line-height: 1.8;
+}
+
+/* ══════════════════════════════════════════
+   FOOTER — sobre el keyboard-cover (z-index: 3)
+══════════════════════════════════════════ */
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 24px 12px;
+}
+
+.site-footer__shortcuts {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.site-footer__link {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: inherit;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.site-footer__link:hover {
+  color: #00D4C8;
+  background: rgba(0, 212, 200, 0.08);
+}
+
+.site-footer__legal {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.site-footer__copy {
+  font-size: 0.55rem;
+  color: rgba(255, 255, 255, 0.22);
+  letter-spacing: 0.04em;
+}
+
+.site-footer__divider {
+  width: 1px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.14);
+  margin: 0 3px;
+}
+
+.site-footer__link--legal {
+  font-size: 0.55rem;
+  color: rgba(255, 255, 255, 0.25);
+  font-weight: 500;
+}
+
+.site-footer__link--legal:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 600px) {
+  .site-footer { padding: 5px 10px 8px; gap: 3px; }
+  .site-footer__link { font-size: 0.52rem; padding: 2px 5px; }
+  .site-footer__copy,
+  .site-footer__link--legal { font-size: 0.5rem; }
+  .site-footer__divider { display: none; }
 }
 
 /* ══════════════════════════════════════════

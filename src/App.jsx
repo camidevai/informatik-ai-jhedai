@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
 import TabPanel from './TabPanel'
 
@@ -35,6 +35,43 @@ export default function App() {
   const scene2Ref     = useRef(null)
   const charRefs      = useRef(new Array(CHARS.length).fill(null))
   const tabSceneRef   = useRef(null)
+
+  const [loadPct, setLoadPct]     = useState(0)   // 0-100
+  const [videoReady, setReady]    = useState(false)
+
+  // ── Carga el video via Fetch+Blob para progreso y seeking instantáneo ──
+  useEffect(() => {
+    const controller = new AbortController()
+
+    fetch('/video.mp4', { signal: controller.signal })
+      .then(res => {
+        const total = parseInt(res.headers.get('Content-Length') || '0', 10)
+        const reader = res.body.getReader()
+        const chunks = []
+        let loaded = 0
+
+        const pump = () => reader.read().then(({ done, value }) => {
+          if (done) {
+            const blob = new Blob(chunks, { type: 'video/mp4' })
+            const url  = URL.createObjectURL(blob)
+            if (videoRef.current) videoRef.current.src = url
+            setLoadPct(100)
+            setReady(true)
+            return
+          }
+          chunks.push(value)
+          loaded += value.length
+          if (total) setLoadPct(Math.min(Math.round((loaded / total) * 100), 99))
+          return pump()
+        })
+        return pump()
+      })
+      .catch(err => {
+        if (err.name !== 'AbortError') setReady(true) // fallback sin progreso
+      })
+
+    return () => controller.abort()
+  }, [])
 
   useEffect(() => {
     const video    = videoRef.current
@@ -130,13 +167,26 @@ export default function App() {
       <div className="video-wrapper">
         <video
           ref={videoRef}
-          src="/video.mp4"
           className="bg-video"
           muted
           playsInline
-          preload="auto"
+          preload="none"
         />
         <div className="video-backdrop" />
+
+        {/* ── Pantalla de carga ── */}
+        {!videoReady && (
+          <div className="video-loader">
+            <div className="video-loader__logos">
+              <img src="/logos/jhedai.png"        alt="JHED AI"       className="video-loader__logo" />
+              <img src="/logos/informatik-ai.png" alt="InformatiK-AI" className="video-loader__logo" />
+            </div>
+            <div className="video-loader__bar-wrap">
+              <div className="video-loader__bar" style={{ width: `${loadPct}%` }} />
+            </div>
+            <span className="video-loader__pct">{loadPct}%</span>
+          </div>
+        )}
 
         {/* ── Escena 1: Logos + CTA ── */}
         <div className="scene scene-1" ref={scene1Ref}>
@@ -189,6 +239,43 @@ export default function App() {
         </div>
 
         <div className="keyboard-cover" />
+
+        {/* ── Footer: atajos + legales ── */}
+        <footer className="site-footer">
+          {/* Atajos de navegación */}
+          <nav className="site-footer__shortcuts">
+            {[
+              { label: 'Servicios',        idx: 0 },
+              { label: 'Construcción',     idx: 1 },
+              { label: 'Proceso',          idx: 2 },
+              { label: 'Por qué elegirnos',idx: 3 },
+              { label: 'Contacto',         idx: 4 },
+            ].map(({ label, idx }) => (
+              <button
+                key={idx}
+                className="site-footer__link"
+                onClick={() => {
+                  const max = document.body.scrollHeight - window.innerHeight
+                  window.scrollTo({ top: max * 0.73, behavior: 'smooth' })
+                  setTimeout(() => {
+                    window.dispatchEvent(new CustomEvent('tp:openTab', { detail: idx }))
+                  }, 900)
+                }}
+              >
+                {label}
+              </button>
+            ))}
+          </nav>
+
+          {/* Separador + legales */}
+          <div className="site-footer__legal">
+            <span className="site-footer__copy">© 2025 JhedAi × InformatiK-AI</span>
+            <span className="site-footer__divider" />
+            <button className="site-footer__link site-footer__link--legal">Términos de uso</button>
+            <button className="site-footer__link site-footer__link--legal">Política de privacidad</button>
+            <button className="site-footer__link site-footer__link--legal">Cookies</button>
+          </div>
+        </footer>
       </div>
 
       <div className="scroll-spacer" />
