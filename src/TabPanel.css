@@ -34,15 +34,6 @@
   border: 1px dashed rgba(0, 212, 200, 0.18);
 }
 
-.tp-menu-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 14px;
-}
-
 /* ── Logos en el placeholder — Desktop: superpuestos ── */
 .tp-menu-img-placeholder {
   position: absolute;
@@ -277,11 +268,6 @@
   color: rgba(255,255,255,0.85);
   /* Contenido entra 0.5s después del panel para que el header sea lo primero en verse */
   animation: tpContentIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
-}
-
-@keyframes tpSlideIn {
-  from { transform: translateX(28px); opacity: 0; }
-  to   { transform: translateX(0);    opacity: 1; }
 }
 
 @keyframes tpContentIn {

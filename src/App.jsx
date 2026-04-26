@@ -39,24 +39,74 @@ export default function App() {
   const [loadPct, setLoadPct]     = useState(0)   // 0-100
   const [videoReady, setReady]    = useState(false)
 
-  // ── Carga el video via Fetch+Blob para progreso y seeking instantáneo ──
+  // ── Carga el video con progreso y manejo especial de iOS ──
   useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
+
+    if (isIOS) {
+      // iOS Safari requiere preload='auto' + play/pause para desbloquear seeking
+      video.preload = 'auto'
+      video.src = '/video.mp4'
+      video.load()
+
+      let settled = false
+      const settle = () => {
+        if (settled) return
+        settled = true
+        video.removeEventListener('progress', onProgress)
+        clearTimeout(fallbackTimer)
+        setLoadPct(100)
+        setReady(true)
+      }
+
+      const onProgress = () => {
+        if (video.buffered.length > 0 && video.duration) {
+          setLoadPct(Math.min(Math.round((video.buffered.end(0) / video.duration) * 100), 99))
+        }
+      }
+
+      // Tras cargar metadata, fuerza la pipeline de video en iOS con play/pause
+      video.addEventListener('loadedmetadata', () => {
+        video.play().then(() => video.pause()).catch(() => {})
+      }, { once: true })
+
+      video.addEventListener('canplaythrough', settle, { once: true })
+      video.addEventListener('progress', onProgress)
+
+      // Fallback: si canplaythrough nunca llega (iOS con datos limitados)
+      const fallbackTimer = setTimeout(settle, 8000)
+
+      return () => {
+        video.removeEventListener('progress', onProgress)
+        clearTimeout(fallbackTimer)
+      }
+    }
+
+    // Desktop / Android: Fetch+Blob para seeking instantáneo + barra de progreso
     const controller = new AbortController()
+
+    const applyAndReady = (src) => {
+      video.src = src
+      video.load()
+      setLoadPct(100)
+      setReady(true)
+    }
 
     fetch('/video.mp4', { signal: controller.signal })
       .then(res => {
-        const total = parseInt(res.headers.get('Content-Length') || '0', 10)
+        if (!res.ok || !res.body) throw new Error('stream unavailable')
+        const total  = parseInt(res.headers.get('Content-Length') || '0', 10)
         const reader = res.body.getReader()
         const chunks = []
-        let loaded = 0
+        let loaded   = 0
 
         const pump = () => reader.read().then(({ done, value }) => {
           if (done) {
             const blob = new Blob(chunks, { type: 'video/mp4' })
-            const url  = URL.createObjectURL(blob)
-            if (videoRef.current) videoRef.current.src = url
-            setLoadPct(100)
-            setReady(true)
+            applyAndReady(URL.createObjectURL(blob))
             return
           }
           chunks.push(value)
@@ -67,13 +117,15 @@ export default function App() {
         return pump()
       })
       .catch(err => {
-        if (err.name !== 'AbortError') setReady(true) // fallback sin progreso
+        if (err.name !== 'AbortError') applyAndReady('/video.mp4')
       })
 
     return () => controller.abort()
   }, [])
 
   useEffect(() => {
+    if (!videoReady) return   // espera a que el video esté listo
+
     const video    = videoRef.current
     const scene1   = scene1Ref.current
     const scene2   = scene2Ref.current
@@ -160,7 +212,7 @@ export default function App() {
       window.removeEventListener('scroll', handleScroll)
       if (rafId) cancelAnimationFrame(rafId)
     }
-  }, [])
+  }, [videoReady])  // re-ejecuta cuando el video esté listo
 
   return (
     <div className="app">
