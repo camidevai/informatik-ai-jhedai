@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './TabPanel.css'
 
 const TABS = [
@@ -163,17 +163,16 @@ const CONTENT_MAP = {
 export default function TabPanel({ videoRef }) {
   const [activeIdx, setActiveIdx]   = useState(null)
   const [menuLeaving, setMenuLeaving] = useState(false)
+  const openTabRef = useRef(null)
 
   const openTab = (idx) => {
     const v = videoRef?.current
     if (v?.duration) v.currentTime = TABS[idx].videoP * v.duration
 
     if (activeIdx !== null) {
-      // Ya estamos en detalle: cambia directo
       setActiveIdx(idx)
       return
     }
-    // Desde menú: anima salida del menú, luego muestra detalle
     setMenuLeaving(true)
     setTimeout(() => {
       setActiveIdx(idx)
@@ -181,14 +180,15 @@ export default function TabPanel({ videoRef }) {
     }, 380)
   }
 
+  openTabRef.current = openTab  // siempre apunta al openTab del render actual
+
   const goBack = () => setActiveIdx(null)
 
-  // Escucha evento externo para abrir un tab específico (ej. desde botón CTA de logos)
   useEffect(() => {
-    const handler = (e) => openTab(e.detail)
+    const handler = (e) => openTabRef.current(e.detail)
     window.addEventListener('tp:openTab', handler)
     return () => window.removeEventListener('tp:openTab', handler)
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [])
 
   /* ── Pantalla de botones ── */
   if (activeIdx === null) {
