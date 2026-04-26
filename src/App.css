@@ -109,7 +109,7 @@
 /* Titular */
 .headline {
   margin: 0;
-  font-size: clamp(1.8rem, 1.35vw, 1.05rem);
+  font-size: clamp(0.85rem, 1.35vw, 1.4rem);
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -344,6 +344,12 @@
   .logo-jhedai {
     width: 52vw;
     max-height: 24vh;
+  }
+  .headline {
+    font-size: clamp(0.68rem, 3.8vw, 0.92rem);
+    letter-spacing: 0.06em;
+    max-width: 88vw;
+    line-height: 1.75;
   }
 }
 
