@@ -106,11 +106,21 @@
   font-weight: 700;
   letter-spacing: 0.01em;
   text-transform: none;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(255, 255, 255, 0.96);
   text-align: center;
-  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.7);
-  max-width: 60vw;
+  /* Sombras múltiples: garantizan legibilidad sobre cualquier frame del video */
+  text-shadow:
+    0 2px 4px  rgba(0, 0, 0, 0.95),
+    0 0 20px   rgba(0, 0, 0, 0.85),
+    0 0 50px   rgba(0, 0, 0, 0.7);
+  max-width: 68vw;
   line-height: 1.65;
+  /* Cápsula oscura detrás del texto — contraste garantizado en cualquier video */
+  background: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 20px 32px;
 }
 
 /* Logo JHED AI levemente más grande */
@@ -403,10 +413,14 @@
     max-height: 24vh;
   }
   .headline {
-    font-size: clamp(0.82rem, 4.2vw, 1.05rem);
+    font-size: clamp(1rem, 5vw, 1.18rem);
     letter-spacing: 0.01em;
-    max-width: 88vw;
-    line-height: 1.6;
+    max-width: 90vw;
+    line-height: 1.55;
+    padding: 16px 22px;
+    border-radius: 14px;
+    /* Fondo más opaco en móvil — pantallas con luz solar directa */
+    background: rgba(0, 0, 0, 0.52);
   }
   .scene1-cta {
     padding: 15px 28px;
