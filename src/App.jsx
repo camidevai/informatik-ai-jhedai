@@ -248,8 +248,8 @@ export default function App() {
       await animateScrollTo(max * 0.47, 2200)
       if (!autoScrollRef.current) return
 
-      // Fase 2 – pausa de lectura 3s
-      await sleep(3000)
+      // Fase 2 – pausa de lectura 1.5s
+      await sleep(1500)
       if (!autoScrollRef.current) return
 
       // Fase 3 – continuar hasta p=0.73 (escena de tabs)
