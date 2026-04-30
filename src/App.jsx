@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 import TabPanel from './TabPanel'
+import LegalModal from './LegalModal'
 
 // ── Chars escena 2 ──
 const buildChars = () => {
@@ -20,6 +21,7 @@ const CHARS       = buildChars()
 const TOTAL_CHARS = CHARS.filter(c => !c.isBreak).length
 const FADE_WINDOW = 5 / TOTAL_CHARS
 const LERP_FACTOR = 0.09
+const easeInOutCubic = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
 
 const sceneOp = (p, fadeIn, show, hide, fadeOut) => {
   if (p < fadeIn || p > fadeOut) return 0
@@ -36,8 +38,11 @@ export default function App() {
   const charRefs      = useRef(new Array(CHARS.length).fill(null))
   const tabSceneRef   = useRef(null)
 
+  const autoScrollRef = useRef(false)
+
   const [loadPct, setLoadPct]     = useState(0)   // 0-100
   const [videoReady, setReady]    = useState(false)
+  const [legalPage, setLegalPage] = useState(null)
 
   // ── Carga el video con progreso y manejo especial de iOS ──
   useEffect(() => {
@@ -200,8 +205,65 @@ export default function App() {
       if (!rafId) rafId = requestAnimationFrame(loop)
     }
 
+    // ── Auto-scroll narrativo ──────────────────────────────────────
+    const sleep = ms => new Promise(r => setTimeout(r, ms))
+
+    const animateScrollTo = (targetY, duration) =>
+      new Promise(resolve => {
+        const startY = window.scrollY
+        const dist   = targetY - startY
+        const t0     = performance.now()
+        const tick = now => {
+          if (!autoScrollRef.current) { resolve(); return }
+          const t = Math.min((now - t0) / duration, 1)
+          window.scrollTo(0, startY + dist * easeInOutCubic(t))
+          if (t < 1) requestAnimationFrame(tick)
+          else resolve()
+        }
+        requestAnimationFrame(tick)
+      })
+
+    const cancelAuto = () => { autoScrollRef.current = false }
+
+    const handleKeyDown = e => {
+      if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return
+      e.preventDefault()
+      // Durante auto-scroll cualquier tecla lo cancela
+      if (autoScrollRef.current) { cancelAuto(); return }
+      const max  = document.body.scrollHeight - window.innerHeight
+      const next = e.key === 'ArrowDown'
+        ? Math.min(window.scrollY + max * 0.05, max)
+        : Math.max(window.scrollY - max * 0.05, 0)
+      window.scrollTo({ top: next, behavior: 'smooth' })
+    }
+
+    const runAutoScroll = async () => {
+      autoScrollRef.current = true
+      const max = document.body.scrollHeight - window.innerHeight
+
+      await sleep(600)
+      if (!autoScrollRef.current) return
+
+      // Fase 1 – scroll suave hasta p=0.47 (texto completamente visible)
+      await animateScrollTo(max * 0.47, 2200)
+      if (!autoScrollRef.current) return
+
+      // Fase 2 – pausa de lectura 3s
+      await sleep(3000)
+      if (!autoScrollRef.current) return
+
+      // Fase 3 – continuar hasta p=0.73 (escena de tabs)
+      await animateScrollTo(max * 0.73, 1800)
+      autoScrollRef.current = false
+    }
+    // ──────────────────────────────────────────────────────────────
+
     const init = () => {
       window.addEventListener('scroll', handleScroll, { passive: true })
+      window.addEventListener('wheel', cancelAuto, { passive: true })
+      window.addEventListener('touchstart', cancelAuto, { passive: true })
+      window.addEventListener('keydown', handleKeyDown)
+      runAutoScroll()
     }
 
     if (video.readyState >= 1) init()
@@ -209,7 +271,11 @@ export default function App() {
 
     return () => {
       clearTimeout(triggerLogos)
+      autoScrollRef.current = false
       window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('wheel', cancelAuto)
+      window.removeEventListener('touchstart', cancelAuto)
+      window.removeEventListener('keydown', handleKeyDown)
       if (rafId) cancelAnimationFrame(rafId)
     }
   }, [videoReady])  // re-ejecuta cuando el video esté listo
@@ -259,7 +325,7 @@ export default function App() {
               setTimeout(() => {
                 window.scrollTo({ top: max * 0.73, behavior: 'smooth' })
                 setTimeout(() => {
-                  window.dispatchEvent(new CustomEvent('tp:openTab', { detail: 4 }))
+                  window.dispatchEvent(new CustomEvent('tp:openTab', { detail: 3 }))
                 }, 1400)
               }, 4400)
             }}
@@ -297,11 +363,10 @@ export default function App() {
           {/* Atajos de navegación */}
           <nav className="site-footer__shortcuts">
             {[
-              { label: 'Servicios',        idx: 0 },
-              { label: 'Construcción',     idx: 1 },
-              { label: 'Proceso',          idx: 2 },
-              { label: 'Por qué elegirnos',idx: 3 },
-              { label: 'Contacto',         idx: 4 },
+              { label: 'Servicios',         idx: 0 },
+              { label: 'Proceso',           idx: 1 },
+              { label: 'Por qué elegirnos', idx: 2 },
+              { label: 'Contacto',          idx: 3 },
             ].map(({ label, idx }) => (
               <button
                 key={idx}
@@ -323,14 +388,16 @@ export default function App() {
           <div className="site-footer__legal">
             <span className="site-footer__copy">© 2025 JhedAi × InformatiK-AI</span>
             <span className="site-footer__divider" />
-            <button className="site-footer__link site-footer__link--legal">Términos de uso</button>
-            <button className="site-footer__link site-footer__link--legal">Política de privacidad</button>
-            <button className="site-footer__link site-footer__link--legal">Cookies</button>
+            <button className="site-footer__link site-footer__link--legal" onClick={() => setLegalPage('terminos')}>Términos de uso</button>
+            <button className="site-footer__link site-footer__link--legal" onClick={() => setLegalPage('privacidad')}>Política de privacidad</button>
+            <button className="site-footer__link site-footer__link--legal" onClick={() => setLegalPage('cookies')}>Cookies</button>
           </div>
         </footer>
       </div>
 
       <div className="scroll-spacer" />
+
+      <LegalModal page={legalPage} onClose={() => setLegalPage(null)} />
     </div>
   )
 }

@@ -101,15 +101,16 @@
 /* Titular */
 .headline {
   margin: 0;
-  font-size: clamp(0.85rem, 1.35vw, 1.4rem);
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(1rem, 1.6vw, 1.65rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: none;
   color: rgba(255, 255, 255, 0.95);
   text-align: center;
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.7);
   max-width: 60vw;
-  line-height: 2;
+  line-height: 1.65;
 }
 
 /* Logo JHED AI levemente más grande */
@@ -178,8 +179,8 @@
   gap: 12px;
   padding: 16px 36px;
   min-height: 54px;
-  background: rgba(0, 212, 200, 0.12);
-  border: 1.5px solid rgba(0, 212, 200, 0.55);
+  background: rgba(0, 212, 200, 0.13);
+  border: 1.5px solid rgba(0, 212, 200, 0.6);
   border-radius: 50px;
   color: #fff;
   font-family: inherit;
@@ -191,15 +192,47 @@
   touch-action: manipulation;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 0 28px rgba(0, 212, 200, 0.18);
+  box-shadow: 0 0 28px rgba(0, 212, 200, 0.2);
   transition: background 0.25s, border-color 0.25s, box-shadow 0.25s;
   pointer-events: none;
+  position: relative;
+  overflow: hidden;
 }
 
 /* aparece cuando JS agrega la clase */
 .scene1-cta--visible {
-  animation: ctaEnter 0.6s cubic-bezier(0.22, 1, 0.36, 1) 1.8s both;
+  animation:
+    ctaEnter 0.6s  cubic-bezier(0.22, 1, 0.36, 1) 1.8s both,
+    ctaGlow  2.8s  ease-in-out                     2.5s infinite;
   pointer-events: auto;
+}
+
+/* Shimmer sweep — recorre el botón de izquierda a derecha */
+.scene1-cta--visible::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -70%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent,
+    rgba(255, 255, 255, 0.14),
+    transparent
+  );
+  pointer-events: none;
+  animation: ctaShimmer 3.6s ease-in-out 2.5s infinite;
+}
+
+/* Anillo expansivo exterior */
+.scene1-cta--visible::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 52px;
+  border: 1.5px solid rgba(0, 212, 200, 0.55);
+  pointer-events: none;
+  animation: ctaRing 2.8s ease-out 2.5s infinite;
 }
 
 @keyframes ctaEnter {
@@ -207,11 +240,35 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes ctaGlow {
+  0%, 100% {
+    box-shadow: 0 0 28px rgba(0,212,200,0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 48px rgba(0,212,200,0.55),
+      0 0 90px rgba(0,212,200,0.18);
+  }
+}
+
+@keyframes ctaShimmer {
+  0%   { left: -70%; opacity: 0; }
+  8%   { opacity: 1; }
+  42%  { left: 115%; opacity: 1; }
+  48%  { opacity: 0; }
+  100% { left: 115%; opacity: 0; }
+}
+
+@keyframes ctaRing {
+  0%   { transform: scale(1);    opacity: 0.7; }
+  100% { transform: scale(1.22); opacity: 0;   }
+}
+
 @media (hover: hover) {
   .scene1-cta:hover {
     background: rgba(0, 212, 200, 0.22);
     border-color: #00D4C8;
-    box-shadow: 0 0 32px rgba(0, 212, 200, 0.35), 0 0 70px rgba(0, 212, 200, 0.12);
+    box-shadow: 0 0 42px rgba(0, 212, 200, 0.5), 0 0 80px rgba(0, 212, 200, 0.18);
     transform: translateY(-2px);
     transition: background 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.2s;
   }
@@ -346,10 +403,10 @@
     max-height: 24vh;
   }
   .headline {
-    font-size: clamp(0.68rem, 3.8vw, 0.92rem);
-    letter-spacing: 0.06em;
+    font-size: clamp(0.82rem, 4.2vw, 1.05rem);
+    letter-spacing: 0.01em;
     max-width: 88vw;
-    line-height: 1.75;
+    line-height: 1.6;
   }
   .scene1-cta {
     padding: 15px 28px;
@@ -388,15 +445,15 @@
 .site-footer__link {
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-family: inherit;
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
   cursor: pointer;
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 4px 11px;
+  border-radius: 20px;
   transition: color 0.2s, background 0.2s;
 }
 
@@ -414,9 +471,9 @@
 }
 
 .site-footer__copy {
-  font-size: 0.55rem;
-  color: rgba(255, 255, 255, 0.22);
-  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.32);
+  letter-spacing: 0.01em;
 }
 
 .site-footer__divider {
@@ -427,21 +484,21 @@
 }
 
 .site-footer__link--legal {
-  font-size: 0.55rem;
-  color: rgba(255, 255, 255, 0.25);
-  font-weight: 500;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 400;
 }
 
 .site-footer__link--legal:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
   background: rgba(255, 255, 255, 0.05);
 }
 
 @media (max-width: 600px) {
   .site-footer { padding: 5px 10px 8px; gap: 3px; }
-  .site-footer__link { font-size: 0.52rem; padding: 2px 5px; }
+  .site-footer__link { font-size: 0.68rem; padding: 3px 8px; }
   .site-footer__copy,
-  .site-footer__link--legal { font-size: 0.5rem; }
+  .site-footer__link--legal { font-size: 0.62rem; }
   .site-footer__divider { display: none; }
 }
 
