@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import './App.css'
 import TabPanel from './TabPanel'
 import LegalModal from './LegalModal'
@@ -43,6 +43,11 @@ export default function App() {
   const [loadPct, setLoadPct]     = useState(0)   // 0-100
   const [videoReady, setReady]    = useState(false)
   const [legalPage, setLegalPage] = useState(null)
+
+  const seekVideoToProgress = useCallback((progress) => {
+    const video = videoRef.current
+    if (video?.duration) video.currentTime = progress * video.duration
+  }, [])
 
   // ── Carga el video con progreso y manejo especial de iOS ──
   useEffect(() => {
@@ -338,22 +343,75 @@ export default function App() {
 
         {/* ── Escena 2: Texto typewriter ── */}
         <div className="scene scene-text" ref={scene2Ref} style={{ opacity: 0 }}>
-          <p className="headline">
-            {CHARS.map((c, i) =>
-              c.isBreak
-                ? <br key={i} />
-                : <span
-                    key={i}
-                    ref={el => { charRefs.current[i] = el }}
-                    className={`char${c.calypso ? ' calypso' : ''}`}
-                  >{c.char}</span>
-            )}
-          </p>
+          <div className="headline-stage">
+            <svg className="headline-orbit" viewBox="0 0 920 360" aria-hidden="true">
+              <defs>
+                <linearGradient id="headlineLine" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#00D4C8" stopOpacity="0" />
+                  <stop offset="45%" stopColor="#00D4C8" stopOpacity="0.9" />
+                  <stop offset="100%" stopColor="#4A9EFF" stopOpacity="0" />
+                </linearGradient>
+                <radialGradient id="headlineCore" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#8EF8F1" stopOpacity="0.95" />
+                  <stop offset="45%" stopColor="#00D4C8" stopOpacity="0.22" />
+                  <stop offset="100%" stopColor="#00D4C8" stopOpacity="0" />
+                </radialGradient>
+                <filter id="headlineGlow">
+                  <feGaussianBlur stdDeviation="4" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <path className="headline-orbit__ring headline-orbit__ring--wide" d="M82 180 C190 42 730 42 838 180 C730 318 190 318 82 180Z" />
+              <path className="headline-orbit__ring headline-orbit__ring--tilt" d="M142 266 C280 116 642 98 780 230" />
+              <path className="headline-orbit__ring headline-orbit__ring--tilt-alt" d="M142 94 C280 244 642 262 780 130" />
+              <path className="headline-orbit__scan" d="M116 180 H804" />
+
+              <g className="headline-orbit__network">
+                <path d="M250 148 L342 106 L460 146 L578 106 L670 148" />
+                <path d="M250 212 L342 254 L460 214 L578 254 L670 212" />
+                <path d="M342 106 L342 254 M460 146 L460 214 M578 106 L578 254" />
+              </g>
+
+              <circle className="headline-orbit__core" cx="460" cy="180" r="72" fill="url(#headlineCore)" />
+              {[250, 342, 460, 578, 670].map((x, i) => (
+                <circle key={`top-${x}`} className={`headline-orbit__node headline-orbit__node--${i + 1}`} cx={x} cy={i === 2 ? 146 : i % 2 ? 106 : 148} r="5" />
+              ))}
+              {[250, 342, 460, 578, 670].map((x, i) => (
+                <circle key={`bottom-${x}`} className={`headline-orbit__node headline-orbit__node--${i + 6}`} cx={x} cy={i === 2 ? 214 : i % 2 ? 254 : 212} r="5" />
+              ))}
+
+              <circle className="headline-orbit__spark headline-orbit__spark--one" r="4">
+                <animateMotion path="M82 180 C190 42 730 42 838 180 C730 318 190 318 82 180Z" dur="7s" repeatCount="indefinite" />
+              </circle>
+              <circle className="headline-orbit__spark headline-orbit__spark--two" r="3">
+                <animateMotion path="M142 94 C280 244 642 262 780 130" dur="5.8s" repeatCount="indefinite" />
+              </circle>
+            </svg>
+
+            <span className="headline-glint headline-glint--left" />
+            <span className="headline-glint headline-glint--right" />
+
+            <p className="headline">
+              {CHARS.map((c, i) =>
+                c.isBreak
+                  ? <br key={i} />
+                  : <span
+                      key={i}
+                      ref={el => { charRefs.current[i] = el }}
+                      className={`char${c.calypso ? ' calypso' : ''}`}
+                    >{c.char}</span>
+              )}
+            </p>
+          </div>
         </div>
 
         {/* ── Escena Tabs ── */}
         <div className="scene scene-tabs" ref={tabSceneRef} style={{ opacity: 0 }}>
-          <TabPanel videoRef={videoRef} />
+          <TabPanel onSeekVideo={seekVideoToProgress} />
         </div>
 
         <div className="keyboard-cover" />

@@ -409,7 +409,14 @@ function ContentTrabajamos() {
 
   return (
     <div className="tc-process">
-      <p className="tc-lead">Cada etapa incluye revisión de seguridad. Código auditable y mantenible — no solo funcional.</p>
+      <div className="tc-process-hero">
+        <p className="tc-lead">Cada etapa incluye revisión de seguridad. Código auditable y mantenible — no solo funcional.</p>
+        <div className="tc-process-badges" aria-label="Características del proceso">
+          <span>5 etapas</span>
+          <span>Seguridad</span>
+          <span>Deploy real</span>
+        </div>
+      </div>
       <div className="tc-pipeline">
         {items}
       </div>
@@ -493,30 +500,27 @@ function ContentElegirnos() {
       {/* ── Contenido izquierdo ── */}
       <div className="tc-reasons-content">
         <div className="tc-stats">
-          {REASONS.map(r => (
+          {REASONS.slice(0, 3).map(r => (
             <div key={r.stat} className="tc-stat">
               <span className="tc-stat-val">{r.stat}</span>
               <strong>{r.label}</strong>
-              <p>{r.desc}</p>
             </div>
           ))}
         </div>
 
         <div className="tc-props">
-          <div className="tc-prop"><span>100% Ejecución propia</span><p>No consultamos sin construir.</p></div>
-          <div className="tc-prop"><span>2 en 1</span><p>Estrategia + código — negocio y técnica en el mismo equipo.</p></div>
-          <div className="tc-prop"><span>Ciclos cortos</span><p>Equipos pequeños, decisiones inmediatas.</p></div>
+          <div className="tc-prop"><span>Construimos</span><p>No solo asesoramos.</p></div>
+          <div className="tc-prop"><span>A medida</span><p>Diseñado para tu operación.</p></div>
         </div>
-
-        <blockquote className="tc-quote">
-          "La calidad de lo que construimos es el mejor argumento que tenemos."
-          <cite>JhedAi × Informatik-AI</cite>
-        </blockquote>
       </div>
 
       {/* ── Visual orbital ── */}
       <div className="tc-reasons-visual">
         <SvgElegirnos />
+        <div className="tc-orbit-caption">
+          <span>Equipo integrado</span>
+          <strong>Estrategia + ingeniería</strong>
+        </div>
       </div>
 
     </div>
@@ -524,6 +528,75 @@ function ContentElegirnos() {
 }
 
 const MEETING_COLORS = ['calipso', 'blue']
+
+function MeetingVisual({ type }) {
+  if (type === 'Alianza') {
+    return (
+      <svg viewBox="0 0 420 260" className="meeting-svg meeting-svg--alliance" aria-hidden="true">
+        <defs>
+          <linearGradient id="meetAllianceLine" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#00D4C8" stopOpacity="0" />
+            <stop offset="45%" stopColor="#8EF8F1" stopOpacity="0.95" />
+            <stop offset="100%" stopColor="#4A9EFF" stopOpacity="0" />
+          </linearGradient>
+          <radialGradient id="meetAllianceCore" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#8EF8F1" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="#00D4C8" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+        <path className="meeting-grid-line" d="M40 200 H380 M70 165 H350 M104 130 H316 M140 95 H280" />
+        <path className="meeting-bridge" d="M92 132 C142 72 278 72 328 132" />
+        <path className="meeting-bridge meeting-bridge--reverse" d="M92 132 C142 192 278 192 328 132" />
+        <circle className="meeting-core" cx="210" cy="132" r="58" fill="url(#meetAllianceCore)" />
+        <g className="meeting-team meeting-team--left">
+          <circle cx="104" cy="132" r="24" />
+          <path d="M70 178 C78 152 130 152 138 178" />
+        </g>
+        <g className="meeting-team meeting-team--right">
+          <circle cx="316" cy="132" r="24" />
+          <path d="M282 178 C290 152 342 152 350 178" />
+        </g>
+        <circle className="meeting-node meeting-node--one" cx="210" cy="132" r="7" />
+        <circle className="meeting-node meeting-node--two" cx="104" cy="132" r="5" />
+        <circle className="meeting-node meeting-node--three" cx="316" cy="132" r="5" />
+        <circle className="meeting-spark" r="4">
+          <animateMotion path="M92 132 C142 72 278 72 328 132" dur="3.8s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+    )
+  }
+
+  return (
+    <svg viewBox="0 0 420 260" className="meeting-svg meeting-svg--build" aria-hidden="true">
+      <defs>
+        <linearGradient id="meetBuildLine" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#4A9EFF" stopOpacity="0" />
+          <stop offset="50%" stopColor="#8EF8F1" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#00D4C8" stopOpacity="0" />
+        </linearGradient>
+        <radialGradient id="meetBuildCore" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#4A9EFF" stopOpacity="0.82" />
+          <stop offset="100%" stopColor="#4A9EFF" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <rect className="meeting-window" x="80" y="54" width="260" height="152" rx="18" />
+      <path className="meeting-window-line" d="M80 88 H340" />
+      <circle className="meeting-dot" cx="108" cy="72" r="4" />
+      <circle className="meeting-dot meeting-dot--soft" cx="126" cy="72" r="4" />
+      <circle className="meeting-dot meeting-dot--soft" cx="144" cy="72" r="4" />
+      <path className="meeting-code" d="M122 128 L150 150 L122 172" />
+      <path className="meeting-code meeting-code--right" d="M298 128 L270 150 L298 172" />
+      <circle className="meeting-core meeting-core--build" cx="210" cy="150" r="64" fill="url(#meetBuildCore)" />
+      <path className="meeting-circuit" d="M178 150 H242 M210 118 V182 M188 128 L232 172 M232 128 L188 172" />
+      <circle className="meeting-node meeting-node--one" cx="210" cy="150" r="8" />
+      <circle className="meeting-node meeting-node--two" cx="178" cy="150" r="5" />
+      <circle className="meeting-node meeting-node--three" cx="242" cy="150" r="5" />
+      <circle className="meeting-spark meeting-spark--blue" r="4">
+        <animateMotion path="M122 128 L150 150 L122 172 M298 128 L270 150 L298 172" dur="4.4s" repeatCount="indefinite" />
+      </circle>
+    </svg>
+  )
+}
 
 function ContentReunion() {
   return (
@@ -539,7 +612,7 @@ function ContentReunion() {
             className={`tc-meeting tc-meeting--${MEETING_COLORS[i]}`}
           >
             <div className="tc-meeting-img">
-              <img src={m.img} alt={m.type} />
+              <MeetingVisual type={m.type} />
             </div>
             <div className="tc-meeting-body">
               <strong>{m.type}</strong>
@@ -561,19 +634,32 @@ const CONTENT_MAP = {
   reunion:    ContentReunion,
 }
 
+const MENU_TITLES = [
+  'Creamos software inteligente',
+  'Automatizamos procesos reales',
+  'Diseñamos agentes IA a medida',
+  'Integramos visión, datos y negocio',
+  'Convertimos ideas en productos funcionales',
+]
+
 /* ══════════════════════════════════════════
    Componente principal
 ══════════════════════════════════════════ */
-export default function TabPanel({ videoRef }) {
+export default function TabPanel({ onSeekVideo }) {
   const [activeIdx, setActiveIdx]   = useState(null)
   const [menuLeaving, setMenuLeaving] = useState(false)
+  const [menuTitleIdx, setMenuTitleIdx] = useState(0)
   const openTabRef = useRef(null)
+  const activeIdxRef = useRef(activeIdx)
+
+  useEffect(() => {
+    activeIdxRef.current = activeIdx
+  }, [activeIdx])
 
   const openTab = (idx) => {
-    const v = videoRef?.current
-    if (v?.duration) v.currentTime = TABS[idx].videoP * v.duration
+    onSeekVideo?.(TABS[idx].videoP)
 
-    if (activeIdx !== null) {
+    if (activeIdxRef.current !== null) {
       setActiveIdx(idx)
       return
     }
@@ -584,20 +670,35 @@ export default function TabPanel({ videoRef }) {
     }, 380)
   }
 
-  openTabRef.current = openTab  // siempre apunta al openTab del render actual
+  useEffect(() => {
+    openTabRef.current = openTab
+  })
 
   const goBack = () => setActiveIdx(null)
 
   useEffect(() => {
-    const handler = (e) => openTabRef.current(e.detail)
+    const handler = (e) => openTabRef.current?.(e.detail)
     window.addEventListener('tp:openTab', handler)
     return () => window.removeEventListener('tp:openTab', handler)
   }, [])
 
   /* ── Pantalla de botones ── */
+  useEffect(() => {
+    const titleTimer = setInterval(() => {
+      setMenuTitleIdx(idx => (idx + 1) % MENU_TITLES.length)
+    }, 2000)
+    return () => clearInterval(titleTimer)
+  }, [])
+
   if (activeIdx === null) {
     return (
-      <div className={`tp-menu ${menuLeaving ? 'tp-menu--leaving' : ''}`}>
+      <div className={`tp-menu-shell ${menuLeaving ? 'tp-menu-shell--leaving' : ''}`}>
+        <div className="tp-menu-head">
+          <span className="tp-menu-kicker">Lo que hacemos</span>
+          <strong key={MENU_TITLES[menuTitleIdx]}>{MENU_TITLES[menuTitleIdx]}</strong>
+        </div>
+
+        <div className={`tp-menu ${menuLeaving ? 'tp-menu--leaving' : ''}`}>
 
         {/* Columna izquierda — botones */}
         <div className="tp-menu-col tp-menu-col--btns">
@@ -619,14 +720,66 @@ export default function TabPanel({ videoRef }) {
           ))}
         </div>
 
-        {/* Columna derecha — logos */}
+        {/* Columna derecha — visual IA */}
         <div className="tp-menu-col tp-menu-col--img">
-          <div className="tp-menu-img-placeholder">
-            <img src="/logos/jhedai.png"        alt="JHED AI"       className="tp-placeholder-logo tp-placeholder-logo--jhedai" />
-            <img src="/logos/informatik-ai.png" alt="InformatiK-AI" className="tp-placeholder-logo" />
+          <div className="tp-menu-visual" aria-hidden="true">
+            <svg className="tp-menu-ai" viewBox="0 0 420 420">
+              <defs>
+                <radialGradient id="tpAiCore" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#8EF8F1" stopOpacity="0.95" />
+                  <stop offset="38%" stopColor="#00D4C8" stopOpacity="0.32" />
+                  <stop offset="100%" stopColor="#00D4C8" stopOpacity="0" />
+                </radialGradient>
+                <linearGradient id="tpAiLine" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#00D4C8" stopOpacity="0" />
+                  <stop offset="50%" stopColor="#8EF8F1" stopOpacity="0.85" />
+                  <stop offset="100%" stopColor="#4A9EFF" stopOpacity="0" />
+                </linearGradient>
+                <filter id="tpAiGlow">
+                  <feGaussianBlur stdDeviation="4" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <circle className="tp-ai-halo" cx="210" cy="210" r="150" />
+              <circle className="tp-ai-core" cx="210" cy="210" r="78" fill="url(#tpAiCore)" />
+
+              <g className="tp-ai-grid">
+                <path d="M86 154 L148 92 L210 132 L272 92 L334 154" />
+                <path d="M86 266 L148 328 L210 288 L272 328 L334 266" />
+                <path d="M86 154 L86 266 M148 92 L148 328 M210 132 L210 288 M272 92 L272 328 M334 154 L334 266" />
+                <path d="M86 154 L210 288 L334 154 M86 266 L210 132 L334 266" />
+              </g>
+
+              <ellipse className="tp-ai-orbit tp-ai-orbit--one" cx="210" cy="210" rx="160" ry="58" />
+              <ellipse className="tp-ai-orbit tp-ai-orbit--two" cx="210" cy="210" rx="150" ry="54" />
+              <ellipse className="tp-ai-orbit tp-ai-orbit--three" cx="210" cy="210" rx="140" ry="50" />
+
+              {[86, 148, 210, 272, 334].map((x, i) => (
+                <circle key={`ai-top-${x}`} className={`tp-ai-node tp-ai-node--${i + 1}`} cx={x} cy={i === 2 ? 132 : i % 2 ? 92 : 154} r="5" />
+              ))}
+              {[86, 148, 210, 272, 334].map((x, i) => (
+                <circle key={`ai-bottom-${x}`} className={`tp-ai-node tp-ai-node--${i + 6}`} cx={x} cy={i === 2 ? 288 : i % 2 ? 328 : 266} r="5" />
+              ))}
+
+              <circle className="tp-ai-spark tp-ai-spark--one" r="4">
+                <animateMotion path="M50,210 C95,72 325,72 370,210 C325,348 95,348 50,210Z" dur="6.4s" repeatCount="indefinite" />
+              </circle>
+              <circle className="tp-ai-spark tp-ai-spark--two" r="3">
+                <animateMotion path="M86,154 L148,92 L210,132 L272,92 L334,154 L210,288 Z" dur="5s" repeatCount="indefinite" />
+              </circle>
+            </svg>
+            <div className="tp-menu-visual__caption">
+              <span>AI System</span>
+              <strong>Ideas que se conectan</strong>
+            </div>
           </div>
         </div>
 
+        </div>
       </div>
     )
   }
@@ -635,16 +788,30 @@ export default function TabPanel({ videoRef }) {
   const ActiveContent = CONTENT_MAP[TABS[activeIdx].id]
 
   return (
-    <div className="tp-detail">
+    <div className="tp-detail-shell">
+      <div className="tp-menu-head tp-menu-head--detail">
+        <span className="tp-menu-kicker">Lo que hacemos</span>
+        <strong key={MENU_TITLES[menuTitleIdx]}>{MENU_TITLES[menuTitleIdx]}</strong>
+      </div>
+
+      <div className={`tp-detail tp-detail--${TABS[activeIdx].id}`}>
       <div className="tp-detail-header">
         <button className="tp-back" onClick={goBack}>← Volver</button>
         <span className="tp-detail-title">{TABS[activeIdx].label}</span>
+        <button
+          className={`tp-header-cta${activeIdx === 3 ? ' tp-header-cta--active' : ''}`}
+          onClick={() => openTab(3)}
+        >
+          Agendar una reunión
+          <span>→</span>
+        </button>
         <span className="tp-detail-num">{String(activeIdx + 1).padStart(2, '0')}</span>
       </div>
       <div className="tp-detail-body">
         <div className="tp-detail-slide">
           <ActiveContent />
         </div>
+      </div>
       </div>
     </div>
   )
