@@ -42,10 +42,8 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  padding: 24px;
   box-sizing: border-box;
-  padding-top: 8%;
-  padding-bottom: 20%;
+  padding-bottom: 14%;
 }
 
 /* ══════════════════════════════════════════
@@ -327,8 +325,7 @@
 
 /* Escena tabs: ocupa todo el espacio hacia abajo, sin padding inferior */
 .scene-tabs {
-  padding-bottom: 0;
-  justify-content: flex-start;
+  padding-bottom: 118;
   align-items: center;
 }
 
@@ -389,7 +386,6 @@
     );
   }
   .scene {
-    padding-top: 30%;
     padding-bottom: 26%;
   }
   /* Logos en columna: uno arriba, uno abajo */

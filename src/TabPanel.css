@@ -246,7 +246,6 @@
   flex-direction: column;
   width: min(78vw, 920px);
   /* Fills available height in the scene */
-  flex: 1;
   background: rgba(4, 10, 28, 0.88);
   border: 1px solid rgba(0, 212, 200, 0.18);
   border-radius: 18px;
