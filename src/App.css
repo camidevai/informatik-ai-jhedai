@@ -333,11 +333,6 @@
 }
 
 
-@media (max-width: 480px) {
-  .scene-tabs {
-    padding-top: 30%;
-  }
-}
 
 /* Cada carácter individual — opacity controlada por JS via rAF */
 .char {
