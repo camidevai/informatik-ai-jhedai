@@ -10,9 +10,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: min(80vw, 940px);
+  width: min(92vw, 1080px);
   animation: tpFadeUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
-  transform: translateY(-5vh);
 }
 
 .tp-detail-shell {
@@ -20,8 +19,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: min(92vw, 1120px);
-  transform: translateY(-6vh);
+  width: min(92vw, 1080px);
   animation: tpFadeUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -445,11 +443,11 @@
 /* ════════════════════════════════════════════
    PANTALLA 2 — Vista de detalle
 ════════════════════════════════════════════ */
+/* ── Panel de detalle — todos los tabs comparten el mismo contenedor ── */
 .tp-detail {
   display: flex;
   flex-direction: column;
-  width: min(78vw, 920px);
-  /* Fills available height in the scene */
+  width: min(92vw, 1080px);
   background: rgba(4, 10, 28, 0.88);
   border: 1px solid rgba(0, 212, 200, 0.18);
   border-radius: 18px;
@@ -457,50 +455,17 @@
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
   box-shadow: 0 0 0 1px rgba(0,212,200,0.06) inset, 0 16px 56px rgba(0,0,0,0.7);
-  /* Entrada más lenta para que se alcance a leer el headline */
   animation: tpFadeUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
 }
 
-.tp-detail--servicios {
-  width: min(92vw, 1120px);
-  max-height: min(78vh, 650px);
+.tp-detail-body {
+  overflow: visible;
 }
 
-.tp-detail--servicios .tp-detail-body {
-  overflow: hidden;
-}
-
-.tp-detail--servicios .tp-detail-slide {
-  height: 100%;
-  padding: 16px;
-}
-
-.tp-detail--trabajamos {
-  width: min(90vw, 1080px);
-  max-height: min(78vh, 620px);
-}
-
-.tp-detail--trabajamos .tp-detail-body {
-  overflow: hidden;
-}
-
-.tp-detail--trabajamos .tp-detail-slide {
-  height: 100%;
-  padding: 18px;
-}
-
-.tp-detail--elegirnos {
-  width: min(82vw, 760px);
-  max-height: min(70vh, 470px);
-}
-
-.tp-detail--elegirnos .tp-detail-body {
-  overflow: hidden;
-}
-
-.tp-detail--elegirnos .tp-detail-slide {
-  height: 100%;
-  padding: 16px;
+.tp-detail-slide {
+  padding: 20px;
+  color: rgba(255,255,255,0.85);
+  animation: tpContentIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
 }
 
 /* ── Header: volver + título ── */
@@ -634,24 +599,6 @@
   opacity: 0.6;
 }
 
-/* ── Cuerpo scrolleable ── */
-.tp-detail-body {
-  flex: 1;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* scroll suave en iOS Safari */
-  overscroll-behavior: contain;
-  min-height: 0;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0,212,200,0.2) transparent;
-}
-
-.tp-detail-slide {
-  padding: 18px 20px;
-  color: rgba(255,255,255,0.85);
-  /* Contenido entra 0.5s después del panel para que el header sea lo primero en verse */
-  animation: tpContentIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
-}
-
 @keyframes tpContentIn {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -675,7 +622,6 @@
 }
 
 .tp-detail--servicios .tc-grid {
-  height: 100%;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   align-items: stretch;
   gap: 12px;
@@ -876,9 +822,7 @@
 }
 
 .tp-detail--trabajamos .tc-process {
-  height: 100%;
   gap: 18px;
-  justify-content: center;
 }
 
 .tc-process-hero {
@@ -1182,7 +1126,6 @@
 }
 
 .tp-detail--elegirnos .tc-reasons {
-  height: 100%;
   gap: 14px;
   align-items: center;
 }
@@ -1714,12 +1657,10 @@
 ════════════════════════════════════════════ */
 
 @media (max-width: 1024px) {
-  .tp-menu-shell { width: min(88vw, 760px); transform: translateY(-4vh); }
-  .tp-detail-shell { transform: translateY(-4vh); }
-  .tp-menu   { width: min(88vw, 760px); gap: 12px; }
-  .tp-detail { width: min(88vw, 720px); }
-  .tp-detail--trabajamos { width: min(92vw, 820px); max-height: 78vh; }
-  .tp-detail--elegirnos { width: min(92vw, 820px); max-height: 78vh; }
+  .tp-menu-shell  { width: min(92vw, 860px); }
+  .tp-detail-shell { width: min(92vw, 860px); }
+  .tp-menu        { width: 100%; gap: 12px; }
+  .tp-detail      { width: min(92vw, 860px); }
   .tp-menu-col--img { min-height: 200px; }
 
   .tp-menu-ai {
@@ -1779,8 +1720,8 @@
 }
 
 @media (max-width: 600px) {
-  .tp-menu-shell { width: 92vw; gap: 12px; transform: translateY(-2vh); }
-  .tp-detail-shell { width: 92vw; transform: translateY(-2vh); gap: 8px; }
+  .tp-menu-shell { width: 92vw; gap: 12px; }
+  .tp-detail-shell { width: 92vw; gap: 8px; }
   .tp-menu   { width: 92vw; gap: 10px; flex-direction: column; }
   .tp-menu-head strong {
     font-size: clamp(1rem, 6vw, 1.45rem);
@@ -1874,9 +1815,6 @@
   .tc-reasons         { flex-direction: column-reverse; gap: 12px; }
   .tc-reasons-visual  { width: 100%; height: 130px; }
   .eli-svg            { width: 120px; height: 120px; }
-  .tp-detail--elegirnos .tp-detail-body {
-    overflow-y: auto;
-  }
   .tp-detail--elegirnos .tc-reasons {
     height: auto;
   }
@@ -1914,9 +1852,6 @@
   .tc-pipeline-orb  { margin-bottom: 0; flex-shrink: 0; width: 52px; height: 52px; }
   .step-icon        { width: 28px; height: 28px; }
   .tc-pipeline-conn { display: none; }
-  .tp-detail--trabajamos .tp-detail-body {
-    overflow-y: auto;
-  }
   .tp-detail--trabajamos .tc-process {
     justify-content: flex-start;
   }
