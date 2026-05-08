@@ -1,23 +1,71 @@
 import './Team.css'
 
 const MEMBERS = [
-  { id: 1, initials: 'CM', name: 'Camila M.',     role: 'CEO & Fundadora',    bio: 'Lidera la estrategia de InformatiK-AI con foco en soluciones de IA aplicada a negocios reales.' },
-  { id: 2, initials: 'JH', name: 'J. Hernández',  role: 'CTO',                bio: 'Arquitecto de sistemas con experiencia en LLMs, visión computacional y automatización a escala.' },
-  { id: 3, initials: 'AA', name: 'A. Álvarez',    role: 'Lead Developer',     bio: 'Especialista en desarrollo full-stack con enfoque en productos de IA producción-ready.' },
-  { id: 4, initials: 'MR', name: 'M. Rodríguez',  role: 'ML Engineer',        bio: 'Diseño y entrenamiento de modelos de clasificación, predicción y visión computacional.' },
-  { id: 5, initials: 'DP', name: 'D. Paredes',    role: 'AI Agent Engineer',  bio: 'Construcción de agentes autónomos conectados con CRM, ERP y canales de comunicación.' },
-  { id: 6, initials: 'LV', name: 'L. Vargas',     role: 'UX / Frontend',      bio: 'Interfaces que combinan funcionalidad con experiencia de usuario de alto impacto visual.' },
-  { id: 7, initials: 'FO', name: 'F. Olivares',   role: 'DevOps & Security',  bio: 'Infraestructura en producción, pipelines CI/CD y auditoría de seguridad en cada entrega.' },
+  {
+    id: 1,
+    photo: '/socios/jorge.png',
+    name: 'Jorge Salgado',
+    role: 'CEO & Fundador',
+    bio: 'Lidera la visión estratégica de InformatiK-AI, conectando inteligencia artificial con resultados reales para empresas y organizaciones.',
+  },
+  {
+    id: 2,
+    photo: '/socios/camila.png',
+    name: 'Camila Bañares',
+    role: 'CMO & Fundadora · VP CCHIA',
+    bio: 'Estratega de marketing e innovación. Vicepresidenta de la Cámara Chilena de Inteligencia Artificial, impulsa la adopción responsable de IA en Chile.',
+  },
+  {
+    id: 3,
+    photo: '/socios/gonzalo.png',
+    name: 'Gonzalo Figueroa',
+    role: 'CTO & Fundador',
+    bio: 'Arquitecto de sistemas con expertise en LLMs, visión computacional y automatización a escala. Diseña la infraestructura técnica de las soluciones.',
+  },
+  {
+    id: 4,
+    photo: '/socios/edison.png',
+    name: 'Edison',
+    role: 'AI Agent Engineer',
+    bio: 'Construye agentes autónomos que se integran con CRM, ERP y canales de comunicación para automatizar flujos de trabajo complejos.',
+  },
+  {
+    id: 5,
+    photo: '/socios/hector.png',
+    name: 'Héctor',
+    role: 'ML Engineer',
+    bio: 'Diseño y entrenamiento de modelos de clasificación, predicción y visión computacional aplicados a casos de negocio concretos.',
+  },
+  {
+    id: 6,
+    photo: '/socios/ignacio.png',
+    name: 'Ignacio',
+    role: 'Lead Developer',
+    bio: 'Especialista en desarrollo full-stack con enfoque en productos de IA listos para producción, escalables y de alta disponibilidad.',
+  },
+  {
+    id: 7,
+    photo: '/socios/julio.png',
+    name: 'Julio',
+    role: 'DevOps & Cloud',
+    bio: 'Infraestructura en producción, pipelines CI/CD y auditoría de seguridad. Garantiza entregas confiables en cada sprint.',
+  },
+  {
+    id: 8,
+    photo: '/socios/pablo.png',
+    name: 'Pablo',
+    role: 'UX / Frontend',
+    bio: 'Interfaces que combinan funcionalidad con experiencia de usuario de alto impacto visual, optimizadas para conversión.',
+  },
 ]
 
-// Los cards se duplican para el loop seamless
 const TRACK = [...MEMBERS, ...MEMBERS]
 
 function Card({ m }) {
   return (
     <div className="team-card" aria-label={m.name}>
       <div className="team-avatar">
-        <span>{m.initials}</span>
+        <img src={m.photo} alt={m.name} />
       </div>
       <strong className="team-name">{m.name}</strong>
       <span className="team-role">{m.role}</span>
@@ -36,7 +84,6 @@ export default function Team() {
         </header>
       </div>
 
-      {/* Máscara con fade en los extremos */}
       <div className="team-viewport">
         <div className="team-track">
           {TRACK.map((m, i) => (
