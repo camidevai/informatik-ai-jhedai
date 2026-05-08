@@ -297,8 +297,8 @@ section[id] {
   gap: 12px;
   padding: 16px 36px;
   min-height: 54px;
-  background: rgba(0, 212, 200, 0.13);
-  border: 1.5px solid rgba(0, 212, 200, 0.6);
+  background: linear-gradient(135deg, rgba(255,107,43,0.85), rgba(255,69,0,0.8));
+  border: 1.5px solid rgba(255,107,43,0.8);
   border-radius: 50px;
   color: #fff;
   font-family: inherit;
@@ -310,7 +310,7 @@ section[id] {
   touch-action: manipulation;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 0 28px rgba(0, 212, 200, 0.2);
+  box-shadow: 0 0 32px rgba(255,107,43,0.35);
   transition: background 0.25s, border-color 0.25s, box-shadow 0.25s;
   pointer-events: none;
   position: relative;
@@ -348,7 +348,7 @@ section[id] {
   position: absolute;
   inset: -1px;
   border-radius: 52px;
-  border: 1.5px solid rgba(0, 212, 200, 0.55);
+  border: 1.5px solid rgba(255, 107, 43, 0.6);
   pointer-events: none;
   animation: ctaRing 2.8s ease-out 2.5s infinite;
 }
@@ -360,12 +360,12 @@ section[id] {
 
 @keyframes ctaGlow {
   0%, 100% {
-    box-shadow: 0 0 28px rgba(0,212,200,0.2);
+    box-shadow: 0 0 32px rgba(255,107,43,0.35);
   }
   50% {
     box-shadow:
-      0 0 48px rgba(0,212,200,0.55),
-      0 0 90px rgba(0,212,200,0.18);
+      0 0 55px rgba(255,107,43,0.65),
+      0 0 100px rgba(255,107,43,0.22);
   }
 }
 
@@ -384,9 +384,9 @@ section[id] {
 
 @media (hover: hover) {
   .scene1-cta:hover {
-    background: rgba(0, 212, 200, 0.22);
-    border-color: #00D4C8;
-    box-shadow: 0 0 42px rgba(0, 212, 200, 0.5), 0 0 80px rgba(0, 212, 200, 0.18);
+    background: linear-gradient(135deg, rgba(255,125,66,0.95), rgba(255,80,16,0.9));
+    border-color: #FF6B2B;
+    box-shadow: 0 0 55px rgba(255,107,43,0.65), 0 0 100px rgba(255,107,43,0.22);
     transform: translateY(-2px);
     transition: background 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.2s;
   }
@@ -396,8 +396,8 @@ section[id] {
 }
 
 .scene1-cta:active {
-  background: rgba(0, 212, 200, 0.22);
-  border-color: #00D4C8;
+  background: linear-gradient(135deg, rgba(255,107,43,0.95), rgba(255,69,0,0.9));
+  border-color: #FF6B2B;
 }
 
 /* punto pulsante de "activo/disponible" */
@@ -405,8 +405,8 @@ section[id] {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #00D4C8;
-  box-shadow: 0 0 8px #00D4C8;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(255,255,255,0.8);
   animation: dotPulse 1.8s ease infinite;
   flex-shrink: 0;
 }
@@ -417,7 +417,7 @@ section[id] {
 }
 
 .scene1-cta__arrow {
-  color: #00D4C8;
+  color: #fff;
   font-size: 1.1em;
   transition: transform 0.2s;
 }
