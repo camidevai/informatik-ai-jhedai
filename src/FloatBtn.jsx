@@ -31,7 +31,6 @@ export default function FloatBtn() {
           <span className="fab-item-icon">💻</span>
           <span className="fab-item-body">
             <strong>Desarrollo / Servicios</strong>
-            <em>Sin costo</em>
           </span>
         </a>
 
@@ -46,7 +45,6 @@ export default function FloatBtn() {
           <span className="fab-item-icon">🤝</span>
           <span className="fab-item-body">
             <strong>Alianza estratégica</strong>
-            <em>Reunión paga</em>
           </span>
         </a>
       </div>
