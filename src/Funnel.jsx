@@ -20,7 +20,6 @@ export default function Funnel() {
             <div className="funnel-card-badge">Partnership</div>
             <strong className="funnel-card-title">Alianza estratégica</strong>
             <p className="funnel-card-desc">Para empresas que quieren colaborar, co-crear o desarrollar una propuesta conjunta.</p>
-            <span className="funnel-card-cost">Reunión paga</span>
             <span className="funnel-card-cta">Explorar alianza →</span>
           </a>
 
@@ -37,7 +36,6 @@ export default function Funnel() {
             <div className="funnel-card-badge funnel-card-badge--blue">Desarrollo</div>
             <strong className="funnel-card-title">Construir juntos</strong>
             <p className="funnel-card-desc">Para quienes necesitan software, automatización, agentes IA o una plataforma a medida.</p>
-            <span className="funnel-card-cost funnel-card-cost--free">Reunión sin costo</span>
             <span className="funnel-card-cta funnel-card-cta--blue">Agendar desarrollo →</span>
           </a>
         </div>

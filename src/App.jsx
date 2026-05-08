@@ -20,18 +20,18 @@ const buildChars = () => {
   const br = () => chars.push({ isBreak: true })
 
   const lines = [
-    { k: 'empresa',   v: 'InformatiK-AI  ×  JhedAI',                            t: 'val'    },
-    { k: 'misión',    v: 'Transformar negocios reales con inteligencia aplicada', t: 'val'    },
-    { k: 'servicios', v: 'Software  ·  Agentes IA  ·  Visión  ·  Machine Learning', t: 'val' },
-    { k: 'ventaja',   v: '3× más rápido  ·  40% menos costo  ·  100% a medida',  t: 'accent' },
-    { k: 'promesa',   v: 'Juntos construimos el futuro que tu empresa merece',    t: 'accent' },
+    { k: 'empresa',   v: 'InformatiK-AI × JhedAI',                           t: 'val'    },
+    { k: 'misión',    v: 'Transformar negocios reales con inteligencia real',  t: 'val'    },
+    { k: 'servicios', v: 'Software · Agentes IA · Visión · Machine Learning', t: 'val'    },
+    { k: 'ventaja',   v: '3× más rápido · 40% menos costo · 100% a medida',   t: 'accent' },
+    { k: 'promesa',   v: 'Juntos construimos el futuro que tu empresa merece', t: 'accent' },
   ]
 
   push('{', 'punct'); br()
   lines.forEach(({ k, v, t }, i) => {
     push('  ', 'punct')
     push(`"${k}"`, 'key')
-    push(':  ', 'punct')
+    push(': ', 'punct')
     push(`"${v}"`, t)
     if (i < lines.length - 1) push(',', 'punct')
     br()
@@ -359,7 +359,10 @@ export default function App() {
             </div>
             <button
               className="scene1-cta"
-              onClick={() => scrollToContent(3)}
+              onClick={() => {
+                autoScrollRef.current = false
+                document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })
+              }}
             >
               <span className="scene1-cta__dot" />
               Agendar una reunión
