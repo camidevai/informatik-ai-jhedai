@@ -1,19 +1,43 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import './App.css'
-import TabPanel from './TabPanel'
+import './sections.css'
+import StickyNav from './StickyNav'
+import FloatBtn from './FloatBtn'
+import Servicios from './Servicios'
+import Proceso from './Proceso'
+import Elegirnos from './Elegirnos'
+import Alianzas from './Alianzas'
+import Funnel from './Funnel'
+import Team from './Team'
 import LegalModal from './LegalModal'
 
-// ── Chars escena 2 ──
+// ── Chars escena 2 — JSON con syntax highlighting ──
 const buildChars = () => {
   const chars = []
-  const push = (str, calypso = false) => {
-    for (const c of str) chars.push({ char: c, calypso, isBreak: false })
+  const push = (str, type = 'default') => {
+    for (const c of str) chars.push({ char: c, type, isBreak: false })
   }
-  push('Juntos creamos soluciones inteligentes')
-  chars.push({ char: '', calypso: false, isBreak: true })
-  push('que ')
-  push('transforman', true)
-  push(' el mañana')
+  const br = () => chars.push({ isBreak: true })
+
+  const lines = [
+    { k: 'empresa',   v: 'InformatiK-AI  ×  JhedAI',                            t: 'val'    },
+    { k: 'misión',    v: 'Transformar negocios reales con inteligencia aplicada', t: 'val'    },
+    { k: 'servicios', v: 'Software  ·  Agentes IA  ·  Visión  ·  Machine Learning', t: 'val' },
+    { k: 'ventaja',   v: '3× más rápido  ·  40% menos costo  ·  100% a medida',  t: 'accent' },
+    { k: 'promesa',   v: 'Juntos construimos el futuro que tu empresa merece',    t: 'accent' },
+  ]
+
+  push('{', 'punct'); br()
+  lines.forEach(({ k, v, t }, i) => {
+    push('  ', 'punct')
+    push(`"${k}"`, 'key')
+    push(':  ', 'punct')
+    push(`"${v}"`, t)
+    if (i < lines.length - 1) push(',', 'punct')
+    br()
+  })
+  push('}', 'punct')
+
   return chars
 }
 
@@ -173,7 +197,8 @@ export default function App() {
       // Escena 2: IDE typewriter — se desvanece al final del spacer
       const op2 = sceneOp(p, 0.24, 0.26, 0.80, 0.96)
       setScene(scene2, op2)
-      const charsP = p < 0.25 ? 0 : p > 0.44 ? 1 : (p - 0.25) / (0.44 - 0.25)
+      // Rango extendido a 0.60 para el JSON más largo
+      const charsP = p < 0.25 ? 0 : p > 0.60 ? 1 : (p - 0.25) / (0.60 - 0.25)
       let nonBreakIdx = 0
       charRefs.current.forEach((ref, i) => {
         if (!ref || CHARS[i]?.isBreak) return
@@ -242,8 +267,8 @@ export default function App() {
       await sleep(600)
       if (!autoScrollRef.current) return
 
-      // Fase 1: scroll hasta p=0.47 (texto 100% escrito)
-      await animateScrollTo(max * 0.47, 2200)
+      // Fase 1: scroll hasta p=0.65 (JSON 100% escrito)
+      await animateScrollTo(max * 0.65, 3200)
       if (!autoScrollRef.current) return
 
       // Fase 2: pausa de lectura
@@ -278,17 +303,29 @@ export default function App() {
     }
   }, [videoReady])
 
+  const SECTION_IDS = ['servicios', 'proceso', 'elegirnos', 'contacto']
+
   const scrollToContent = (tabIdx) => {
-    pageContentRef.current?.scrollIntoView({ behavior: 'smooth' })
-    if (tabIdx != null) {
-      setTimeout(() => {
-        window.dispatchEvent(new CustomEvent('tp:openTab', { detail: tabIdx }))
-      }, 1200)
+    const id = SECTION_IDS[tabIdx] ?? 'servicios'
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      pageContentRef.current?.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
+  useEffect(() => {
+    const handler = () => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })
+    window.addEventListener('goto:contacto', handler)
+    return () => window.removeEventListener('goto:contacto', handler)
+  }, [])
+
   return (
     <>
+      <StickyNav />
+      <FloatBtn />
+
       <div className="app" ref={appRef}>
         <div className="video-wrapper">
           <video
@@ -341,8 +378,7 @@ export default function App() {
               </div>
               <div className="ide-body">
                 <div className="ide-gutter">
-                  <span>1</span>
-                  <span>2</span>
+                  {[1,2,3,4,5,6,7].map(n => <span key={n}>{n}</span>)}
                 </div>
                 <div className="ide-code">
                   <p className="headline">
@@ -352,7 +388,7 @@ export default function App() {
                         : <span
                             key={i}
                             ref={el => { charRefs.current[i] = el }}
-                            className={`char${c.calypso ? ' calypso' : ''}`}
+                            className={`char char--${c.type ?? 'default'}`}
                           >{c.char}</span>
                     )}
                     <span className="ide-cursor" aria-hidden="true" />
@@ -370,7 +406,17 @@ export default function App() {
 
       {/* ── Sección de contenido — flujo normal de página ── */}
       <div className="page-content" ref={pageContentRef}>
-        <TabPanel onSeekVideo={seekVideoToProgress} />
+        <section id="servicios"><Servicios /></section>
+        <div className="s-divider" />
+        <section id="proceso"><Proceso /></section>
+        <div className="s-divider" />
+        <section id="elegirnos"><Elegirnos /></section>
+        <div className="s-divider" />
+        <section id="alianzas"><Alianzas /></section>
+        <div className="s-divider" />
+        <section id="contacto"><Funnel /></section>
+        <div className="s-divider" />
+        <section id="equipo"><Team /></section>
       </div>
 
       {/* ── Footer real de la página ── */}

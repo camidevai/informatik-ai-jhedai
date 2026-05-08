@@ -1,0 +1,123 @@
+.proc-line-wrap {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.proc-line {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00D4C8 30%, #4A9EFF 70%, transparent);
+  pointer-events: none;
+}
+
+.proc-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+}
+
+.proc-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  gap: 14px;
+  padding-top: 0;
+}
+
+.proc-orb {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(4, 10, 28, 0.9);
+  border: 1.5px solid rgba(0, 212, 200, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(0, 212, 200, 0.1);
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.proc-step:hover .proc-orb {
+  border-color: #00D4C8;
+  box-shadow: 0 0 28px rgba(0, 212, 200, 0.25);
+}
+
+.proc-orb-num {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #00D4C8;
+}
+
+.proc-title {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+}
+
+.proc-desc {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.55;
+  margin: 0;
+  max-width: 140px;
+}
+
+.proc-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.proc-badges span {
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: rgba(0, 212, 200, 0.08);
+  border: 1px solid rgba(0, 212, 200, 0.22);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0, 212, 200, 0.8);
+}
+
+@media (max-width: 768px) {
+  .proc-line {
+    display: none;
+  }
+
+  .proc-steps {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .proc-step {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .proc-desc {
+    max-width: none;
+  }
+
+  .proc-orb {
+    flex-shrink: 0;
+  }
+}

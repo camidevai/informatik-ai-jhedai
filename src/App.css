@@ -15,6 +15,15 @@
   overflow: hidden;
 }
 
+/* Compensa la altura del StickyNav (56px) para que el contenido no quede tapado */
+.page-content {
+  scroll-margin-top: 56px;
+}
+
+section[id] {
+  scroll-margin-top: 72px;
+}
+
 .bg-video {
   position: absolute;
   inset: 0;
@@ -100,7 +109,7 @@
    IDE WINDOW — Escena 2 (minimalista)
 ══════════════════════════════════════════ */
 .ide-window {
-  width: min(88vw, 820px);
+  width: min(92vw, 960px);
   border-radius: 14px;
   background: rgba(10, 14, 26, 0.88);
   border: 1px solid rgba(0, 212, 200, 0.2);
@@ -160,9 +169,9 @@
 .ide-gutter span {
   display: block;
   font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', ui-monospace, monospace;
-  font-size: clamp(1rem, 1.9vw, 1.55rem);
+  font-size: clamp(0.75rem, 1.3vw, 1.1rem);
   color: rgba(0, 212, 200, 0.28);
-  line-height: 1.38;
+  line-height: 1.7;
   text-align: right;
   min-width: 1.5ch;
 }
@@ -176,10 +185,10 @@
 .headline {
   margin: 0;
   font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', ui-monospace, monospace;
-  font-size: clamp(1rem, 1.9vw, 1.55rem);
+  font-size: clamp(0.75rem, 1.3vw, 1.1rem);
   font-weight: 400;
   letter-spacing: -0.01em;
-  line-height: 1.38;
+  line-height: 1.7;
   color: #D4E8FF;
   text-align: left;
   text-transform: none;
@@ -196,6 +205,14 @@
 
 .headline::before,
 .headline::after { display: none; }
+
+/* ── JSON syntax highlighting ── */
+.char { opacity: 0; display: inline; }
+.char--punct   { color: rgba(255,255,255,0.3); }
+.char--key     { color: #7DD3FC; }   /* azul claro — claves JSON */
+.char--val     { color: #86EFAC; }   /* verde claro — strings */
+.char--accent  { color: #00D4C8; text-shadow: 0 0 14px rgba(0,212,200,0.35); } /* cyan — promesa/ventaja */
+.char--default { color: #D4E8FF; }
 
 /* Cursor parpadeante al final del texto */
 .ide-cursor {
@@ -493,18 +510,10 @@
     max-height: 24vh;
   }
   /* IDE en mobile */
-  .ide-window {
-    width: 92vw;
-  }
-  .ide-body {
-    padding: 20px 0;
-  }
-  .ide-gutter {
-    padding: 0 10px 0 12px;
-  }
-  .ide-code {
-    padding: 0 16px;
-  }
+  .ide-window { width: 96vw; }
+  .ide-body   { padding: 16px 0; }
+  .ide-gutter { padding: 0 8px 0 10px; }
+  .ide-code   { padding: 0 12px; }
   .scene1-cta {
     padding: 15px 28px;
     font-size: 0.82rem;
@@ -614,12 +623,6 @@
 ══════════════════════════════════════════ */
 .page-content {
   background: #020810;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 72px 24px 100px;
-  min-height: 100vh;
   position: relative;
 }
 

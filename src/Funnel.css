@@ -1,0 +1,172 @@
+.funnel {
+  position: relative;
+  overflow: hidden;
+}
+
+.funnel-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(0, 212, 200, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.funnel-sub {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.funnel-cards {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  justify-content: center;
+}
+
+.funnel-card {
+  flex: 1;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 36px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s;
+}
+
+.funnel-card--alianza {
+  background: linear-gradient(160deg, rgba(0, 212, 200, 0.1), rgba(0, 212, 200, 0.04)), rgba(4, 10, 28, 0.9);
+  border: 1px solid rgba(0, 212, 200, 0.4);
+}
+
+.funnel-card--desarrollo {
+  background: linear-gradient(160deg, rgba(74, 158, 255, 0.1), rgba(74, 158, 255, 0.04)), rgba(4, 10, 28, 0.9);
+  border: 1px solid rgba(74, 158, 255, 0.4);
+}
+
+.funnel-card--alianza:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 212, 200, 0.15);
+}
+
+.funnel-card--desarrollo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(74, 158, 255, 0.15);
+}
+
+.funnel-card-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(0, 212, 200, 0.12);
+  border: 1px solid rgba(0, 212, 200, 0.3);
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #00D4C8;
+  width: fit-content;
+}
+
+.funnel-card-badge--blue {
+  background: rgba(74, 158, 255, 0.12);
+  border-color: rgba(74, 158, 255, 0.3);
+  color: #4A9EFF;
+}
+
+.funnel-card-title {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.funnel-card-desc {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.funnel-card-cost {
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(0, 212, 200, 0.8);
+  display: block;
+}
+
+.funnel-card-cost--free {
+  color: rgba(74, 158, 255, 0.8);
+}
+
+.funnel-card-cta {
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #00D4C8;
+  display: block;
+}
+
+.funnel-card-cta--blue {
+  color: #4A9EFF;
+}
+
+.funnel-center {
+  width: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.funnel-orb {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #00D4C8;
+  box-shadow: 0 0 20px #00D4C8;
+  animation: orbPulse 2s ease-in-out infinite;
+}
+
+@keyframes orbPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+}
+
+.funnel-note {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .funnel-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .funnel-center {
+    width: 100%;
+    height: 40px;
+  }
+
+  .funnel-card {
+    max-width: 100%;
+    padding: 32px 28px;
+  }
+}
