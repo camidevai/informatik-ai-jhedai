@@ -1,23 +1,27 @@
 import './Alianzas.css'
 
 const PARTNERS = [
-  { id: 1, initials: 'AN', name: 'Anthropic',       type: 'AI Foundation Partner', region: 'Global',         color: '#00D4C8' },
-  { id: 2, initials: 'OA', name: 'OpenAI',           type: 'Technology Partner',    region: 'Global',         color: '#4A9EFF' },
-  { id: 3, initials: 'GC', name: 'Google Cloud',     type: 'Infrastructure Partner',region: 'LATAM',          color: '#8EF8F1' },
-  { id: 4, initials: 'AW', name: 'AWS',              type: 'Cloud Partner',         region: 'LATAM',          color: '#00D4C8' },
-  { id: 5, initials: 'MS', name: 'Microsoft Azure',  type: 'Cloud & AI Partner',    region: 'Global',         color: '#4A9EFF' },
-  { id: 6, initials: 'HF', name: 'HuggingFace',      type: 'ML Models Partner',     region: 'Global',         color: '#8EF8F1' },
-  { id: 7, initials: 'LG', name: 'LangChain',        type: 'Framework Partner',     region: 'Global',         color: '#00D4C8' },
-  { id: 8, initials: 'PP', name: 'Partner 8',        type: 'Alianza en curso',      region: 'LATAM',          color: '#4A9EFF' },
+  { id: 1, logo: '/logos/cchia.png', name: 'CCHIA', type: 'Alianza estratégica', region: 'Chile', color: '#00D4C8' },
+  // Agregar más partners aquí cuando estén disponibles
 ]
 
-const TRACK = [...PARTNERS, ...PARTNERS]
+// Rellena el track para que el carousel tenga suficiente contenido
+const fillTrack = (items, minCount = 8) => {
+  const result = []
+  while (result.length < minCount) result.push(...items)
+  return [...result, ...result] // duplica para loop seamless
+}
 
-function PartnerCard({ p }) {
+const TRACK = fillTrack(PARTNERS)
+
+function PartnerCard({ p, idx }) {
   return (
     <div className="ali-card" style={{ '--ali-color': p.color }}>
       <div className="ali-logo">
-        <span>{p.initials}</span>
+        {p.logo
+          ? <img src={p.logo} alt={p.name} className="ali-logo-img" />
+          : <span>{p.initials}</span>
+        }
       </div>
       <strong className="ali-name">{p.name}</strong>
       <span className="ali-type">{p.type}</span>
@@ -33,14 +37,14 @@ export default function Alianzas() {
         <header className="s-header">
           <span className="s-kicker">Ecosistema</span>
           <h2 className="s-title">Alianzas estratégicas</h2>
-          <p className="ali-sub">Construimos sobre las mejores plataformas del mundo para entregar soluciones que escalan</p>
+          <p className="ali-sub">Trabajamos con organizaciones que comparten nuestra visión de transformar negocios con tecnología real</p>
         </header>
       </div>
 
       <div className="ali-viewport">
         <div className="ali-track">
           {TRACK.map((p, i) => (
-            <PartnerCard key={`${p.id}-${i}`} p={p} />
+            <PartnerCard key={`${p.id}-${i}`} p={p} idx={i} />
           ))}
         </div>
       </div>
