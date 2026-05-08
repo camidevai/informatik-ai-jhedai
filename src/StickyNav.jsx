@@ -41,15 +41,10 @@ export default function StickyNav() {
         </nav>
 
         {/* CTA desktop */}
-        <a
-          href="https://calendar.app.google/dbFyNjc56vKE9WPZ9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="snav-cta"
-        >
+        <button className="snav-cta" onClick={() => scrollTo('contacto')}>
           Agendar reunión
           <span className="snav-cta__arrow">→</span>
-        </a>
+        </button>
 
         {/* Hamburguesa mobile */}
         <button
@@ -74,15 +69,12 @@ export default function StickyNav() {
               {l.label}
             </button>
           ))}
-          <a
-            href="https://calendar.app.google/dbFyNjc56vKE9WPZ9"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
             className="snav-drawer-cta"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => { scrollTo('contacto'); setMenuOpen(false) }}
           >
             Agendar reunión →
-          </a>
+          </button>
         </div>
       )}
     </header>
