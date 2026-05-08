@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import './StickyNav.css'
 
 const NAV_LINKS = [
-  { label: 'Servicios',    id: 'servicios'  },
-  { label: 'Proceso',      id: 'proceso'    },
+  { label: 'Equipo',            id: 'equipo'    },
+  { label: 'Servicios',         id: 'servicios' },
+  { label: 'Proceso',           id: 'proceso'   },
   { label: 'Por qué elegirnos', id: 'elegirnos' },
-  { label: 'Contacto',     id: 'contacto'   },
-  { label: 'Equipo',       id: 'equipo'     },
+  { label: 'Contacto',          id: 'contacto'  },
 ]
 
 const scrollTo = (id) =>

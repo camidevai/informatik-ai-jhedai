@@ -409,6 +409,8 @@ export default function App() {
 
       {/* ── Sección de contenido — flujo normal de página ── */}
       <div className="page-content" ref={pageContentRef}>
+        <section id="equipo"><Team /></section>
+        <div className="s-divider" />
         <section id="servicios"><Servicios /></section>
         <div className="s-divider" />
         <section id="proceso"><Proceso /></section>
@@ -418,8 +420,6 @@ export default function App() {
         <section id="alianzas"><Alianzas /></section>
         <div className="s-divider" />
         <section id="contacto"><Funnel /></section>
-        <div className="s-divider" />
-        <section id="equipo"><Team /></section>
       </div>
 
       {/* ── Footer real de la página ── */}
