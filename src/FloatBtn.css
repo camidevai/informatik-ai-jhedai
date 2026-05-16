@@ -194,6 +194,31 @@
 .fab-item--cyan .fab-item-body em { color: rgba(0,212,200,0.8); }
 .fab-item--blue .fab-item-body em { color: rgba(74,158,255,0.8); }
 
+/* ── Botón formulario — siempre visible ── */
+.fab-form-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #ff6b00, #ff9a3c);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(255, 107, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.fab-form-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(255, 107, 0, 0.55);
+}
+
 /* ── Mobile ── */
 @media (max-width: 480px) {
   .fab-wrap { bottom: 20px; right: 16px; }

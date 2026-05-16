@@ -49,6 +49,19 @@ export default function FloatBtn() {
         </a>
       </div>
 
+      {/* Botón siempre visible — ir al formulario */}
+      <button
+        className="fab-form-btn"
+        onClick={() => document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' })}
+        aria-label="Ir al formulario de contacto"
+      >
+        <svg viewBox="0 0 24 24" fill="none" width="18" height="18" aria-hidden="true">
+          <path d="M4 4h16v12H4z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/>
+          <path d="M4 8l8 5 8-5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+        </svg>
+        Escribirnos
+      </button>
+
       {/* Botón principal */}
       <button
         className={`fab-btn ${open ? 'fab-btn--open' : ''}`}

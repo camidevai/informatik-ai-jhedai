@@ -31,14 +31,34 @@ const INITIAL = {
   message: '',
 }
 
+const MIN_MSG = 50
+
 export default function ContactForm() {
   const [fields, setFields] = useState(INITIAL)
   const [status, setStatus] = useState('idle') // idle | sending | success | error
+  const [errors, setErrors] = useState({})
 
-  const set = (k, v) => setFields(f => ({ ...f, [k]: v }))
+  const set = (k, v) => {
+    setFields(f => ({ ...f, [k]: v }))
+    setErrors(e => ({ ...e, [k]: undefined }))
+  }
+
+  const validate = () => {
+    const e = {}
+    if (!fields.user_name.trim())                        e.user_name  = 'El nombre es obligatorio'
+    if (!fields.user_email.trim())                       e.user_email = 'El email es obligatorio'
+    if (!fields.phone.trim())                            e.phone      = 'El teléfono es obligatorio'
+    if (!fields.company.trim())                          e.company    = 'La empresa es obligatoria'
+    if (!fields.services)                                e.services   = 'Selecciona un servicio'
+    if (!fields.budget)                                  e.budget     = 'Selecciona un presupuesto'
+    if (fields.message.trim().length < MIN_MSG)          e.message    = `Mínimo ${MIN_MSG} caracteres (faltan ${Math.max(0, MIN_MSG - fields.message.trim().length)})`
+    return e
+  }
 
   const handleSubmit = async e => {
     e.preventDefault()
+    const e2 = validate()
+    if (Object.keys(e2).length) { setErrors(e2); return }
     setStatus('sending')
     try {
       await emailjs.send(
@@ -64,7 +84,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="s-section cf-section" id="contacto">
+    <section className="s-section cf-section" id="formulario">
       <div className="cf-glow" aria-hidden="true" />
       <div className="s-container">
         <header className="s-header">
@@ -92,8 +112,9 @@ export default function ContactForm() {
                   placeholder="Tu nombre completo"
                   value={fields.user_name}
                   onChange={e => set('user_name', e.target.value)}
-                  required
+                  className={errors.user_name ? 'cf-input--error' : ''}
                 />
+                {errors.user_name && <span className="cf-field-error">{errors.user_name}</span>}
               </div>
               <div className="cf-field">
                 <label htmlFor="cf-email">Email *</label>
@@ -104,14 +125,15 @@ export default function ContactForm() {
                   placeholder="tu@empresa.com"
                   value={fields.user_email}
                   onChange={e => set('user_email', e.target.value)}
-                  required
+                  className={errors.user_email ? 'cf-input--error' : ''}
                 />
+                {errors.user_email && <span className="cf-field-error">{errors.user_email}</span>}
               </div>
             </div>
 
             <div className="cf-row">
               <div className="cf-field">
-                <label htmlFor="cf-phone">Teléfono</label>
+                <label htmlFor="cf-phone">Teléfono *</label>
                 <input
                   id="cf-phone"
                   name="phone"
@@ -119,10 +141,12 @@ export default function ContactForm() {
                   placeholder="+56 9 1234 5678"
                   value={fields.phone}
                   onChange={e => set('phone', e.target.value)}
+                  className={errors.phone ? 'cf-input--error' : ''}
                 />
+                {errors.phone && <span className="cf-field-error">{errors.phone}</span>}
               </div>
               <div className="cf-field">
-                <label htmlFor="cf-company">Empresa</label>
+                <label htmlFor="cf-company">Empresa *</label>
                 <input
                   id="cf-company"
                   name="company"
@@ -130,7 +154,9 @@ export default function ContactForm() {
                   placeholder="Nombre de tu empresa"
                   value={fields.company}
                   onChange={e => set('company', e.target.value)}
+                  className={errors.company ? 'cf-input--error' : ''}
                 />
+                {errors.company && <span className="cf-field-error">{errors.company}</span>}
               </div>
             </div>
 
@@ -142,32 +168,38 @@ export default function ContactForm() {
                   name="services"
                   value={fields.services}
                   onChange={e => set('services', e.target.value)}
-                  required
+                  className={errors.services ? 'cf-input--error' : ''}
                 >
                   <option value="" disabled>Selecciona una opción</option>
                   {SERVICES_OPTIONS.map(s => (
                     <option key={s} value={s}>{s}</option>
                   ))}
                 </select>
+                {errors.services && <span className="cf-field-error">{errors.services}</span>}
               </div>
               <div className="cf-field">
-                <label htmlFor="cf-budget">Presupuesto aproximado</label>
+                <label htmlFor="cf-budget">Presupuesto aproximado *</label>
                 <select
                   id="cf-budget"
                   name="budget"
                   value={fields.budget}
                   onChange={e => set('budget', e.target.value)}
+                  className={errors.budget ? 'cf-input--error' : ''}
                 >
                   <option value="" disabled>Selecciona un rango</option>
                   {BUDGET_OPTIONS.map(b => (
                     <option key={b} value={b}>{b}</option>
                   ))}
                 </select>
+                {errors.budget && <span className="cf-field-error">{errors.budget}</span>}
               </div>
             </div>
 
             <div className="cf-field cf-field--full">
-              <label htmlFor="cf-message">Mensaje *</label>
+              <label htmlFor="cf-message">
+                Mensaje *
+                <span className="cf-char-count">{fields.message.trim().length}/{MIN_MSG}</span>
+              </label>
               <textarea
                 id="cf-message"
                 name="message"
@@ -175,8 +207,9 @@ export default function ContactForm() {
                 placeholder="Cuéntanos qué necesitas, qué problema quieres resolver..."
                 value={fields.message}
                 onChange={e => set('message', e.target.value)}
-                required
+                className={errors.message ? 'cf-input--error' : ''}
               />
+              {errors.message && <span className="cf-field-error">{errors.message}</span>}
             </div>
 
             {status === 'error' && (
