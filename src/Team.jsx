@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import './Team.css'
 
 const MEMBERS = [
@@ -75,6 +76,17 @@ function Card({ m }) {
 }
 
 export default function Team() {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768)
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 768px)')
+    const handler = e => setIsMobile(e.matches)
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [])
+
+  const track = isMobile ? MEMBERS : TRACK
+
   return (
     <section className="s-section s-section--alt" id="equipo">
       <div className="s-container">
@@ -86,11 +98,18 @@ export default function Team() {
 
       <div className="team-viewport">
         <div className="team-track">
-          {TRACK.map((m, i) => (
+          {track.map((m, i) => (
             <Card key={`${m.id}-${i}`} m={m} />
           ))}
         </div>
       </div>
+
+      <p className="team-swipe-hint" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+        Desliza para ver más
+      </p>
     </section>
   )
 }

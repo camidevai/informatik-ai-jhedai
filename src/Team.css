@@ -29,7 +29,6 @@
   gap: 20px;
   width: max-content;
   padding: 20px 0 40px;
-  /* 8 × 280px + 7 × 20px gap = 2380px → loop perfecto */
   animation: teamScroll 68s linear infinite;
 }
 
@@ -40,6 +39,11 @@
 @keyframes teamScroll {
   0%   { transform: translateX(0); }
   100% { transform: translateX(calc(-1 * (280px * 8 + 20px * 7))); }
+}
+
+/* ── Hint desliza (solo mobile) ── */
+.team-swipe-hint {
+  display: none;
 }
 
 /* ── Card individual ── */
@@ -114,21 +118,63 @@
   line-height: 1.55;
 }
 
-/* ── Responsive ── */
-@media (max-width: 600px) {
-  .team-card { width: 230px; padding: 22px 18px; }
+/* ── Mobile: carrusel deslizable con touch ── */
+@media (max-width: 768px) {
+  .team-viewport {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    mask-image: none;
+    -webkit-mask-image: none;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 0 20px;
+  }
 
-  @keyframes teamScroll {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(calc(-1 * (230px * 8 + 20px * 7))); }
+  .team-viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .team-track {
+    animation: none;
+    width: max-content;
+    padding: 20px 4px 32px;
+    gap: 16px;
+  }
+
+  .team-card {
+    width: 260px;
+    padding: 24px 18px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+
+  .team-swipe-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 12px;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.28);
+    letter-spacing: 0.06em;
+  }
+
+  .team-swipe-hint svg {
+    opacity: 0.5;
+    animation: swipeHint 1.6s ease-in-out infinite;
+  }
+
+  @keyframes swipeHint {
+    0%, 100% { transform: translateX(0); }
+    50%       { transform: translateX(5px); }
   }
 }
 
+@media (max-width: 420px) {
+  .team-card { width: 230px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .team-track {
-    animation: none;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  .team-card { scroll-snap-align: start; }
+  .team-track { animation: none; }
 }
