@@ -10,6 +10,7 @@ import Alianzas from './Alianzas'
 import Funnel from './Funnel'
 import Team from './Team'
 import LegalModal from './LegalModal'
+import ContactForm from './ContactForm'
 
 // ── Chars escena 2 — JSON con syntax highlighting ──
 const buildChars = () => {
@@ -420,6 +421,8 @@ export default function App() {
         <section id="alianzas"><Alianzas /></section>
         <div className="s-divider" />
         <section id="contacto"><Funnel /></section>
+        <div className="s-divider" />
+        <ContactForm />
       </div>
 
       {/* ── Footer real de la página ── */}
