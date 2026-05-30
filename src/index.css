@@ -1,13 +1,79 @@
-*, *::before, *::after {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ════════════════════════════════════════════════════════════
+   PROCHECHANDO AI — Theme
+   Paleta de marca:
+     Morado IA      #6C3DFF
+     Morado Claro   #9D7DFF
+     Gris Tec.      #D7D7D7
+     Negro          #1D1D1D
+     Blanco         #FFFFFF
+   Tipografía: Montserrat (títulos/logo) · Poppins (contenido)
+   ════════════════════════════════════════════════════════════ */
+:root {
+  /* — Marca — */
+  --brand:          #6C3DFF;   /* Morado IA */
+  --brand-light:    #9D7DFF;   /* Morado Claro */
+  --brand-dark:     #4A1FD6;   /* Morado profundo (hover/sombra) */
+  --gray-tech:      #D7D7D7;   /* Gris Tecnológico */
+  --ink:            #1D1D1D;   /* Negro */
+
+  /* — Superficies (tema claro / lavanda) — */
+  --bg:        #f7f5ff;        /* fondo base lavanda muy claro */
+  --bg-soft:   #efeaff;        /* superficie suave */
+  --bg-card:   #ffffff;        /* tarjetas */
+  --bg-lav:    #e9e3ff;        /* lavanda de acento */
+  --surface:   #ffffff;
+
+  /* — Texto — */
+  --fg:          #1d1d1d;      /* texto principal */
+  --fg-strong:   #14122b;      /* títulos (navy oscuro como la referencia) */
+  --muted:       #6b6780;      /* texto secundario */
+  --on-brand:    #ffffff;      /* texto sobre morado */
+
+  /* — Acentos (compatibilidad con el código existente) — */
+  --accent:        #6C3DFF;
+  --accent2:       #9D7DFF;
+  --accent-strong: #6C3DFF;
+
+  /* — Bordes / sombras — */
+  --border:      rgba(108, 61, 255, 0.14);
+  --border-soft: rgba(20, 18, 43, 0.08);
+  --shadow:      0 18px 50px -20px rgba(108, 61, 255, 0.35);
+  --shadow-soft: 0 10px 30px -16px rgba(20, 18, 43, 0.18);
+
+  /* — Degradados — */
+  --grad-brand:  linear-gradient(135deg, #6C3DFF 0%, #9D7DFF 100%);
+  --grad-soft:   linear-gradient(180deg, #ffffff 0%, #f0ebff 100%);
+
+  --radius: 18px;
+  --maxw: 1180px;
+
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
 }
+
+* { box-sizing: border-box; }
 
 html, body {
   margin: 0;
   padding: 0;
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  scroll-behavior: smooth;
 }
 
-#root {
-  width: 100%;
+body {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Montserrat', 'Poppins', system-ui, sans-serif;
+  color: var(--fg-strong);
+}
+
+img { max-width: 100%; display: block; }
+
+button { font-family: inherit; }

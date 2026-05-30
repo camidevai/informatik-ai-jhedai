@@ -6,7 +6,7 @@
 .funnel-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 50%, rgba(0, 212, 200, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(108,61,255, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -14,7 +14,7 @@
   text-align: center;
   margin-top: 12px;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(20,18,43,0.5);
 }
 
 .funnel-cards {
@@ -33,48 +33,48 @@
   padding: 40px 36px;
   border-radius: 20px;
   text-decoration: none;
-  color: #fff;
+  color: var(--fg-strong);
   transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s;
 }
 
 .funnel-card--alianza {
-  background: linear-gradient(160deg, rgba(0, 212, 200, 0.1), rgba(0, 212, 200, 0.04)), rgba(4, 10, 28, 0.9);
-  border: 1px solid rgba(0, 212, 200, 0.4);
+  background: linear-gradient(160deg, rgba(108,61,255, 0.1), rgba(108,61,255, 0.04)), rgba(255,255,255, 0.9);
+  border: 1px solid rgba(108,61,255, 0.4);
 }
 
 .funnel-card--desarrollo {
-  background: linear-gradient(160deg, rgba(74, 158, 255, 0.1), rgba(74, 158, 255, 0.04)), rgba(4, 10, 28, 0.9);
-  border: 1px solid rgba(74, 158, 255, 0.4);
+  background: linear-gradient(160deg, rgba(157,125,255, 0.1), rgba(157,125,255, 0.04)), rgba(255,255,255, 0.9);
+  border: 1px solid rgba(157,125,255, 0.4);
 }
 
 .funnel-card--alianza:hover {
   transform: translateY(-8px);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 212, 200, 0.15);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(108,61,255, 0.15);
 }
 
 .funnel-card--desarrollo:hover {
   transform: translateY(-8px);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(74, 158, 255, 0.15);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(157,125,255, 0.15);
 }
 
 .funnel-card-badge {
   display: inline-block;
   padding: 4px 12px;
   border-radius: 999px;
-  background: rgba(0, 212, 200, 0.12);
-  border: 1px solid rgba(0, 212, 200, 0.3);
+  background: rgba(108,61,255, 0.12);
+  border: 1px solid rgba(108,61,255, 0.3);
   font-size: 0.6rem;
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #00D4C8;
+  color: #6c3dff;
   width: fit-content;
 }
 
 .funnel-card-badge--blue {
-  background: rgba(74, 158, 255, 0.12);
-  border-color: rgba(74, 158, 255, 0.3);
-  color: #4A9EFF;
+  background: rgba(157,125,255, 0.12);
+  border-color: rgba(157,125,255, 0.3);
+  color: #9d7dff;
 }
 
 .funnel-card-title {
@@ -86,7 +86,7 @@
 
 .funnel-card-desc {
   font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(20,18,43,0.55);
   line-height: 1.6;
   margin: 0;
   flex: 1;
@@ -97,24 +97,24 @@
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(0, 212, 200, 0.8);
+  color: rgba(108,61,255, 0.8);
   display: block;
 }
 
 .funnel-card-cost--free {
-  color: rgba(74, 158, 255, 0.8);
+  color: rgba(157,125,255, 0.8);
 }
 
 .funnel-card-cta {
   margin-top: auto;
   font-size: 0.9rem;
   font-weight: 700;
-  color: #FF6B2B;
+  color: #6c3dff;
   display: block;
 }
 
 .funnel-card-cta--blue {
-  color: #FF6B2B;
+  color: #6c3dff;
 }
 
 .funnel-center {
@@ -130,8 +130,8 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #00D4C8;
-  box-shadow: 0 0 20px #00D4C8;
+  background: #6c3dff;
+  box-shadow: 0 0 20px #6c3dff;
   animation: orbPulse 2s ease-in-out infinite;
 }
 
@@ -150,7 +150,7 @@
   text-align: center;
   margin-top: 32px;
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(20,18,43,0.3);
   font-style: italic;
 }
 

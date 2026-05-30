@@ -13,13 +13,13 @@
   background: rgba(2, 8, 16, 0.15);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(20,18,43,0.04);
 }
 
 /* Sólido cuando el usuario scrollea */
 .snav--solid {
   background: rgba(2, 8, 16, 0.92);
-  border-bottom-color: rgba(0, 212, 200, 0.12);
+  border-bottom-color: rgba(108,61,255, 0.12);
   box-shadow: 0 4px 24px rgba(0,0,0,0.4);
 }
 
@@ -38,14 +38,14 @@
   font-family: 'Space Grotesk', system-ui, sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--fg-strong);
   letter-spacing: 0.02em;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .snav-brand-sep {
-  color: #00D4C8;
+  color: #6c3dff;
   margin: 0 5px;
 }
 
@@ -61,7 +61,7 @@
 .snav-link {
   background: none;
   border: none;
-  color: rgba(255,255,255,0.55);
+  color: rgba(20,18,43,0.55);
   font-family: inherit;
   font-size: 0.78rem;
   font-weight: 500;
@@ -73,8 +73,8 @@
 }
 
 .snav-link:hover {
-  color: #00D4C8;
-  background: rgba(0,212,200,0.08);
+  color: #6c3dff;
+  background: rgba(108,61,255,0.08);
 }
 
 /* ── CTA desktop ── */
@@ -83,10 +83,10 @@
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
-  background: linear-gradient(135deg, #FF6B2B, #FF4500);
-  border: 1px solid rgba(255,107,43,0.7);
+  background: linear-gradient(135deg, #6c3dff, #4a1fd6);
+  border: 1px solid rgba(108,61,255,0.7);
   border-radius: 999px;
-  color: #fff;
+  color: #ffffff;
   font-family: inherit;
   font-size: 0.78rem;
   font-weight: 700;
@@ -94,19 +94,19 @@
   text-decoration: none;
   white-space: nowrap;
   flex-shrink: 0;
-  box-shadow: 0 0 18px rgba(255,107,43,0.35);
+  box-shadow: 0 0 18px rgba(108,61,255,0.35);
   transition: background 0.22s, box-shadow 0.22s, transform 0.2s;
   cursor: pointer;
 }
 
 .snav-cta:hover {
-  background: linear-gradient(135deg, #FF7D42, #FF5510);
-  box-shadow: 0 0 32px rgba(255,107,43,0.55);
+  background: linear-gradient(135deg, #9d7dff, #4a1fd6);
+  box-shadow: 0 0 32px rgba(108,61,255,0.55);
   transform: translateY(-1px);
 }
 
 .snav-cta__arrow {
-  color: #fff;
+  color: var(--fg-strong);
   transition: transform 0.2s;
 }
 
@@ -130,7 +130,7 @@
   display: block;
   width: 22px;
   height: 2px;
-  background: rgba(255,255,255,0.7);
+  background: #ffffff;
   border-radius: 2px;
   transition: transform 0.25s, opacity 0.25s;
 }
@@ -145,7 +145,7 @@
   flex-direction: column;
   padding: 12px 24px 20px;
   background: rgba(2, 8, 16, 0.97);
-  border-top: 1px solid rgba(0,212,200,0.1);
+  border-top: 1px solid rgba(108,61,255,0.1);
   gap: 4px;
   animation: drawerIn 0.2s ease-out;
 }
@@ -158,40 +158,40 @@
 .snav-drawer-link {
   background: none;
   border: none;
-  color: rgba(255,255,255,0.7);
+  color: rgba(20,18,43,0.7);
   font-family: inherit;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   padding: 10px 0;
   text-align: left;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(20,18,43,0.05);
   transition: color 0.2s;
 }
 
-.snav-drawer-link:hover { color: #00D4C8; }
+.snav-drawer-link:hover { color: #6c3dff; }
 
 .snav-drawer-cta {
   margin-top: 8px;
   display: inline-flex;
   align-items: center;
   padding: 12px 20px;
-  background: linear-gradient(135deg, #FF6B2B, #FF4500);
-  border: 1px solid rgba(255,107,43,0.6);
+  background: linear-gradient(135deg, #6c3dff, #4a1fd6);
+  border: 1px solid rgba(108,61,255,0.6);
   border-radius: 999px;
-  color: #fff;
+  color: #ffffff;
   font-size: 0.85rem;
   font-weight: 700;
   text-decoration: none;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 0 18px rgba(255,107,43,0.3);
+  box-shadow: 0 0 18px rgba(108,61,255,0.3);
   transition: background 0.2s, box-shadow 0.2s;
 }
 
 .snav-drawer-cta:hover {
-  background: linear-gradient(135deg, #FF7D42, #FF5510);
-  box-shadow: 0 0 28px rgba(255,107,43,0.5);
+  background: linear-gradient(135deg, #9d7dff, #4a1fd6);
+  box-shadow: 0 0 28px rgba(108,61,255,0.5);
 }
 
 /* ── Responsive: ocultar links desktop, mostrar burger ── */
@@ -200,3 +200,41 @@
   .snav-cta   { display: none; }
   .snav-burger { display: flex; }
 }
+
+/* PROCHECHANDO AI — marca del nav */
+.nav-brand__name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+.nav-brand__name b { color: var(--brand); font-weight: 800; }
+
+/* ════════════════════════════════════════════
+   PROCHECHANDO AI — marca y estados del nav
+   (transparente sobre el video = texto claro;
+    sólido al hacer scroll = fondo claro, texto oscuro)
+════════════════════════════════════════════ */
+.snav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.snav-brand__logo { flex-shrink: 0; }
+.snav-brand-sep { margin-left: 0.3em; color: var(--brand-light); font-weight: 800; }
+
+.snav--solid {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  box-shadow: 0 6px 24px -16px rgba(20, 18, 43, 0.45);
+}
+.snav--solid .snav-brand { color: var(--fg-strong); }
+.snav--solid .snav-brand-sep { color: var(--brand); }
+.snav--solid .snav-link { color: var(--fg); }
+
+.snav-drawer { background: rgba(255, 255, 255, 0.97) !important; }

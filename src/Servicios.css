@@ -1,101 +1,153 @@
-.svc-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+/* ══════════════════════════════════════════
+   SERVICIOS — "Lo que hacemos" (tema claro)
+══════════════════════════════════════════ */
+.svc-hl {
+  background: linear-gradient(120deg, #6c3dff, #9d7dff);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.svc-intro {
+  margin: 14px auto 0;
+  max-width: 560px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
+/* Grilla: 3 arriba + 2 centradas */
+.svc-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 44px;
+}
+
+/* ── Card ── */
 .svc-card {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 320px;
+  max-width: 366px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 36px 32px;
-  border-radius: 20px;
-  background: linear-gradient(160deg, rgba(0,212,200,0.06), rgba(0,212,200,0.02)), rgba(4,10,28,0.85);
-  border: 1px solid rgba(0, 212, 200, 0.18);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  gap: 10px;
+  padding: 30px 28px;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid rgba(108, 61, 255, 0.12);
+  box-shadow: 0 16px 40px -28px rgba(108, 61, 255, 0.55);
   transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.28s, box-shadow 0.28s;
+  animation: svcUp 0.6s cubic-bezier(.22,1,.36,1) both;
 }
+.svc-grid > :nth-child(1) { animation-delay: .04s; }
+.svc-grid > :nth-child(2) { animation-delay: .10s; }
+.svc-grid > :nth-child(3) { animation-delay: .16s; }
+.svc-grid > :nth-child(4) { animation-delay: .22s; }
+.svc-grid > :nth-child(5) { animation-delay: .28s; }
+@keyframes svcUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
 
 .svc-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(0, 212, 200, 0.45);
-  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.45), 0 0 32px rgba(0, 212, 200, 0.1);
+  border-color: rgba(108, 61, 255, 0.32);
+  box-shadow: 0 26px 50px -28px rgba(108, 61, 255, 0.7);
 }
 
+/* Decoración: puntos arriba-derecha */
+.svc-dots {
+  position: absolute;
+  top: 24px; right: 22px;
+  width: 70px; height: 46px;
+  background-image: radial-gradient(rgba(108, 61, 255, 0.28) 1.5px, transparent 1.6px);
+  background-size: 11px 11px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+/* Decoración: onda morada abajo-derecha */
+.svc-wave {
+  position: absolute;
+  right: -40px; bottom: -50px;
+  width: 150px; height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(157, 125, 255, 0.22), rgba(108, 61, 255, 0.06) 60%, transparent 72%);
+  pointer-events: none;
+  transition: transform 0.4s ease;
+}
+.svc-card:hover .svc-wave { transform: scale(1.25); }
+
+/* Top: ícono + número */
+.svc-top { display: flex; align-items: center; gap: 14px; position: relative; z-index: 1; }
+.svc-ico {
+  width: 52px; height: 52px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(108, 61, 255, 0.14), rgba(157, 125, 255, 0.14));
+  border: 1px solid rgba(108, 61, 255, 0.18);
+  color: var(--brand);
+}
 .svc-num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: rgba(0, 212, 200, 0.12);
-  border: 1px solid rgba(0, 212, 200, 0.28);
-  font-size: 0.65rem;
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  color: #00D4C8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em;
+  color: rgba(108, 61, 255, 0.55);
 }
 
 .svc-title {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;
-  display: block;
+  margin-top: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem; font-weight: 800;
+  color: var(--fg-strong);
+  position: relative; z-index: 1;
 }
-
 .svc-sub {
   font-style: normal;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #00D4C8;
-  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem; font-weight: 600;
+  color: var(--brand);
+  position: relative; z-index: 1;
 }
-
 .svc-desc {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.55);
-  line-height: 1.6;
-  margin: 0;
+  margin: 4px 0 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem; line-height: 1.6;
+  color: var(--muted);
   flex: 1;
+  position: relative; z-index: 1;
 }
 
+/* CTA */
 .svc-cta {
   align-self: flex-start;
-  margin-top: 8px;
-  padding: 10px 22px;
-  border-radius: 50px;
-  background: rgba(0, 212, 200, 0.1);
-  border: 1px solid rgba(0, 212, 200, 0.35);
-  color: #00D4C8;
-  font-family: inherit;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  margin-top: 14px;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(108, 61, 255, 0.1);
+  border: 1px solid rgba(108, 61, 255, 0.28);
+  color: var(--brand);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem; font-weight: 700;
   cursor: pointer;
-  transition: background 0.22s, border-color 0.22s, transform 0.18s;
+  position: relative; z-index: 1;
+  transition: background 0.22s, color 0.22s, transform 0.2s, box-shadow 0.22s;
 }
-
+.svc-cta .ico { width: 16px; height: 16px; }
+.svc-cta__arrow { transition: transform 0.2s; }
 .svc-cta:hover {
-  background: rgba(0, 212, 200, 0.2);
-  border-color: #00D4C8;
-  transform: translateX(2px);
+  background: linear-gradient(135deg, #6c3dff, #9d7dff);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 12px 26px -12px rgba(108, 61, 255, 0.8);
+  transform: translateY(-2px);
+}
+.svc-cta:hover .svc-cta__arrow { transform: translateX(3px); }
+
+/* ── Responsive ── */
+@media (max-width: 760px) {
+  .svc-grid { gap: 16px; }
+  .svc-card { flex: 1 1 100%; max-width: 460px; }
 }
 
-@media (max-width: 768px) {
-  .svc-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .svc-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .svc-card {
-    padding: 28px 24px;
-  }
+@media (prefers-reduced-motion: reduce) {
+  .svc-card { animation: none; }
+  .svc-card:hover .svc-wave { transform: none; }
 }

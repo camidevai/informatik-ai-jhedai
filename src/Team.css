@@ -1,180 +1,141 @@
 /* ══════════════════════════════════════════
-   TEAM — Scroll infinito automático
-   Ciclo completo: 60s (≈ 1 min por ronda)
+   TEAM — Grilla de integrantes (tema claro)
 ══════════════════════════════════════════ */
+.team-hl {
+  background: linear-gradient(120deg, #6c3dff, #9d7dff);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.s-kicker .ico { width: 16px; height: 16px; vertical-align: -3px; margin-right: 4px; }
 
-/* Contenedor externo — oculta overflow y aplica fade lateral */
-.team-viewport {
-  overflow: hidden;
-  position: relative;
-  mask-image: linear-gradient(
-    90deg,
-    transparent 0%,
-    #000 8%,
-    #000 92%,
-    transparent 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    90deg,
-    transparent 0%,
-    #000 8%,
-    #000 92%,
-    transparent 100%
-  );
+.team-sub {
+  margin: 14px auto 0;
+  max-width: 560px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
-/* Track: 16 cards (8 originales + 8 duplicadas) en fila continua */
-.team-track {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-  padding: 20px 0 40px;
-  animation: teamScroll 68s linear infinite;
+/* ── Grilla ── */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 44px;
 }
 
-.team-viewport:hover .team-track {
-  animation-play-state: paused;
-}
-
-@keyframes teamScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(calc(-1 * (280px * 8 + 20px * 7))); }
-}
-
-/* ── Hint desliza (solo mobile) ── */
-.team-swipe-hint {
-  display: none;
-}
-
-/* ── Card individual ── */
+/* ── Card ── */
 .team-card {
-  flex-shrink: 0;
-  width: 280px;
-  background:
-    linear-gradient(160deg, rgba(255,255,255,0.055), rgba(255,255,255,0.015)),
-    rgba(4, 10, 28, 0.82);
-  border: 1px solid rgba(0, 212, 200, 0.14);
-  border-radius: 20px;
-  padding: 28px 22px;
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(108, 61, 255, 0.12);
+  border-radius: 22px;
+  padding: 30px 22px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 8px;
-  transition: border-color 0.28s, box-shadow 0.28s, transform 0.28s;
-  cursor: default;
+  box-shadow: 0 16px 40px -28px rgba(108, 61, 255, 0.55);
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  animation: teamUp 0.6s cubic-bezier(.22,1,.36,1) both;
 }
+.team-grid > :nth-child(1) { animation-delay: .03s; }
+.team-grid > :nth-child(2) { animation-delay: .09s; }
+.team-grid > :nth-child(3) { animation-delay: .15s; }
+.team-grid > :nth-child(4) { animation-delay: .21s; }
+.team-grid > :nth-child(5) { animation-delay: .27s; }
+.team-grid > :nth-child(6) { animation-delay: .33s; }
+.team-grid > :nth-child(7) { animation-delay: .39s; }
+.team-grid > :nth-child(8) { animation-delay: .45s; }
+@keyframes teamUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
 
 .team-card:hover {
-  border-color: rgba(0, 212, 200, 0.38);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35), 0 0 28px rgba(0, 212, 200, 0.1);
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  border-color: rgba(108, 61, 255, 0.3);
+  box-shadow: 0 26px 50px -28px rgba(108, 61, 255, 0.7);
 }
 
-/* ── Avatar con iniciales (placeholder hasta tener fotos) ── */
+/* ── Avatar con anillo + badge ── */
 .team-avatar {
-  width: 76px;
-  height: 76px;
+  position: relative;
+  width: 104px; height: 104px;
+  margin-bottom: 16px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(0,212,200,0.22), rgba(74,158,255,0.14));
-  border: 1.5px solid rgba(0, 212, 200, 0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 4px;
-  box-shadow: 0 0 20px rgba(0, 212, 200, 0.12);
-  flex-shrink: 0;
-  overflow: hidden;
+  padding: 4px;
+  background: linear-gradient(135deg, #9d7dff, #6c3dff);
+  box-shadow: 0 10px 26px -10px rgba(108, 61, 255, 0.6);
 }
-
 .team-avatar img {
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
+  border-radius: 50%;
   object-fit: cover;
   object-position: top center;
-  border-radius: 50%;
+  border: 3px solid #fff;
+  background: #efeaff;
 }
+.team-badge {
+  position: absolute;
+  top: -4px; right: -4px;
+  width: 32px; height: 32px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #6c3dff, #9d7dff);
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 6px 16px -6px rgba(108, 61, 255, 0.7);
+}
+.team-badge .ico { width: 16px; height: 16px; }
 
 .team-name {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.05rem; font-weight: 800;
+  color: var(--fg-strong); line-height: 1.2;
 }
-
 .team-role {
-  font-size: 0.62rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(0, 212, 200, 0.75);
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.66rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--brand);
 }
-
 .team-bio {
-  margin: 4px 0 0;
-  font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.48);
-  line-height: 1.55;
+  margin: 12px 0 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem; line-height: 1.55;
+  color: var(--muted);
 }
 
-/* ── Mobile: carrusel deslizable con touch ── */
-@media (max-width: 768px) {
-  .team-viewport {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    mask-image: none;
-    -webkit-mask-image: none;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    padding: 0 20px;
-  }
-
-  .team-viewport::-webkit-scrollbar {
-    display: none;
-  }
-
-  .team-track {
-    animation: none;
-    width: max-content;
-    padding: 20px 4px 32px;
-    gap: 16px;
-  }
-
-  .team-card {
-    width: 260px;
-    padding: 24px 18px;
-    scroll-snap-align: start;
-    flex-shrink: 0;
-  }
-
-  .team-swipe-hint {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    margin-top: 12px;
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.28);
-    letter-spacing: 0.06em;
-  }
-
-  .team-swipe-hint svg {
-    opacity: 0.5;
-    animation: swipeHint 1.6s ease-in-out infinite;
-  }
-
-  @keyframes swipeHint {
-    0%, 100% { transform: translateX(0); }
-    50%       { transform: translateX(5px); }
-  }
+/* ── Redes ── */
+.team-socials { display: flex; gap: 9px; margin-top: 16px; }
+.team-social {
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 11px;
+  background: rgba(108, 61, 255, 0.08);
+  color: var(--brand);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
 }
+.team-social .ico { width: 17px; height: 17px; }
+.team-social:hover { background: var(--brand); color: #fff; transform: translateY(-2px); }
 
-@media (max-width: 420px) {
-  .team-card { width: 230px; }
+/* ── Valores ── */
+.team-values {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+  margin-top: 40px;
 }
+.team-value {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 18px; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(108, 61, 255, 0.12);
+  font-family: 'Poppins', sans-serif; font-size: 0.8rem; font-weight: 500;
+  color: var(--fg-strong);
+}
+.team-value .ico { width: 17px; height: 17px; color: var(--brand); }
 
-@media (prefers-reduced-motion: reduce) {
-  .team-track { animation: none; }
-}
+/* ── Responsive ── */
+@media (max-width: 1100px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 760px)  { .team-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
+@media (max-width: 440px)  { .team-grid { grid-template-columns: 1fr; } }
+
+@media (prefers-reduced-motion: reduce) { .team-card { animation: none; } }

@@ -1,0 +1,39 @@
+.prochi-lockup {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55em;
+}
+
+.prochi {
+  display: block;
+  overflow: visible;
+}
+
+/* Wordmark "PROCHECHANDO AI" bajo la carita */
+.prochi-wordmark {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  font-size: clamp(1.1rem, 2.4vw, 1.7rem);
+  color: var(--fg-strong);
+  line-height: 1;
+}
+.prochi-wordmark b { color: var(--brand); font-weight: 800; }
+
+/* Pulso de los pelos/destellos */
+.prochi--animated .prochi__sparks line {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation: prochiSpark 1.4s ease-in-out infinite;
+  animation-delay: var(--spark-delay, 0s);
+}
+
+@keyframes prochiSpark {
+  0%, 100% { opacity: 0.5;  transform: scaleY(0.7); }
+  50%      { opacity: 1;    transform: scaleY(1.12); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prochi--animated .prochi__sparks line { animation: none; opacity: 1; }
+}
