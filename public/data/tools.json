@@ -1,0 +1,4854 @@
+{
+  "generatedFrom": "Registro Camidevai.xlsx",
+  "count": 249,
+  "categories": [
+    "3D y Diseño",
+    "Audio y Música",
+    "Datos y Análisis",
+    "Documentos y Escritura",
+    "Educación y Estudio",
+    "Empleo y CV",
+    "IA Conversacional",
+    "Imagen",
+    "Negocios y Marketing",
+    "Otras",
+    "Presentaciones",
+    "Productividad",
+    "Programación y Desarrollo",
+    "Utilidades",
+    "Video"
+  ],
+  "tools": [
+    {
+      "id": 1,
+      "order": 1,
+      "name": "GeForceNow",
+      "description": "Plataforma de videojuegos en línea. (El juego se ejecuta en un servidor)",
+      "category": "Video",
+      "domain": "play.geforcenow.com",
+      "toolUrl": "https://play.geforcenow.com",
+      "videoUrl": "https://www.instagram.com/p/C-fs5qEOCAd/",
+      "keywords": [
+        "geforcenow",
+        "videojuegos",
+        "linea",
+        "juego",
+        "ejecuta",
+        "servidor",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 2,
+      "order": 2,
+      "name": "VividShare",
+      "description": "Pasar código a una imagen (imagen del código escrito).",
+      "category": "Imagen",
+      "domain": "vividshare.io",
+      "toolUrl": "https://vividshare.io",
+      "videoUrl": "https://www.instagram.com/p/C-jFmH6M67F/",
+      "keywords": [
+        "vividshare",
+        "pasar",
+        "codigo",
+        "imagen",
+        "escrito"
+      ],
+      "popular": false
+    },
+    {
+      "id": 3,
+      "order": 3,
+      "name": "JSON Crack",
+      "description": "Visualiza JSON como diagramas.",
+      "category": "Programación y Desarrollo",
+      "domain": "jsoncrack.com",
+      "toolUrl": "https://jsoncrack.com",
+      "videoUrl": "https://www.instagram.com/p/C-jN33ONdJw/",
+      "keywords": [
+        "json",
+        "crack",
+        "visualiza",
+        "diagramas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 4,
+      "order": 4,
+      "name": "Teachy",
+      "description": "Herramienta para profesores. Planear, crear material, calificar, etc.",
+      "category": "Educación y Estudio",
+      "domain": "teachy.app",
+      "toolUrl": "https://teachy.app",
+      "videoUrl": "https://www.instagram.com/p/C-nygdvSIwV/",
+      "keywords": [
+        "teachy",
+        "profesores",
+        "planear",
+        "material",
+        "calificar",
+        "etc",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 5,
+      "order": 5,
+      "name": "CSV to JSON",
+      "description": "Transforma archivos CSV a JSON y viceversa.",
+      "category": "Programación y Desarrollo",
+      "domain": "csvjson.com",
+      "toolUrl": "https://csvjson.com",
+      "videoUrl": "https://www.instagram.com/p/C-oJ48zSS1-/",
+      "keywords": [
+        "csv",
+        "json",
+        "transforma",
+        "archivos",
+        "viceversa",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 6,
+      "order": 6,
+      "name": "DrawSQL",
+      "description": "Plataforma para \"dibujar\" bases de datos como diagramas.",
+      "category": "Programación y Desarrollo",
+      "domain": "drawsql.app",
+      "toolUrl": "https://drawsql.app",
+      "videoUrl": "https://www.instagram.com/p/C-qROg9xWhD/",
+      "keywords": [
+        "drawsql",
+        "dibujar",
+        "bases",
+        "datos",
+        "diagramas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 7,
+      "order": 7,
+      "name": "Replit",
+      "description": "Plataforma de desarrollo en línea.",
+      "category": "Programación y Desarrollo",
+      "domain": "replit.com",
+      "toolUrl": "https://replit.com",
+      "videoUrl": "https://www.instagram.com/p/C-rEiHdtS_U/",
+      "keywords": [
+        "replit",
+        "desarrollo",
+        "linea",
+        "programacion"
+      ],
+      "popular": true
+    },
+    {
+      "id": 8,
+      "order": 8,
+      "name": "CodePen",
+      "description": "Plataforma para practicar código y exhibirlo.",
+      "category": "Programación y Desarrollo",
+      "domain": "codepen.io",
+      "toolUrl": "https://codepen.io",
+      "videoUrl": "https://www.instagram.com/p/C-sjp6gu4sI/",
+      "keywords": [
+        "codepen",
+        "practicar",
+        "codigo",
+        "exhibirlo",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 9,
+      "order": 9,
+      "name": "FormulaBot",
+      "description": "Generador de fórmulas de excel gratuito.",
+      "category": "Otras",
+      "domain": "app.formulabot.com",
+      "toolUrl": "https://app.formulabot.com",
+      "videoUrl": "https://www.instagram.com/p/C-tlergN8zd/",
+      "keywords": [
+        "formulabot",
+        "generador",
+        "formulas",
+        "excel",
+        "gratuito",
+        "otras"
+      ],
+      "popular": false
+    },
+    {
+      "id": 10,
+      "order": 10,
+      "name": "FreeCodeCamp",
+      "description": "Plataforma para practicar código.",
+      "category": "Programación y Desarrollo",
+      "domain": "freecodecamp.org",
+      "toolUrl": "https://freecodecamp.org",
+      "videoUrl": "https://www.instagram.com/p/C-vdQQjydEA/",
+      "keywords": [
+        "freecodecamp",
+        "practicar",
+        "codigo",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 11,
+      "order": 11,
+      "name": "Gamma",
+      "description": "Plataforma para crear presentaciones (tipo PPT).",
+      "category": "Presentaciones",
+      "domain": "gamma.app",
+      "toolUrl": "https://gamma.app",
+      "videoUrl": "https://www.instagram.com/p/C-wPst4t56f/",
+      "keywords": [
+        "gamma",
+        "presentaciones",
+        "tipo",
+        "ppt"
+      ],
+      "popular": true
+    },
+    {
+      "id": 12,
+      "order": 12,
+      "name": "Terabox",
+      "description": "Plataforma de alojamiento de archivos.",
+      "category": "Utilidades",
+      "domain": "terabox.com",
+      "toolUrl": "https://terabox.com",
+      "videoUrl": "https://www.instagram.com/p/C-xeqXQu_Oj/",
+      "keywords": [
+        "terabox",
+        "alojamiento",
+        "archivos",
+        "utilidades"
+      ],
+      "popular": false
+    },
+    {
+      "id": 13,
+      "order": 13,
+      "name": "ClaseFlix",
+      "description": "Plataforma de cursos online.",
+      "category": "Educación y Estudio",
+      "domain": "claseflix.io",
+      "toolUrl": "https://claseflix.io",
+      "videoUrl": "https://www.instagram.com/p/C-x7NDzRM_g/",
+      "keywords": [
+        "claseflix",
+        "cursos",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 14,
+      "order": 14,
+      "name": "Aithor",
+      "description": "Plataforma para la creación de trabajos de estudiantes.",
+      "category": "Educación y Estudio",
+      "domain": "aithor.com",
+      "toolUrl": "https://aithor.com",
+      "videoUrl": "https://www.instagram.com/p/C-yi-6jyVmJ/",
+      "keywords": [
+        "aithor",
+        "creacion",
+        "trabajos",
+        "estudiantes",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 15,
+      "order": 15,
+      "name": "ChefGPT",
+      "description": "Genera recetas con los ingredientes que le proporcionas.",
+      "category": "Utilidades",
+      "domain": "chefgpt.xyz",
+      "toolUrl": "https://chefgpt.xyz",
+      "videoUrl": "https://www.instagram.com/p/C-0fBByxDre/",
+      "keywords": [
+        "chefgpt",
+        "recetas",
+        "ingredientes",
+        "proporcionas",
+        "utilidades"
+      ],
+      "popular": false
+    },
+    {
+      "id": 16,
+      "order": 16,
+      "name": "Postgres.new",
+      "description": "Crea bases de datos de forma simplificada.",
+      "category": "Programación y Desarrollo",
+      "domain": "postgres.new",
+      "toolUrl": "https://postgres.new",
+      "videoUrl": "https://www.instagram.com/p/C-1aGtttYCz/",
+      "keywords": [
+        "postgres",
+        "new",
+        "bases",
+        "datos",
+        "forma",
+        "simplificada",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 17,
+      "order": 17,
+      "name": "Quizizz",
+      "description": "Plataforma de estudio y evaluación estilo juego.",
+      "category": "Educación y Estudio",
+      "domain": "quizizz.com",
+      "toolUrl": "https://quizizz.com",
+      "videoUrl": "https://www.instagram.com/p/C-2j3CfupXz/",
+      "keywords": [
+        "quizizz",
+        "estudio",
+        "evaluacion",
+        "estilo",
+        "juego",
+        "educacion"
+      ],
+      "popular": false
+    },
+    {
+      "id": 18,
+      "order": 18,
+      "name": "Garticphone",
+      "description": "Juego online de dibujo.",
+      "category": "Imagen",
+      "domain": "garticphone.com",
+      "toolUrl": "https://garticphone.com",
+      "videoUrl": "https://www.instagram.com/p/C-2_m7TRJPO/",
+      "keywords": [
+        "garticphone",
+        "juego",
+        "dibujo",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 19,
+      "order": 19,
+      "name": "Homeopatic",
+      "description": "Plataforma que recomienda medicina homeopática según tus síntomas.",
+      "category": "IA Conversacional",
+      "domain": "chat.homeopathic.ai",
+      "toolUrl": "https://chat.homeopathic.ai",
+      "videoUrl": "https://www.instagram.com/p/C-5I5p_OxiO/",
+      "keywords": [
+        "homeopatic",
+        "recomienda",
+        "medicina",
+        "homeopatica",
+        "segun",
+        "sintomas",
+        "conversacional"
+      ],
+      "popular": false
+    },
+    {
+      "id": 20,
+      "order": 20,
+      "name": "Replika",
+      "description": "Amigo hecho por IA.",
+      "category": "IA Conversacional",
+      "domain": "replika.com",
+      "toolUrl": "https://replika.com",
+      "videoUrl": "https://www.instagram.com/p/C-5krwSuXdt/",
+      "keywords": [
+        "replika",
+        "amigo",
+        "hecho",
+        "conversacional"
+      ],
+      "popular": false
+    },
+    {
+      "id": 21,
+      "order": 21,
+      "name": "Notion",
+      "description": "Herramienta dentro de notion para generar planificación o redactar correos.",
+      "category": "Documentos y Escritura",
+      "domain": "notion.so",
+      "toolUrl": "https://notion.so",
+      "videoUrl": "https://www.instagram.com/p/C-6Hq1dSzpE/",
+      "keywords": [
+        "notion",
+        "dentro",
+        "planificacion",
+        "redactar",
+        "correos",
+        "documentos",
+        "escritura"
+      ],
+      "popular": true
+    },
+    {
+      "id": 22,
+      "order": 22,
+      "name": "Runway",
+      "description": "Generador de videos.",
+      "category": "Video",
+      "domain": "app.runwayml.com",
+      "toolUrl": "https://app.runwayml.com",
+      "videoUrl": "https://www.instagram.com/p/C-8JDiEOAKA/",
+      "keywords": [
+        "runway",
+        "generador",
+        "videos",
+        "video"
+      ],
+      "popular": true
+    },
+    {
+      "id": 23,
+      "order": 23,
+      "name": "Rows",
+      "description": "Analista de datos online.",
+      "category": "Datos y Análisis",
+      "domain": "rows.com",
+      "toolUrl": "https://rows.com",
+      "videoUrl": "https://www.instagram.com/p/C-8wGKGSKSt/",
+      "keywords": [
+        "rows",
+        "analista",
+        "datos",
+        "analisis"
+      ],
+      "popular": false
+    },
+    {
+      "id": 24,
+      "order": 24,
+      "name": "Humata",
+      "description": "Subes un documento, lo analiza, resume o extrae información de él.",
+      "category": "Documentos y Escritura",
+      "domain": "app.humata.ai",
+      "toolUrl": "https://app.humata.ai",
+      "videoUrl": "https://www.instagram.com/p/C--QNCMO8UY/",
+      "keywords": [
+        "humata",
+        "subes",
+        "documento",
+        "analiza",
+        "resume",
+        "extrae",
+        "informacion",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 25,
+      "order": 25,
+      "name": "Beethoven",
+      "description": "Generador de música con IA.",
+      "category": "Audio y Música",
+      "domain": "sync.beatoven.ai",
+      "toolUrl": "https://sync.beatoven.ai",
+      "videoUrl": "https://www.instagram.com/p/C--xgMJxTRm/",
+      "keywords": [
+        "beethoven",
+        "generador",
+        "musica",
+        "audio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 26,
+      "order": 26,
+      "name": "Julius",
+      "description": "Analista de datos. Genera gráficos, infografias, mapas, reportes, etc.",
+      "category": "Datos y Análisis",
+      "domain": "julius.ai",
+      "toolUrl": "https://julius.ai",
+      "videoUrl": "https://www.instagram.com/p/C_A3ebAOYXH/",
+      "keywords": [
+        "julius",
+        "analista",
+        "datos",
+        "graficos",
+        "infografias",
+        "mapas",
+        "reportes",
+        "etc",
+        "analisis"
+      ],
+      "popular": false
+    },
+    {
+      "id": 27,
+      "order": 27,
+      "name": "Flux",
+      "description": "Generador de imágenes online.",
+      "category": "Imagen",
+      "domain": "flux1.ai",
+      "toolUrl": "https://flux1.ai",
+      "videoUrl": "https://www.instagram.com/p/C_BZYZWRfFj/",
+      "keywords": [
+        "flux",
+        "generador",
+        "imagenes",
+        "imagen"
+      ],
+      "popular": true
+    },
+    {
+      "id": 28,
+      "order": 28,
+      "name": "Writesonic",
+      "description": "Plataforma de generación de contenido (post, artículos, etc.)",
+      "category": "Documentos y Escritura",
+      "domain": "app.writesonic.com",
+      "toolUrl": "https://app.writesonic.com",
+      "videoUrl": "https://www.instagram.com/p/C_B3OjfSA1t/",
+      "keywords": [
+        "writesonic",
+        "generacion",
+        "contenido",
+        "post",
+        "articulos",
+        "etc",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 29,
+      "order": 29,
+      "name": "Soundraw",
+      "description": "Plataforma de generación de música.",
+      "category": "Audio y Música",
+      "domain": "soundraw.io",
+      "toolUrl": "https://soundraw.io",
+      "videoUrl": "https://www.instagram.com/p/C_Dd5T9OuxJ/",
+      "keywords": [
+        "soundraw",
+        "generacion",
+        "musica",
+        "audio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 30,
+      "order": 30,
+      "name": "Immersity",
+      "description": "Plataforma para simulación de entornos visuales (da movimiento a imágenes)",
+      "category": "Video",
+      "domain": "app.immersity.ai",
+      "toolUrl": "https://app.immersity.ai",
+      "videoUrl": "https://www.instagram.com/p/C_El-05yc7N/",
+      "keywords": [
+        "immersity",
+        "simulacion",
+        "entornos",
+        "visuales",
+        "movimiento",
+        "imagenes",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 31,
+      "order": 31,
+      "name": "Wordwall",
+      "description": "Plataforma de estudio. Crea cuestionarios, ruletas aleatorias, sopas de letras, etc.",
+      "category": "Educación y Estudio",
+      "domain": "wordwall.net",
+      "toolUrl": "https://wordwall.net",
+      "videoUrl": "https://www.instagram.com/p/C_GD6efOABp/",
+      "keywords": [
+        "wordwall",
+        "estudio",
+        "cuestionarios",
+        "ruletas",
+        "aleatorias",
+        "sopas",
+        "letras",
+        "etc",
+        "educacion"
+      ],
+      "popular": false
+    },
+    {
+      "id": 32,
+      "order": 32,
+      "name": "Around",
+      "description": "Plataforma de videoconferencias.",
+      "category": "Video",
+      "domain": "around.co",
+      "toolUrl": "https://around.co",
+      "videoUrl": "https://www.instagram.com/p/C_GgUH8x7IY/",
+      "keywords": [
+        "around",
+        "videoconferencias",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 33,
+      "order": 33,
+      "name": "Freepik",
+      "description": "Plataforma para edición de imágenes con IA",
+      "category": "Imagen",
+      "domain": "freepik.com",
+      "toolUrl": "https://freepik.com",
+      "videoUrl": "https://www.instagram.com/p/C_Ikf9TOObQ/",
+      "keywords": [
+        "freepik",
+        "edicion",
+        "imagenes",
+        "imagen"
+      ],
+      "popular": true
+    },
+    {
+      "id": 34,
+      "order": 34,
+      "name": "ReImagineHome",
+      "description": "Plataforma de rediseño de interiores impulsada por IA",
+      "category": "3D y Diseño",
+      "domain": "reimaginehome.ai",
+      "toolUrl": "https://reimaginehome.ai",
+      "videoUrl": "https://www.instagram.com/p/C_JCOWjxFhA/",
+      "keywords": [
+        "reimaginehome",
+        "rediseno",
+        "interiores",
+        "impulsada",
+        "diseno"
+      ],
+      "popular": false
+    },
+    {
+      "id": 35,
+      "order": 35,
+      "name": "UI Ball",
+      "description": "Base de recursos de elementos UI para descarga.",
+      "category": "Educación y Estudio",
+      "domain": "uiball.com",
+      "toolUrl": "https://uiball.com",
+      "videoUrl": "https://www.instagram.com/p/C_JnGmiSmQq/",
+      "keywords": [
+        "ball",
+        "recursos",
+        "elementos",
+        "descarga",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 36,
+      "order": 36,
+      "name": "InVideo",
+      "description": "Plataforma de generación de video para contenido a partir de texto.",
+      "category": "Video",
+      "domain": "invideo.io",
+      "toolUrl": "https://invideo.io",
+      "videoUrl": "https://www.instagram.com/p/C_LIhBlOp0t/",
+      "keywords": [
+        "invideo",
+        "generacion",
+        "video",
+        "contenido",
+        "partir",
+        "texto"
+      ],
+      "popular": false
+    },
+    {
+      "id": 37,
+      "order": 37,
+      "name": "VideoToBlog",
+      "description": "Convierte videos en artículos de blog.",
+      "category": "Video",
+      "domain": "videotoblog.ai",
+      "toolUrl": "https://videotoblog.ai",
+      "videoUrl": "https://www.instagram.com/p/C_LnUcTxZD7/",
+      "keywords": [
+        "videotoblog",
+        "convierte",
+        "videos",
+        "articulos",
+        "blog",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 38,
+      "order": 38,
+      "name": "Lingodeer",
+      "description": "Plataforma para aprendizaje de idiomas.",
+      "category": "Educación y Estudio",
+      "domain": "lingodeer.com",
+      "toolUrl": "https://lingodeer.com",
+      "videoUrl": "https://www.instagram.com/p/C_MGFZnSLLS/",
+      "keywords": [
+        "lingodeer",
+        "aprendizaje",
+        "idiomas",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 39,
+      "order": 39,
+      "name": "Splide",
+      "description": "Base de carruseles para tus páginas.",
+      "category": "Programación y Desarrollo",
+      "domain": "splidejs.com",
+      "toolUrl": "https://splidejs.com",
+      "videoUrl": "https://www.instagram.com/p/C_O7KGHMUO0/",
+      "keywords": [
+        "splide",
+        "carruseles",
+        "paginas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 40,
+      "order": 40,
+      "name": "GDevelop",
+      "description": "Plataforma para generación de videojuegos sin programar.",
+      "category": "Video",
+      "domain": "editor.gdevelop.io",
+      "toolUrl": "https://editor.gdevelop.io",
+      "videoUrl": "https://www.instagram.com/p/C_QVuBzO2qj/",
+      "keywords": [
+        "gdevelop",
+        "generacion",
+        "videojuegos",
+        "sin",
+        "programar",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 41,
+      "order": 41,
+      "name": "PhotoEditor",
+      "description": "Editor de imágenes impulsado por IA",
+      "category": "Imagen",
+      "domain": "photoeditor.ai",
+      "toolUrl": "https://photoeditor.ai",
+      "videoUrl": "https://www.instagram.com/p/C_RFUbtyrP-/",
+      "keywords": [
+        "photoeditor",
+        "editor",
+        "imagenes",
+        "impulsado",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 42,
+      "order": 42,
+      "name": "Udio",
+      "description": "Plataforma de generación de música.",
+      "category": "Audio y Música",
+      "domain": "udio.com",
+      "toolUrl": "https://udio.com",
+      "videoUrl": "https://www.instagram.com/p/C_S4ww0RD15/",
+      "keywords": [
+        "udio",
+        "generacion",
+        "musica",
+        "audio"
+      ],
+      "popular": true
+    },
+    {
+      "id": 43,
+      "order": 43,
+      "name": "EmoteMaker",
+      "description": "Generador de emotes.",
+      "category": "Imagen",
+      "domain": "emotemaker.ai",
+      "toolUrl": "https://emotemaker.ai",
+      "videoUrl": "https://www.instagram.com/p/C_TSzWtxYTS/",
+      "keywords": [
+        "emotemaker",
+        "generador",
+        "emotes",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 44,
+      "order": 44,
+      "name": "Skybox",
+      "description": "Generador de entornos 3D descargables.",
+      "category": "3D y Diseño",
+      "domain": "skybox.blockadelabs.com",
+      "toolUrl": "https://skybox.blockadelabs.com",
+      "videoUrl": "https://www.instagram.com/p/C_T5A-VSgJr/",
+      "keywords": [
+        "skybox",
+        "generador",
+        "entornos",
+        "descargables",
+        "diseno"
+      ],
+      "popular": false
+    },
+    {
+      "id": 45,
+      "order": 45,
+      "name": "Otter",
+      "description": "Transcriptor de reuniones.",
+      "category": "Documentos y Escritura",
+      "domain": "otter.ai",
+      "toolUrl": "https://otter.ai",
+      "videoUrl": "https://www.instagram.com/p/C_Vk8emuEMd/",
+      "keywords": [
+        "otter",
+        "transcriptor",
+        "reuniones",
+        "documentos",
+        "escritura"
+      ],
+      "popular": true
+    },
+    {
+      "id": 46,
+      "order": 46,
+      "name": "Meta's Animated Drawings",
+      "description": "Anima tus dibujos subido.",
+      "category": "Video",
+      "domain": "sketch.metademolab.com",
+      "toolUrl": "https://sketch.metademolab.com",
+      "videoUrl": "https://www.instagram.com/p/C_W3LdnNIG-/",
+      "keywords": [
+        "meta",
+        "animated",
+        "drawings",
+        "anima",
+        "dibujos",
+        "subido",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 47,
+      "order": 47,
+      "name": "Goblin",
+      "description": "Desglosa tareas complejas.",
+      "category": "Educación y Estudio",
+      "domain": "goblin.tools",
+      "toolUrl": "https://goblin.tools",
+      "videoUrl": "https://www.instagram.com/p/C_alkNhu6IU/",
+      "keywords": [
+        "goblin",
+        "desglosa",
+        "tareas",
+        "complejas",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 48,
+      "order": 48,
+      "name": "DataRobot",
+      "description": "Analista de datos. Visualiza, analiza, y tiene tutorial para usarlo.",
+      "category": "Datos y Análisis",
+      "domain": "datarobot.com",
+      "toolUrl": "https://datarobot.com",
+      "videoUrl": "https://www.instagram.com/p/C_iS2k0OhxU/",
+      "keywords": [
+        "datarobot",
+        "analista",
+        "datos",
+        "visualiza",
+        "analiza",
+        "tiene",
+        "tutorial",
+        "usarlo",
+        "analisis"
+      ],
+      "popular": false
+    },
+    {
+      "id": 49,
+      "order": 49,
+      "name": "Getbring",
+      "description": "Creador de listas colaborativas (para lista de compras por ejemplo).",
+      "category": "Productividad",
+      "domain": "web.getbring.com",
+      "toolUrl": "https://web.getbring.com",
+      "videoUrl": "https://www.instagram.com/p/C_jEW-vSDQW/",
+      "keywords": [
+        "getbring",
+        "creador",
+        "listas",
+        "colaborativas",
+        "lista",
+        "compras",
+        "ejemplo",
+        "productividad"
+      ],
+      "popular": false
+    },
+    {
+      "id": 50,
+      "order": 50,
+      "name": "Bootsnipp",
+      "description": "Bóveda de proyectos web descargables.",
+      "category": "Productividad",
+      "domain": "bootsnipp.com",
+      "toolUrl": "https://bootsnipp.com",
+      "videoUrl": "https://www.instagram.com/p/C_niZamOr0P/",
+      "keywords": [
+        "bootsnipp",
+        "boveda",
+        "proyectos",
+        "web",
+        "descargables",
+        "productividad"
+      ],
+      "popular": false
+    },
+    {
+      "id": 51,
+      "order": 51,
+      "name": "JSFiddle",
+      "description": "Editor de código online.",
+      "category": "Programación y Desarrollo",
+      "domain": "jsfiddle.net",
+      "toolUrl": "https://jsfiddle.net",
+      "videoUrl": "https://www.instagram.com/p/C_oOwJRyrhI/",
+      "keywords": [
+        "jsfiddle",
+        "editor",
+        "codigo",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 52,
+      "order": 52,
+      "name": "Job Description",
+      "description": "Generador de descripciones para puestos de trabajo.",
+      "category": "Empleo y CV",
+      "domain": "jobdescription.ai",
+      "toolUrl": "https://jobdescription.ai",
+      "videoUrl": "https://www.instagram.com/p/C_pxLHexjEY/",
+      "keywords": [
+        "job",
+        "description",
+        "generador",
+        "descripciones",
+        "puestos",
+        "trabajo",
+        "empleo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 53,
+      "order": 53,
+      "name": "SmartPaper",
+      "description": "Planifica clases, evalúa tesis, genera marcos teóricos, proyectos de investigación, etc.",
+      "category": "Educación y Estudio",
+      "domain": "app.smartpaper.ai",
+      "toolUrl": "https://app.smartpaper.ai",
+      "videoUrl": "https://www.instagram.com/p/C_ql0QNxP01/",
+      "keywords": [
+        "smartpaper",
+        "planifica",
+        "clases",
+        "evalua",
+        "tesis",
+        "marcos",
+        "teoricos",
+        "proyectos",
+        "investigacion",
+        "etc",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 54,
+      "order": 54,
+      "name": "PlanetaPreescolar",
+      "description": "Juegos educativos para niños.",
+      "category": "Educación y Estudio",
+      "domain": "planetapreescolar.com",
+      "toolUrl": "https://planetapreescolar.com",
+      "videoUrl": "https://www.instagram.com/p/C_sTweFRuYN/",
+      "keywords": [
+        "planetapreescolar",
+        "juegos",
+        "educativos",
+        "ninos",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 55,
+      "order": 55,
+      "name": "Piktochart",
+      "description": "Creador de infografias, carteles, diagramas, etc.",
+      "category": "Datos y Análisis",
+      "domain": "piktochart.com",
+      "toolUrl": "https://piktochart.com",
+      "videoUrl": "https://www.instagram.com/p/C_u4hnmRZYN/",
+      "keywords": [
+        "piktochart",
+        "creador",
+        "infografias",
+        "carteles",
+        "diagramas",
+        "etc",
+        "datos",
+        "analisis"
+      ],
+      "popular": false
+    },
+    {
+      "id": 56,
+      "order": 56,
+      "name": "Character AI",
+      "description": "Chatear con personajes de IA.",
+      "category": "IA Conversacional",
+      "domain": "character.ai",
+      "toolUrl": "https://character.ai",
+      "videoUrl": "https://www.instagram.com/p/C_vlizGOs2P/",
+      "keywords": [
+        "character",
+        "chatear",
+        "personajes",
+        "conversacional"
+      ],
+      "popular": true
+    },
+    {
+      "id": 57,
+      "order": 57,
+      "name": "YouLearn",
+      "description": "Analiza videos y extrae información como resúmenes o explicaciones vía chat.",
+      "category": "Video",
+      "domain": "app.youlearn.ai",
+      "toolUrl": "https://app.youlearn.ai",
+      "videoUrl": "https://www.instagram.com/p/C_xf5nrxSm0/",
+      "keywords": [
+        "youlearn",
+        "analiza",
+        "videos",
+        "extrae",
+        "informacion",
+        "resumenes",
+        "explicaciones",
+        "via",
+        "chat",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 58,
+      "order": 58,
+      "name": "RenderNet",
+      "description": "Creador de fotos con IA (image to image)",
+      "category": "Imagen",
+      "domain": "app.rendernet.ai",
+      "toolUrl": "https://app.rendernet.ai",
+      "videoUrl": "https://www.instagram.com/p/C_yXZV1S6vl/",
+      "keywords": [
+        "rendernet",
+        "creador",
+        "fotos",
+        "image",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 59,
+      "order": 59,
+      "name": "CSS Loaders",
+      "description": "Bóveda de animaciones de carga para páginas.",
+      "category": "Programación y Desarrollo",
+      "domain": "css-loaders.com",
+      "toolUrl": "https://css-loaders.com",
+      "videoUrl": "https://www.instagram.com/p/C_0J9w5x2b-/",
+      "keywords": [
+        "css",
+        "loaders",
+        "boveda",
+        "animaciones",
+        "carga",
+        "paginas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 60,
+      "order": 60,
+      "name": "Giphy",
+      "description": "Bóveda con gifs, stickers, y creador de gifs.",
+      "category": "Imagen",
+      "domain": "giphy.com",
+      "toolUrl": "https://giphy.com",
+      "videoUrl": "https://www.instagram.com/p/C_3l5aLSLqi/",
+      "keywords": [
+        "giphy",
+        "boveda",
+        "gifs",
+        "stickers",
+        "creador",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 61,
+      "order": 61,
+      "name": "MathGPTPro",
+      "description": "Subes un ejercicio matemático y te lo explica, incluyendo apoyo gráfico.",
+      "category": "Educación y Estudio",
+      "domain": "mathgptpro.com",
+      "toolUrl": "https://mathgptpro.com",
+      "videoUrl": "https://www.instagram.com/p/C_6Eo5SShld/",
+      "keywords": [
+        "mathgptpro",
+        "subes",
+        "ejercicio",
+        "matematico",
+        "explica",
+        "incluyendo",
+        "apoyo",
+        "grafico",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 62,
+      "order": 62,
+      "name": "MindLuster",
+      "description": "Plataforma de cursos online.",
+      "category": "Educación y Estudio",
+      "domain": "mindluster.com",
+      "toolUrl": "https://mindluster.com",
+      "videoUrl": "https://www.instagram.com/p/C__Q_xpSmci/",
+      "keywords": [
+        "mindluster",
+        "cursos",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 63,
+      "order": 63,
+      "name": "PNGMaker",
+      "description": "Creador de PNGs.",
+      "category": "Imagen",
+      "domain": "pngmaker.io",
+      "toolUrl": "https://pngmaker.io",
+      "videoUrl": "https://www.instagram.com/p/DAA9hjsxZsm/",
+      "keywords": [
+        "pngmaker",
+        "creador",
+        "pngs",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 64,
+      "order": 64,
+      "name": "MuscleWiki",
+      "description": "Guía online para ejercicios personalizados.",
+      "category": "Utilidades",
+      "domain": "musclewiki.com",
+      "toolUrl": "https://musclewiki.com",
+      "videoUrl": "https://www.instagram.com/p/DAB6W9LSpfl/",
+      "keywords": [
+        "musclewiki",
+        "guia",
+        "ejercicios",
+        "personalizados",
+        "utilidades"
+      ],
+      "popular": false
+    },
+    {
+      "id": 65,
+      "order": 65,
+      "name": "Tinkercad",
+      "description": "Simulador de circuitos.",
+      "category": "3D y Diseño",
+      "domain": "tinkercad.com",
+      "toolUrl": "https://tinkercad.com",
+      "videoUrl": "https://www.instagram.com/p/DADsNHROlhO/",
+      "keywords": [
+        "tinkercad",
+        "simulador",
+        "circuitos",
+        "diseno"
+      ],
+      "popular": false
+    },
+    {
+      "id": 66,
+      "order": 66,
+      "name": "AutoPPT",
+      "description": "Generador de presentaciones PPT.",
+      "category": "Presentaciones",
+      "domain": "autoppt.com",
+      "toolUrl": "https://autoppt.com",
+      "videoUrl": "https://www.instagram.com/p/DAGSPf_uwOH/",
+      "keywords": [
+        "autoppt",
+        "generador",
+        "presentaciones",
+        "ppt"
+      ],
+      "popular": false
+    },
+    {
+      "id": 67,
+      "order": 67,
+      "name": "GitMind",
+      "description": "Creador de mapas mentales para organizar ideas.",
+      "category": "Programación y Desarrollo",
+      "domain": "gitmind.com",
+      "toolUrl": "https://gitmind.com",
+      "videoUrl": "https://www.instagram.com/p/DAJmJGRSr_Z/",
+      "keywords": [
+        "gitmind",
+        "creador",
+        "mapas",
+        "mentales",
+        "organizar",
+        "ideas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 68,
+      "order": 68,
+      "name": "Napkin",
+      "description": "Asistente creativo para la creación de textos con imágenes.",
+      "category": "Imagen",
+      "domain": "app.napkin.ai",
+      "toolUrl": "https://app.napkin.ai",
+      "videoUrl": "https://www.instagram.com/p/DAMPt5DS0XB/",
+      "keywords": [
+        "napkin",
+        "asistente",
+        "creativo",
+        "creacion",
+        "textos",
+        "imagenes",
+        "imagen"
+      ],
+      "popular": true
+    },
+    {
+      "id": 69,
+      "order": 69,
+      "name": "MyChefAI",
+      "description": "Chef Online según menús especiales (para diabéticos, celíacos, etc.)",
+      "category": "Utilidades",
+      "domain": "mychefai.com",
+      "toolUrl": "https://mychefai.com",
+      "videoUrl": "https://www.instagram.com/p/DAOLzZ4u6jA/",
+      "keywords": [
+        "mychefai",
+        "chef",
+        "segun",
+        "menus",
+        "especiales",
+        "diabeticos",
+        "celiacos",
+        "etc",
+        "utilidades"
+      ],
+      "popular": false
+    },
+    {
+      "id": 70,
+      "order": 70,
+      "name": "DeepDreamGenerator",
+      "description": "Creador de imágenes con enfoque artístico.",
+      "category": "Imagen",
+      "domain": "deepdreamgenerator.com",
+      "toolUrl": "https://deepdreamgenerator.com",
+      "videoUrl": "https://www.instagram.com/p/DAQZQyRxBTE/",
+      "keywords": [
+        "deepdreamgenerator",
+        "creador",
+        "imagenes",
+        "enfoque",
+        "artistico",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 71,
+      "order": 71,
+      "name": "Meshy",
+      "description": "Generador de modelos 3D.",
+      "category": "3D y Diseño",
+      "domain": "meshy.ai",
+      "toolUrl": "https://meshy.ai",
+      "videoUrl": "https://www.instagram.com/p/DATJoxWRXcX/",
+      "keywords": [
+        "meshy",
+        "generador",
+        "modelos",
+        "diseno"
+      ],
+      "popular": true
+    },
+    {
+      "id": 72,
+      "order": 72,
+      "name": "Imagine",
+      "description": "Generador de imágenes (image to image)",
+      "category": "Imagen",
+      "domain": "imagine.art",
+      "toolUrl": "https://imagine.art",
+      "videoUrl": "https://www.instagram.com/p/DAVvMNGujL4/",
+      "keywords": [
+        "imagine",
+        "generador",
+        "imagenes",
+        "image",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 73,
+      "order": 73,
+      "name": "ElevenLabs",
+      "description": "Generador de voces con IA.",
+      "category": "Audio y Música",
+      "domain": "elevenlabs.io",
+      "toolUrl": "https://elevenlabs.io",
+      "videoUrl": "https://www.instagram.com/p/DAYMpl-xC0d/",
+      "keywords": [
+        "elevenlabs",
+        "generador",
+        "voces",
+        "audio",
+        "musica"
+      ],
+      "popular": true
+    },
+    {
+      "id": 74,
+      "order": 74,
+      "name": "OnlineOCR",
+      "description": "Extrae el texto de una imagen.",
+      "category": "Imagen",
+      "domain": "onlineocr.net",
+      "toolUrl": "https://onlineocr.net",
+      "videoUrl": "https://www.instagram.com/p/DAZQIOwyh-b/",
+      "keywords": [
+        "onlineocr",
+        "extrae",
+        "texto",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 75,
+      "order": 75,
+      "name": "Lumen5",
+      "description": "Generador de videos (text-to-video).",
+      "category": "Video",
+      "domain": "lumen5.com",
+      "toolUrl": "https://lumen5.com",
+      "videoUrl": "https://www.instagram.com/p/DAa4SNeRdXl/",
+      "keywords": [
+        "lumen5",
+        "generador",
+        "videos",
+        "text",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 76,
+      "order": 76,
+      "name": "NightCafe",
+      "description": "Generador de imágenes multimodelo.",
+      "category": "Imagen",
+      "domain": "creator.nightcafe.studio",
+      "toolUrl": "https://creator.nightcafe.studio",
+      "videoUrl": "https://www.instagram.com/p/DAbfSzlRKDF/",
+      "keywords": [
+        "nightcafe",
+        "generador",
+        "imagenes",
+        "multimodelo",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 77,
+      "order": 77,
+      "name": "ChatPDF",
+      "description": "Analiza contenido de PDFs para poder hacerle preguntas.",
+      "category": "Documentos y Escritura",
+      "domain": "chatpdf.com",
+      "toolUrl": "https://chatpdf.com",
+      "videoUrl": "https://www.instagram.com/p/DAgOLnNx9T8/",
+      "keywords": [
+        "chatpdf",
+        "analiza",
+        "contenido",
+        "pdfs",
+        "poder",
+        "hacerle",
+        "preguntas",
+        "documentos",
+        "escritura"
+      ],
+      "popular": true
+    },
+    {
+      "id": 78,
+      "order": 78,
+      "name": "Prezi",
+      "description": "Generador de presentaciones visuales.",
+      "category": "Presentaciones",
+      "domain": "prezi.com",
+      "toolUrl": "https://prezi.com",
+      "videoUrl": "https://www.instagram.com/p/DAiqCwGx-nN/",
+      "keywords": [
+        "prezi",
+        "generador",
+        "presentaciones",
+        "visuales"
+      ],
+      "popular": true
+    },
+    {
+      "id": 79,
+      "order": 79,
+      "name": "Remove bg",
+      "description": "Removedor/Modificador de fondo de imágenes.",
+      "category": "Imagen",
+      "domain": "remove.bg",
+      "toolUrl": "https://remove.bg",
+      "videoUrl": "https://www.instagram.com/p/DAlPOGARBAb/",
+      "keywords": [
+        "remove",
+        "removedor",
+        "modificador",
+        "fondo",
+        "imagenes",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 80,
+      "order": 80,
+      "name": "Codacy",
+      "description": "Evaluador de código (desde GitHub).",
+      "category": "Programación y Desarrollo",
+      "domain": "app.codacy.com",
+      "toolUrl": "https://app.codacy.com",
+      "videoUrl": "https://www.instagram.com/p/DAoXXSCSLt-/",
+      "keywords": [
+        "codacy",
+        "evaluador",
+        "codigo",
+        "github",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 81,
+      "order": 81,
+      "name": "AI Comic Factory (en HuggingFace)",
+      "description": "Generador de comics/manga.",
+      "category": "Imagen",
+      "domain": "huggingface.co",
+      "toolUrl": "https://huggingface.co/spaces/jbilcke-hf/ai-comic-factory",
+      "videoUrl": "https://www.instagram.com/p/DApA8BtyEkY/",
+      "keywords": [
+        "comic",
+        "factory",
+        "huggingface",
+        "generador",
+        "comics",
+        "manga",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 82,
+      "order": 82,
+      "name": "Xero",
+      "description": "Automatización de contabilidad.",
+      "category": "Productividad",
+      "domain": "go.xero.com",
+      "toolUrl": "https://go.xero.com",
+      "videoUrl": "https://www.instagram.com/p/DAqWQxjxVjC/",
+      "keywords": [
+        "xero",
+        "automatizacion",
+        "contabilidad",
+        "productividad"
+      ],
+      "popular": false
+    },
+    {
+      "id": 83,
+      "order": 83,
+      "name": "Looka",
+      "description": "Generador de logos.",
+      "category": "Imagen",
+      "domain": "looka.com",
+      "toolUrl": "https://looka.com",
+      "videoUrl": "https://www.instagram.com/p/DAs_wDOxY_z/",
+      "keywords": [
+        "looka",
+        "generador",
+        "logos",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 84,
+      "order": 84,
+      "name": "Pika Art",
+      "description": "Generador de video.",
+      "category": "Video",
+      "domain": "pika.art",
+      "toolUrl": "https://pika.art",
+      "videoUrl": "https://www.instagram.com/p/DAtgIaERF4E/",
+      "keywords": [
+        "pika",
+        "art",
+        "generador",
+        "video"
+      ],
+      "popular": true
+    },
+    {
+      "id": 85,
+      "order": 85,
+      "name": "Edpuzzle",
+      "description": "Genera lecciones (de distintos temas) con base en videos en la página.",
+      "category": "Video",
+      "domain": "edpuzzle.com",
+      "toolUrl": "https://edpuzzle.com",
+      "videoUrl": "https://www.instagram.com/p/DAvr7yFxWcz/",
+      "keywords": [
+        "edpuzzle",
+        "lecciones",
+        "distintos",
+        "temas",
+        "videos",
+        "pagina",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 86,
+      "order": 86,
+      "name": "Resoomer",
+      "description": "Genera resúmenes, parafraseos, etc. de textos muy largos.",
+      "category": "Documentos y Escritura",
+      "domain": "resoomer.com",
+      "toolUrl": "https://resoomer.com",
+      "videoUrl": "https://www.instagram.com/p/DAwj3VPSbqk/",
+      "keywords": [
+        "resoomer",
+        "resumenes",
+        "parafraseos",
+        "etc",
+        "textos",
+        "muy",
+        "largos",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 87,
+      "order": 87,
+      "name": "Formative",
+      "description": "Genera preguntas con base en archivos subidos (para estudio)",
+      "category": "Educación y Estudio",
+      "domain": "app.formative.com",
+      "toolUrl": "https://app.formative.com",
+      "videoUrl": "https://www.instagram.com/p/DA3LQ0kxwXS/",
+      "keywords": [
+        "formative",
+        "preguntas",
+        "archivos",
+        "subidos",
+        "estudio",
+        "educacion"
+      ],
+      "popular": false
+    },
+    {
+      "id": 88,
+      "order": 88,
+      "name": "Pictory",
+      "description": "Creador de videos con base en distintos inputs (blogs, scripts, imágenes, etc.)",
+      "category": "Video",
+      "domain": "app.pictory.ai",
+      "toolUrl": "https://app.pictory.ai",
+      "videoUrl": "https://www.instagram.com/p/DA8N_U4R1Jr/",
+      "keywords": [
+        "pictory",
+        "creador",
+        "videos",
+        "distintos",
+        "inputs",
+        "blogs",
+        "scripts",
+        "imagenes",
+        "etc",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 89,
+      "order": 89,
+      "name": "ProQuest",
+      "description": "Bóveda bibliografica con tesis de todo tipo.",
+      "category": "Educación y Estudio",
+      "domain": "proquest.com",
+      "toolUrl": "https://proquest.com",
+      "videoUrl": "https://www.instagram.com/p/DA9qQvJSoR3/",
+      "keywords": [
+        "proquest",
+        "boveda",
+        "bibliografica",
+        "tesis",
+        "todo",
+        "tipo",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 90,
+      "order": 90,
+      "name": "Cleanup",
+      "description": "Removedor de logos, texto, etc. de la imágenes.",
+      "category": "Imagen",
+      "domain": "cleanup.pictures",
+      "toolUrl": "https://cleanup.pictures",
+      "videoUrl": "https://www.instagram.com/p/DA_yufay4TD/",
+      "keywords": [
+        "cleanup",
+        "removedor",
+        "logos",
+        "texto",
+        "etc",
+        "imagenes",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 91,
+      "order": 91,
+      "name": "Hedra",
+      "description": "Generador de imágenes. (image-to-image)",
+      "category": "Imagen",
+      "domain": "hedra.com",
+      "toolUrl": "https://hedra.com",
+      "videoUrl": "https://www.instagram.com/p/DBEQ4bMRvT0/",
+      "keywords": [
+        "hedra",
+        "generador",
+        "imagenes",
+        "image",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 92,
+      "order": 92,
+      "name": "Kwai Kolors (HuggingFace)",
+      "description": "Subes una foto y genera otra cambiadote la ropa.",
+      "category": "Imagen",
+      "domain": "huggingface.co",
+      "toolUrl": "https://huggingface.co/spaces/Kwai-Kolors/Kolors-Virtual-Try-On",
+      "videoUrl": "https://www.instagram.com/p/DBE7yy7S1RP/",
+      "keywords": [
+        "kwai",
+        "kolors",
+        "huggingface",
+        "subes",
+        "foto",
+        "otra",
+        "cambiadote",
+        "ropa",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 93,
+      "order": 93,
+      "name": "Perplexity",
+      "description": "IA generativa de texto que también entrega la bibliografía de donde la obtuvo",
+      "category": "Documentos y Escritura",
+      "domain": "perplexity.ai",
+      "toolUrl": "https://perplexity.ai",
+      "videoUrl": "https://www.instagram.com/p/DBGiDV-RNk-/",
+      "keywords": [
+        "perplexity",
+        "generativa",
+        "texto",
+        "tambien",
+        "entrega",
+        "bibliografia",
+        "donde",
+        "obtuvo",
+        "documentos",
+        "escritura"
+      ],
+      "popular": true
+    },
+    {
+      "id": 94,
+      "order": 94,
+      "name": "Gutenberg",
+      "description": "Biblioteca de libros electrónicos gratuita.",
+      "category": "Otras",
+      "domain": "gutenberg.org",
+      "toolUrl": "https://gutenberg.org",
+      "videoUrl": "https://www.instagram.com/p/DBHMYUrREzu/",
+      "keywords": [
+        "gutenberg",
+        "biblioteca",
+        "libros",
+        "electronicos",
+        "gratuita",
+        "otras"
+      ],
+      "popular": true
+    },
+    {
+      "id": 95,
+      "order": 95,
+      "name": "InstantMesh (HuggingFace)",
+      "description": "Generador de modelos 3D de imagen a 3D.",
+      "category": "Imagen",
+      "domain": "huggingface.co",
+      "toolUrl": "https://huggingface.co/spaces/TencentARC/InstantMesh",
+      "videoUrl": "https://www.instagram.com/p/DBJMoQeRhnt/",
+      "keywords": [
+        "instantmesh",
+        "huggingface",
+        "generador",
+        "modelos",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 96,
+      "order": 96,
+      "name": "Microsoft Math Solver",
+      "description": "Explica problemas matemáticos y como resolverlos.",
+      "category": "Educación y Estudio",
+      "domain": "math.microsoft.com",
+      "toolUrl": "https://math.microsoft.com",
+      "videoUrl": "https://www.instagram.com/p/DBKEtxcy5Ks/",
+      "keywords": [
+        "microsoft",
+        "math",
+        "solver",
+        "explica",
+        "problemas",
+        "matematicos",
+        "resolverlos",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 97,
+      "order": 97,
+      "name": "Sider",
+      "description": "Resume videos en texto o incluso video.",
+      "category": "Video",
+      "domain": "sider.ai",
+      "toolUrl": "https://sider.ai",
+      "videoUrl": "https://www.instagram.com/p/DBLsfWZxBnm/",
+      "keywords": [
+        "sider",
+        "resume",
+        "videos",
+        "texto",
+        "incluso",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 98,
+      "order": 98,
+      "name": "Veed IO",
+      "description": "Creación de avatares.",
+      "category": "Video",
+      "domain": "veed.io",
+      "toolUrl": "https://veed.io",
+      "videoUrl": "https://www.instagram.com/p/DBQ85JCxMjA/",
+      "keywords": [
+        "veed",
+        "creacion",
+        "avatares",
+        "video"
+      ],
+      "popular": true
+    },
+    {
+      "id": 99,
+      "order": 99,
+      "name": "Hireflow",
+      "description": "Analiza tu CV, así lo puedes mejorar tanto en redacción como formato.",
+      "category": "Documentos y Escritura",
+      "domain": "hireflow.net",
+      "toolUrl": "https://hireflow.net",
+      "videoUrl": "https://www.instagram.com/p/DBd2uKTRYDf/",
+      "keywords": [
+        "hireflow",
+        "analiza",
+        "asi",
+        "mejorar",
+        "tanto",
+        "redaccion",
+        "formato",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 100,
+      "order": 100,
+      "name": "WriteMyEmail",
+      "description": "Extensión para escribir correos.",
+      "category": "Documentos y Escritura",
+      "domain": "writemyemail.co",
+      "toolUrl": "https://writemyemail.co",
+      "videoUrl": "https://www.instagram.com/p/DBgeSsYxs7P/",
+      "keywords": [
+        "writemyemail",
+        "extension",
+        "escribir",
+        "correos",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 101,
+      "order": 101,
+      "name": "AICarousels",
+      "description": "Generador de carruseles.",
+      "category": "Programación y Desarrollo",
+      "domain": "aicarousels.com",
+      "toolUrl": "https://aicarousels.com",
+      "videoUrl": "https://www.instagram.com/p/DBiwFnwxRao/",
+      "keywords": [
+        "aicarousels",
+        "generador",
+        "carruseles",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 102,
+      "order": 102,
+      "name": "Compressor",
+      "description": "Compresor de imágenes manteniendo calidad.",
+      "category": "Imagen",
+      "domain": "compressor.io",
+      "toolUrl": "https://compressor.io",
+      "videoUrl": "https://www.instagram.com/p/DBjKrcTxUvP/",
+      "keywords": [
+        "compressor",
+        "compresor",
+        "imagenes",
+        "manteniendo",
+        "calidad",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 103,
+      "order": 103,
+      "name": "WiseStamp",
+      "description": "Genera firmas de email personalizadas.",
+      "category": "Documentos y Escritura",
+      "domain": "webapp.wisestamp.com",
+      "toolUrl": "https://webapp.wisestamp.com",
+      "videoUrl": "https://www.instagram.com/p/DBrREK5xTRT/",
+      "keywords": [
+        "wisestamp",
+        "firmas",
+        "email",
+        "personalizadas",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 104,
+      "order": 104,
+      "name": "Polotno Studio",
+      "description": "Bóveda de plantillas para banners, flyers, e incluso videos.",
+      "category": "Video",
+      "domain": "studio.polotno.com",
+      "toolUrl": "https://studio.polotno.com",
+      "videoUrl": "https://www.instagram.com/p/DBtQ37XRvg8/",
+      "keywords": [
+        "polotno",
+        "studio",
+        "boveda",
+        "plantillas",
+        "banners",
+        "flyers",
+        "incluso",
+        "videos",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 105,
+      "order": 105,
+      "name": "AI Ease",
+      "description": "Generador de imágenes (image to image)",
+      "category": "Imagen",
+      "domain": "aiease.ai",
+      "toolUrl": "https://aiease.ai",
+      "videoUrl": "https://www.instagram.com/p/DBv9oWlRKkC/",
+      "keywords": [
+        "ease",
+        "generador",
+        "imagenes",
+        "image",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 106,
+      "order": 106,
+      "name": "HeyGen",
+      "description": "Generador de avatares hiperrealistas.",
+      "category": "Video",
+      "domain": "app.heygen.com",
+      "toolUrl": "https://app.heygen.com",
+      "videoUrl": "https://www.instagram.com/p/DB6TqpTxFmd/",
+      "keywords": [
+        "heygen",
+        "generador",
+        "avatares",
+        "hiperrealistas",
+        "video"
+      ],
+      "popular": true
+    },
+    {
+      "id": 107,
+      "order": 107,
+      "name": "Viggle",
+      "description": "Subes una y un video, y haces que la persona en la foto haga lo que se hace en el video.",
+      "category": "Video",
+      "domain": "viggle.ai",
+      "toolUrl": "https://viggle.ai",
+      "videoUrl": "https://www.instagram.com/p/DB85li-Rg4W/",
+      "keywords": [
+        "viggle",
+        "subes",
+        "video",
+        "persona",
+        "foto",
+        "haga"
+      ],
+      "popular": false
+    },
+    {
+      "id": 108,
+      "order": 108,
+      "name": "Quizlet",
+      "description": "Página para estudiar con juegos y crear cuestionarios.",
+      "category": "Educación y Estudio",
+      "domain": "quizlet.com",
+      "toolUrl": "https://quizlet.com",
+      "videoUrl": "https://www.instagram.com/p/DB_aTyNAhIy/",
+      "keywords": [
+        "quizlet",
+        "pagina",
+        "estudiar",
+        "juegos",
+        "cuestionarios",
+        "educacion",
+        "estudio"
+      ],
+      "popular": true
+    },
+    {
+      "id": 109,
+      "order": 109,
+      "name": "Descript",
+      "description": "Plataforma para generar transcripciones a partir de video.",
+      "category": "Video",
+      "domain": "web.descript.com",
+      "toolUrl": "https://web.descript.com",
+      "videoUrl": "https://www.instagram.com/p/DB_6phVRkrD/",
+      "keywords": [
+        "descript",
+        "transcripciones",
+        "partir",
+        "video"
+      ],
+      "popular": true
+    },
+    {
+      "id": 110,
+      "order": 110,
+      "name": "LlamaCoder",
+      "description": "Plataforma de generación de código a partir de lenguaje natural.",
+      "category": "Programación y Desarrollo",
+      "domain": "llamacoder.together.ai",
+      "toolUrl": "https://llamacoder.together.ai",
+      "videoUrl": "https://www.instagram.com/p/DCCkYTjSBqL/",
+      "keywords": [
+        "llamacoder",
+        "generacion",
+        "codigo",
+        "partir",
+        "lenguaje",
+        "natural",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 111,
+      "order": 111,
+      "name": "Makereels",
+      "description": "Crea reels a partir de texto.",
+      "category": "Video",
+      "domain": "makereels.ai",
+      "toolUrl": "https://makereels.ai",
+      "videoUrl": "https://www.instagram.com/p/DCHRk5TxyvN/",
+      "keywords": [
+        "makereels",
+        "reels",
+        "partir",
+        "texto",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 112,
+      "order": 112,
+      "name": "Algorithm Visualizer",
+      "description": "Explica el funcionamiento de algoritmos de distintas formas.",
+      "category": "Programación y Desarrollo",
+      "domain": "algorithm-visualizer.org",
+      "toolUrl": "https://algorithm-visualizer.org",
+      "videoUrl": "https://www.instagram.com/p/DCKaie2yhq_/",
+      "keywords": [
+        "algorithm",
+        "visualizer",
+        "explica",
+        "funcionamiento",
+        "algoritmos",
+        "distintas",
+        "formas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 113,
+      "order": 113,
+      "name": "Superprof",
+      "description": "Plataforma para buscar profesores u ofrecer tus servicios como profesor.",
+      "category": "Educación y Estudio",
+      "domain": "superprof.cl",
+      "toolUrl": "https://superprof.cl",
+      "videoUrl": "https://www.instagram.com/p/DCPY8JTyCw5/",
+      "keywords": [
+        "superprof",
+        "buscar",
+        "profesores",
+        "ofrecer",
+        "servicios",
+        "profesor",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 114,
+      "order": 114,
+      "name": "Mapify",
+      "description": "Genera mapas conceptuales para organizar tus ideas y desglosarlas.",
+      "category": "Programación y Desarrollo",
+      "domain": "mapify.so",
+      "toolUrl": "https://mapify.so",
+      "videoUrl": "https://www.instagram.com/p/DCRUUuXxTrz/",
+      "keywords": [
+        "mapify",
+        "mapas",
+        "conceptuales",
+        "organizar",
+        "ideas",
+        "desglosarlas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 115,
+      "order": 115,
+      "name": "DeepAI",
+      "description": "Generador de imágenes. (text-to-image)",
+      "category": "Imagen",
+      "domain": "deepai.org",
+      "toolUrl": "https://deepai.org",
+      "videoUrl": "https://www.instagram.com/p/DCXIIRBy_cB/",
+      "keywords": [
+        "deepai",
+        "generador",
+        "imagenes",
+        "text",
+        "image",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 116,
+      "order": 116,
+      "name": "RapidApi",
+      "description": "Bóveda de APIs.",
+      "category": "Programación y Desarrollo",
+      "domain": "rapidapi.com",
+      "toolUrl": "https://rapidapi.com",
+      "videoUrl": "https://www.instagram.com/p/DCZ2UjASL_f/",
+      "keywords": [
+        "rapidapi",
+        "boveda",
+        "apis",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 117,
+      "order": 117,
+      "name": "Exam Mimic (Poe)",
+      "description": "Simulador de exámenes con preguntas y respuestas personalizadas.",
+      "category": "Educación y Estudio",
+      "domain": "poe.com",
+      "toolUrl": "https://poe.com/Exam-Mimic",
+      "videoUrl": "https://www.instagram.com/p/DCbylXeRK9x/",
+      "keywords": [
+        "exam",
+        "mimic",
+        "poe",
+        "simulador",
+        "examenes",
+        "preguntas",
+        "respuestas",
+        "personalizadas",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 118,
+      "order": 118,
+      "name": "Visual Images (Poe)",
+      "description": "Generador de imágenes (text-to-image)",
+      "category": "Imagen",
+      "domain": "poe.com",
+      "toolUrl": "https://poe.com/Visualimages",
+      "videoUrl": "https://www.instagram.com/p/DCee5ZuRNcC/",
+      "keywords": [
+        "visual",
+        "images",
+        "poe",
+        "generador",
+        "imagenes",
+        "text",
+        "image",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 119,
+      "order": 119,
+      "name": "Rolemantic",
+      "description": "Chatear con personajes de IA.",
+      "category": "IA Conversacional",
+      "domain": "rolemantic.ai",
+      "toolUrl": "https://rolemantic.ai",
+      "videoUrl": "https://www.instagram.com/p/DCm3RXkSY-C/",
+      "keywords": [
+        "rolemantic",
+        "chatear",
+        "personajes",
+        "conversacional"
+      ],
+      "popular": false
+    },
+    {
+      "id": 120,
+      "order": 120,
+      "name": "ArtGuru",
+      "description": "Generador de imágenes (puede generar estilos de tatuajes).",
+      "category": "Imagen",
+      "domain": "artguru.ai",
+      "toolUrl": "https://artguru.ai",
+      "videoUrl": "https://www.instagram.com/p/DCp7fM9t9zh/",
+      "keywords": [
+        "artguru",
+        "generador",
+        "imagenes",
+        "estilos",
+        "tatuajes",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 121,
+      "order": 121,
+      "name": "Fffiloni",
+      "description": "Toma imágenes blanco y negro y puedes darle color (generación image-to-image)",
+      "category": "Imagen",
+      "domain": "huggingface.co",
+      "toolUrl": "https://huggingface.co/spaces/fffiloni/text-guided-image-colorization",
+      "videoUrl": "https://www.instagram.com/p/DC3-b71RHdk/",
+      "keywords": [
+        "fffiloni",
+        "toma",
+        "imagenes",
+        "blanco",
+        "negro",
+        "darle",
+        "color",
+        "generacion",
+        "image",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 122,
+      "order": 122,
+      "name": "MorphStudio",
+      "description": "Toma videos y puede cambiarles el estilo (video real a anime, etc.)",
+      "category": "Video",
+      "domain": "app.morphstudio.com",
+      "toolUrl": "https://app.morphstudio.com",
+      "videoUrl": "https://www.instagram.com/p/DC42IybSFoY/",
+      "keywords": [
+        "morphstudio",
+        "toma",
+        "videos",
+        "cambiarles",
+        "estilo",
+        "video",
+        "real",
+        "anime",
+        "etc"
+      ],
+      "popular": false
+    },
+    {
+      "id": 123,
+      "order": 123,
+      "name": "Atom",
+      "description": "Unificador de links.",
+      "category": "Productividad",
+      "domain": "atom.bio",
+      "toolUrl": "https://atom.bio",
+      "videoUrl": "https://www.instagram.com/p/DDCQiv1x7Vw/",
+      "keywords": [
+        "atom",
+        "unificador",
+        "links",
+        "productividad"
+      ],
+      "popular": false
+    },
+    {
+      "id": 124,
+      "order": 124,
+      "name": "Flypix",
+      "description": "Analiza imágenes satelitales con IA.",
+      "category": "Imagen",
+      "domain": "flypix.ai",
+      "toolUrl": "https://flypix.ai",
+      "videoUrl": "https://www.instagram.com/p/DDFGmknAFUX/",
+      "keywords": [
+        "flypix",
+        "analiza",
+        "imagenes",
+        "satelitales",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 125,
+      "order": 125,
+      "name": "WebSim",
+      "description": "Crea simulaciones interactivas con IA.",
+      "category": "Programación y Desarrollo",
+      "domain": "websim.ai",
+      "toolUrl": "https://websim.ai",
+      "videoUrl": "https://www.instagram.com/p/DDH9sqzRZuk/",
+      "keywords": [
+        "websim",
+        "simulaciones",
+        "interactivas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 126,
+      "order": 126,
+      "name": "Bolt",
+      "description": "Plataforma de programación.",
+      "category": "Programación y Desarrollo",
+      "domain": "bolt.new",
+      "toolUrl": "https://bolt.new",
+      "videoUrl": "https://www.instagram.com/p/DDQbakmxK3e/",
+      "keywords": [
+        "bolt",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": true
+    },
+    {
+      "id": 127,
+      "order": 127,
+      "name": "BlinkShot",
+      "description": "Generador de imágenes en tiempo real (la imagen se muestra mientras escribes)",
+      "category": "Imagen",
+      "domain": "blinkshot.io",
+      "toolUrl": "https://blinkshot.io",
+      "videoUrl": "https://www.instagram.com/p/DDSRgoNx7tE/",
+      "keywords": [
+        "blinkshot",
+        "generador",
+        "imagenes",
+        "tiempo",
+        "real",
+        "imagen",
+        "muestra",
+        "mientras",
+        "escribes"
+      ],
+      "popular": false
+    },
+    {
+      "id": 128,
+      "order": 128,
+      "name": "Vidnoz",
+      "description": "Generación de video con base en plantillas.",
+      "category": "Video",
+      "domain": "aiapp-es.vidnoz.com",
+      "toolUrl": "https://aiapp-es.vidnoz.com",
+      "videoUrl": "https://www.instagram.com/p/DDaWZ8GyKKv/",
+      "keywords": [
+        "vidnoz",
+        "generacion",
+        "video",
+        "plantillas"
+      ],
+      "popular": false
+    },
+    {
+      "id": 129,
+      "order": 129,
+      "name": "Giftruly",
+      "description": "Sugiere regalos con base en una descripción de la persona, y fecha especial.",
+      "category": "Imagen",
+      "domain": "giftruly.com",
+      "toolUrl": "https://giftruly.com",
+      "videoUrl": "https://www.instagram.com/p/DDb_mBXxk4k/",
+      "keywords": [
+        "giftruly",
+        "sugiere",
+        "regalos",
+        "descripcion",
+        "persona",
+        "fecha",
+        "especial",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 130,
+      "order": 130,
+      "name": "Claid",
+      "description": "Modifica el fondo de las imágenes.",
+      "category": "Imagen",
+      "domain": "claid.ai",
+      "toolUrl": "https://claid.ai",
+      "videoUrl": "https://www.instagram.com/p/DDgGG75tN9Z/",
+      "keywords": [
+        "claid",
+        "modifica",
+        "fondo",
+        "imagenes",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 131,
+      "order": 131,
+      "name": "MyMap",
+      "description": "Creador de diagramas.",
+      "category": "Documentos y Escritura",
+      "domain": "mymap.ai",
+      "toolUrl": "https://mymap.ai",
+      "videoUrl": "https://www.instagram.com/p/DDqDL4DyTsU/",
+      "keywords": [
+        "mymap",
+        "creador",
+        "diagramas",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 132,
+      "order": 132,
+      "name": "Glide",
+      "description": "Creador de aplicaciones no-code.",
+      "category": "Programación y Desarrollo",
+      "domain": "glideapps.com",
+      "toolUrl": "https://glideapps.com",
+      "videoUrl": "https://www.instagram.com/p/DD0yhAZNb8Y/",
+      "keywords": [
+        "glide",
+        "creador",
+        "aplicaciones",
+        "code",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 133,
+      "order": 133,
+      "name": "FreeLogoDesign",
+      "description": "Generador de logos que permite personalizar.",
+      "category": "Video",
+      "domain": "freelogodesign.org",
+      "toolUrl": "https://freelogodesign.org",
+      "videoUrl": "https://www.instagram.com/p/DECnubrRNYS/",
+      "keywords": [
+        "freelogodesign",
+        "generador",
+        "logos",
+        "permite",
+        "personalizar",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 134,
+      "order": 134,
+      "name": "GPT Excel",
+      "description": "Genera y explica fórmulas de excel y SQL.",
+      "category": "Programación y Desarrollo",
+      "domain": "gptexcel.uk",
+      "toolUrl": "https://gptexcel.uk",
+      "videoUrl": "https://www.instagram.com/p/DEFUj9yR76p/",
+      "keywords": [
+        "gpt",
+        "excel",
+        "explica",
+        "formulas",
+        "sql",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 135,
+      "order": 135,
+      "name": "Scratch",
+      "description": "Plataforma de programación no-code para niños.",
+      "category": "Programación y Desarrollo",
+      "domain": "scrratch.mit.edu",
+      "toolUrl": "https://scrratch.mit.edu",
+      "videoUrl": "https://www.instagram.com/p/DEPx3gZRhzk/",
+      "keywords": [
+        "scratch",
+        "programacion",
+        "code",
+        "ninos",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 136,
+      "order": 136,
+      "name": "Hotpot",
+      "description": "Generador de logos.",
+      "category": "Imagen",
+      "domain": "hotpot.ai",
+      "toolUrl": "https://hotpot.ai",
+      "videoUrl": "https://www.instagram.com/p/DES_sIcSU1B/",
+      "keywords": [
+        "hotpot",
+        "generador",
+        "logos",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 137,
+      "order": 137,
+      "name": "Kickresume",
+      "description": "Creador de CVs que puede importar info desde LinkedIn.",
+      "category": "Documentos y Escritura",
+      "domain": "kickresume.com",
+      "toolUrl": "https://kickresume.com",
+      "videoUrl": "https://www.instagram.com/p/DEVmZmPS5C0/",
+      "keywords": [
+        "kickresume",
+        "creador",
+        "cvs",
+        "importar",
+        "info",
+        "linkedin",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 138,
+      "order": 138,
+      "name": "LandingSite",
+      "description": "Generador de Landing Pages con base en plantillas.",
+      "category": "Programación y Desarrollo",
+      "domain": "app.landingsite.ai",
+      "toolUrl": "https://app.landingsite.ai",
+      "videoUrl": "https://www.instagram.com/p/DEaQ1QyRuzX/",
+      "keywords": [
+        "landingsite",
+        "generador",
+        "landing",
+        "pages",
+        "plantillas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 139,
+      "order": 139,
+      "name": "Ideogram",
+      "description": "Generador de imágenes (text-to-image)",
+      "category": "Imagen",
+      "domain": "ideogram.ai",
+      "toolUrl": "https://ideogram.ai",
+      "videoUrl": "https://www.instagram.com/p/DEgF6H4yon0/",
+      "keywords": [
+        "ideogram",
+        "generador",
+        "imagenes",
+        "text",
+        "image",
+        "imagen"
+      ],
+      "popular": true
+    },
+    {
+      "id": 140,
+      "order": 140,
+      "name": "Rodin",
+      "description": "Generador de modelos 3D.",
+      "category": "3D y Diseño",
+      "domain": "hyper3d.ai",
+      "toolUrl": "https://hyper3d.ai",
+      "videoUrl": "https://www.instagram.com/p/DEi42tMM5hs/",
+      "keywords": [
+        "rodin",
+        "generador",
+        "modelos",
+        "diseno"
+      ],
+      "popular": false
+    },
+    {
+      "id": 141,
+      "order": 141,
+      "name": "ResumAI",
+      "description": "Creador de CVs.",
+      "category": "Documentos y Escritura",
+      "domain": "app.resumai.com",
+      "toolUrl": "https://app.resumai.com",
+      "videoUrl": "https://www.instagram.com/p/DEn33guSeBq/",
+      "keywords": [
+        "resumai",
+        "creador",
+        "cvs",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 142,
+      "order": 142,
+      "name": "AutoDraw",
+      "description": "Toma tus dibujos y los mejora (incluso sketchs muy básicos)",
+      "category": "Imagen",
+      "domain": "autodraw.com",
+      "toolUrl": "https://autodraw.com",
+      "videoUrl": "https://www.instagram.com/p/DE2W0WxRdNx/",
+      "keywords": [
+        "autodraw",
+        "toma",
+        "dibujos",
+        "mejora",
+        "incluso",
+        "sketchs",
+        "muy",
+        "basicos",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 143,
+      "order": 143,
+      "name": "JSON4U",
+      "description": "Transforma JSONs en diagramas.",
+      "category": "Programación y Desarrollo",
+      "domain": "json4u.com",
+      "toolUrl": "https://json4u.com",
+      "videoUrl": "https://www.instagram.com/p/DE40muWx2Dg/",
+      "keywords": [
+        "json4u",
+        "transforma",
+        "jsons",
+        "diagramas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 144,
+      "order": 144,
+      "name": "Appy Pie",
+      "description": "Generador de aplicaciones con base en plantillas.",
+      "category": "Programación y Desarrollo",
+      "domain": "essnappy.appypie.com",
+      "toolUrl": "https://essnappy.appypie.com",
+      "videoUrl": "https://www.instagram.com/p/DFGgR6WSw_E/",
+      "keywords": [
+        "appy",
+        "pie",
+        "generador",
+        "aplicaciones",
+        "plantillas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 145,
+      "order": 145,
+      "name": "Presentations",
+      "description": "Genera presentaciones a partir de PDFs.",
+      "category": "Presentaciones",
+      "domain": "presentations.ai",
+      "toolUrl": "https://presentations.ai",
+      "videoUrl": "https://www.instagram.com/p/DFIKaT6R0H5/",
+      "keywords": [
+        "presentations",
+        "presentaciones",
+        "partir",
+        "pdfs"
+      ],
+      "popular": false
+    },
+    {
+      "id": 146,
+      "order": 146,
+      "name": "CSS Grid Generator",
+      "description": "Te permite crear el layout de tus páginas.",
+      "category": "Programación y Desarrollo",
+      "domain": "cssgridgenerator.io",
+      "toolUrl": "https://cssgridgenerator.io",
+      "videoUrl": "https://www.instagram.com/p/DFSyEgGR2pj/",
+      "keywords": [
+        "css",
+        "grid",
+        "generator",
+        "permite",
+        "layout",
+        "paginas",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 147,
+      "order": 147,
+      "name": "GoFullPage",
+      "description": "Extensión para tomar fotos de páginas completas (no solo pantallazo)",
+      "category": "Imagen",
+      "domain": "gofullpage.com",
+      "toolUrl": "https://gofullpage.com",
+      "videoUrl": "https://www.instagram.com/p/DFTiqGAyWz9/",
+      "keywords": [
+        "gofullpage",
+        "extension",
+        "tomar",
+        "fotos",
+        "paginas",
+        "completas",
+        "solo",
+        "pantallazo",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 148,
+      "order": 148,
+      "name": "AIMusicGen",
+      "description": "Generador de música (text-to-music)",
+      "category": "Audio y Música",
+      "domain": "aimusicgen.ai",
+      "toolUrl": "https://aimusicgen.ai",
+      "videoUrl": "https://www.instagram.com/p/DFWTAPhSlYN/",
+      "keywords": [
+        "aimusicgen",
+        "generador",
+        "musica",
+        "text",
+        "music",
+        "audio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 149,
+      "order": 149,
+      "name": "DeepSeekImageGenerator",
+      "description": "Generador de imágenes de alta calidad (text-to-image)",
+      "category": "Imagen",
+      "domain": "deepseekimagegenerator.com",
+      "toolUrl": "https://deepseekimagegenerator.com",
+      "videoUrl": "https://www.instagram.com/p/DFea_6GtlDk/",
+      "keywords": [
+        "deepseekimagegenerator",
+        "generador",
+        "imagenes",
+        "alta",
+        "calidad",
+        "text",
+        "image",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 150,
+      "order": 150,
+      "name": "Moises",
+      "description": "Editor de audio. Separa pistas, agrega como metrónomo, etc.",
+      "category": "Audio y Música",
+      "domain": "studio.moises.ai",
+      "toolUrl": "https://studio.moises.ai",
+      "videoUrl": "https://www.instagram.com/p/DFilxJ4yW0N/",
+      "keywords": [
+        "moises",
+        "editor",
+        "audio",
+        "separa",
+        "pistas",
+        "agrega",
+        "metronomo",
+        "etc",
+        "musica"
+      ],
+      "popular": false
+    },
+    {
+      "id": 151,
+      "order": 151,
+      "name": "Cursa",
+      "description": "Cursos online gratuitos.",
+      "category": "Educación y Estudio",
+      "domain": "cursa.app",
+      "toolUrl": "https://cursa.app",
+      "videoUrl": "https://www.instagram.com/p/DFxiidsREUB/",
+      "keywords": [
+        "cursa",
+        "cursos",
+        "gratuitos",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 152,
+      "order": 152,
+      "name": "Whisk",
+      "description": "Generador de historias con base en escenas planteadas por el usuario.",
+      "category": "Otras",
+      "domain": "labs.google",
+      "toolUrl": "https://labs.google/fx/es/tools/whisk",
+      "videoUrl": "https://www.instagram.com/p/DGD1KzTxPg7/",
+      "keywords": [
+        "whisk",
+        "generador",
+        "historias",
+        "escenas",
+        "planteadas",
+        "usuario",
+        "otras"
+      ],
+      "popular": false
+    },
+    {
+      "id": 153,
+      "order": 153,
+      "name": "PixVerse",
+      "description": "Generador de videos con base en imágenes, generando \"efectos\" prediseñaados.",
+      "category": "Video",
+      "domain": "app.pixverse.ai",
+      "toolUrl": "https://app.pixverse.ai",
+      "videoUrl": "https://www.instagram.com/p/DGHnwnYNnyP/",
+      "keywords": [
+        "pixverse",
+        "generador",
+        "videos",
+        "imagenes",
+        "generando",
+        "efectos",
+        "predisenaados",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 154,
+      "order": 154,
+      "name": "OpenArt AI",
+      "description": "Generador de imágenes (text-to-image)",
+      "category": "Imagen",
+      "domain": "openart.ai",
+      "toolUrl": "https://openart.ai",
+      "videoUrl": "https://www.instagram.com/p/DGQP5s8xUCl/",
+      "keywords": [
+        "openart",
+        "generador",
+        "imagenes",
+        "text",
+        "image",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 155,
+      "order": 155,
+      "name": "CommercePro",
+      "description": "Generador de videos con avatares.",
+      "category": "Video",
+      "domain": "commercepro.capcut.com",
+      "toolUrl": "https://commercepro.capcut.com",
+      "videoUrl": "https://www.instagram.com/p/DGdOgdYRX8D/",
+      "keywords": [
+        "commercepro",
+        "generador",
+        "videos",
+        "avatares",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 156,
+      "order": 156,
+      "name": "Cuentito",
+      "description": "Generador de cuentos.",
+      "category": "Otras",
+      "domain": "cuenti.to",
+      "toolUrl": "https://cuenti.to",
+      "videoUrl": "https://www.instagram.com/p/DGjOY2rynLM/",
+      "keywords": [
+        "cuentito",
+        "generador",
+        "cuentos",
+        "otras"
+      ],
+      "popular": false
+    },
+    {
+      "id": 157,
+      "order": 157,
+      "name": "Peregrino",
+      "description": "Optimiza un currículum para dejarlo en formato ATS, entre otras mejoras.",
+      "category": "Empleo y CV",
+      "domain": "peregrino.ai",
+      "toolUrl": "https://peregrino.ai",
+      "videoUrl": "https://www.instagram.com/p/DGrWB6gsySo/",
+      "keywords": [
+        "peregrino",
+        "optimiza",
+        "curriculum",
+        "dejarlo",
+        "formato",
+        "ats",
+        "entre",
+        "otras",
+        "mejoras",
+        "empleo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 158,
+      "order": 158,
+      "name": "Qanda",
+      "description": "Subes una imagen de tu tarea y te la explica y/o resuelve.",
+      "category": "Imagen",
+      "domain": "qanda.ai",
+      "toolUrl": "https://qanda.ai",
+      "videoUrl": "https://www.instagram.com/p/DG1ht8vMY7j/",
+      "keywords": [
+        "qanda",
+        "subes",
+        "imagen",
+        "tarea",
+        "explica",
+        "resuelve"
+      ],
+      "popular": false
+    },
+    {
+      "id": 159,
+      "order": 159,
+      "name": "EmailJS",
+      "description": "Sistema de correos automáticos.",
+      "category": "Documentos y Escritura",
+      "domain": "dashboard.emailj.com",
+      "toolUrl": "https://dashboard.emailj.com",
+      "videoUrl": "https://www.instagram.com/p/DG5dpCFRHPa/",
+      "keywords": [
+        "emailjs",
+        "sistema",
+        "correos",
+        "automaticos",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 160,
+      "order": 160,
+      "name": "Planner5D",
+      "description": "Genera espacios tridimensionales.",
+      "category": "3D y Diseño",
+      "domain": "planner5d.com",
+      "toolUrl": "https://planner5d.com",
+      "videoUrl": "https://www.instagram.com/p/DHCLhgly5AL/",
+      "keywords": [
+        "planner5d",
+        "espacios",
+        "tridimensionales",
+        "diseno"
+      ],
+      "popular": false
+    },
+    {
+      "id": 161,
+      "order": 161,
+      "name": "Powerdrill",
+      "description": "Analizador de archivos, bses de datos y documentos.",
+      "category": "Datos y Análisis",
+      "domain": "powerdrill.ai",
+      "toolUrl": "https://powerdrill.ai",
+      "videoUrl": "https://www.instagram.com/p/DHJRToox2_L/",
+      "keywords": [
+        "powerdrill",
+        "analizador",
+        "archivos",
+        "bses",
+        "datos",
+        "documentos",
+        "analisis"
+      ],
+      "popular": false
+    },
+    {
+      "id": 162,
+      "order": 162,
+      "name": "Klang",
+      "description": "Transcribe canciones a partitura.",
+      "category": "Audio y Música",
+      "domain": "klang.io",
+      "toolUrl": "https://klang.io/transcription-studio",
+      "videoUrl": "https://www.instagram.com/p/DHZ7RvbM0qH/",
+      "keywords": [
+        "klang",
+        "transcribe",
+        "canciones",
+        "partitura",
+        "audio",
+        "musica"
+      ],
+      "popular": false
+    },
+    {
+      "id": 163,
+      "order": 163,
+      "name": "Instagantt",
+      "description": "Genera y organiza tu proyecto con un simple prompt.",
+      "category": "Documentos y Escritura",
+      "domain": "app.instagantt.com",
+      "toolUrl": "https://app.instagantt.com",
+      "videoUrl": "https://www.instagram.com/p/DHlpspixrZA/",
+      "keywords": [
+        "instagantt",
+        "organiza",
+        "proyecto",
+        "simple",
+        "prompt",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 164,
+      "order": 164,
+      "name": "Nim Video",
+      "description": "Generación de imágenes y videos.",
+      "category": "Video",
+      "domain": "nim.video",
+      "toolUrl": "https://nim.video",
+      "videoUrl": "https://www.instagram.com/p/DHzQh-ayvj_/",
+      "keywords": [
+        "nim",
+        "video",
+        "generacion",
+        "imagenes",
+        "videos"
+      ],
+      "popular": false
+    },
+    {
+      "id": 165,
+      "order": 165,
+      "name": "Fish Audio",
+      "description": "Plataforma de clonación de voz + biblioteca.",
+      "category": "Audio y Música",
+      "domain": "fish.audio",
+      "toolUrl": "https://fish.audio",
+      "videoUrl": "https://www.instagram.com/p/DILrflFxN6Y/",
+      "keywords": [
+        "fish",
+        "audio",
+        "clonacion",
+        "voz",
+        "biblioteca",
+        "musica"
+      ],
+      "popular": false
+    },
+    {
+      "id": 166,
+      "order": 166,
+      "name": "MegaProfe",
+      "description": "Generador de contenido para profesores.",
+      "category": "Educación y Estudio",
+      "domain": "app.megaprofe.net",
+      "toolUrl": "https://app.megaprofe.net",
+      "videoUrl": "https://www.instagram.com/p/DIP7NXxss4a/",
+      "keywords": [
+        "megaprofe",
+        "generador",
+        "contenido",
+        "profesores",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 167,
+      "order": 167,
+      "name": "Lovable",
+      "description": "Plataforma de generación de apps.",
+      "category": "Programación y Desarrollo",
+      "domain": "lovable.dev",
+      "toolUrl": "https://lovable.dev",
+      "videoUrl": "https://www.instagram.com/p/DIfXnhYsBHk/",
+      "keywords": [
+        "lovable",
+        "generacion",
+        "apps",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": true
+    },
+    {
+      "id": 168,
+      "order": 168,
+      "name": "LawyerSpektr",
+      "description": "IA de consulta jurídica chilena.",
+      "category": "IA Conversacional",
+      "domain": "lawyer.spektr.cl",
+      "toolUrl": "https://lawyer.spektr.cl",
+      "videoUrl": "https://www.instagram.com/p/DIh3NqxMIJn/",
+      "keywords": [
+        "lawyerspektr",
+        "consulta",
+        "juridica",
+        "chilena",
+        "conversacional"
+      ],
+      "popular": false
+    },
+    {
+      "id": 169,
+      "order": 169,
+      "name": "Make",
+      "description": "Plataforma de automatización.",
+      "category": "Productividad",
+      "domain": "us2.make.com",
+      "toolUrl": "https://us2.make.com",
+      "videoUrl": "https://www.instagram.com/p/DInVh-Cseu4/",
+      "keywords": [
+        "make",
+        "automatizacion",
+        "productividad"
+      ],
+      "popular": true
+    },
+    {
+      "id": 170,
+      "order": 170,
+      "name": "Gliglish",
+      "description": "Plataforma para estudiar idiomas mediante interacción con avatares animados.",
+      "category": "Video",
+      "domain": "gliglish.com",
+      "toolUrl": "https://gliglish.com",
+      "videoUrl": "https://www.instagram.com/p/DI89H4pxj5D/",
+      "keywords": [
+        "gliglish",
+        "estudiar",
+        "idiomas",
+        "mediante",
+        "interaccion",
+        "avatares",
+        "animados",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 171,
+      "order": 171,
+      "name": "Eduaide",
+      "description": "Plataforma para la creación de contenido de estudio.",
+      "category": "Educación y Estudio",
+      "domain": "eduaide.ai",
+      "toolUrl": "https://eduaide.ai",
+      "videoUrl": "https://www.instagram.com/p/DJLJi-fsEpq/",
+      "keywords": [
+        "eduaide",
+        "creacion",
+        "contenido",
+        "estudio",
+        "educacion"
+      ],
+      "popular": false
+    },
+    {
+      "id": 172,
+      "order": 172,
+      "name": "Vitara",
+      "description": "Plataforma de creación de aplicaciones no-code.",
+      "category": "Programación y Desarrollo",
+      "domain": "vitara.ai",
+      "toolUrl": "https://vitara.ai",
+      "videoUrl": "https://www.instagram.com/p/DJNmBa-Mpxp/?img_index=10",
+      "keywords": [
+        "vitara",
+        "creacion",
+        "aplicaciones",
+        "code",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 173,
+      "order": 173,
+      "name": "Suno",
+      "description": "Creación de música desde texto.",
+      "category": "Audio y Música",
+      "domain": "suno.com",
+      "toolUrl": "https://suno.com",
+      "videoUrl": "https://www.instagram.com/p/DJQWKeWMHHU/",
+      "keywords": [
+        "suno",
+        "creacion",
+        "musica",
+        "texto",
+        "audio"
+      ],
+      "popular": true
+    },
+    {
+      "id": 174,
+      "order": 174,
+      "name": "Earkick",
+      "description": "Chat que funciona como terapeuta emocional.",
+      "category": "IA Conversacional",
+      "domain": "earkick.com",
+      "toolUrl": "https://earkick.com",
+      "videoUrl": "https://www.instagram.com/p/DJl1HAhu3or/",
+      "keywords": [
+        "earkick",
+        "chat",
+        "funciona",
+        "terapeuta",
+        "emocional",
+        "conversacional"
+      ],
+      "popular": false
+    },
+    {
+      "id": 175,
+      "order": 175,
+      "name": "LearningStudio",
+      "description": "Plataforma para la creación de cursos.",
+      "category": "Educación y Estudio",
+      "domain": "learningstudioai.com",
+      "toolUrl": "https://learningstudioai.com",
+      "videoUrl": "https://www.instagram.com/p/DJusJZsSxDH/",
+      "keywords": [
+        "learningstudio",
+        "creacion",
+        "cursos",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 176,
+      "order": 176,
+      "name": "Veo3",
+      "description": "Plataforma de creación de video.",
+      "category": "Video",
+      "domain": "veo3.ai",
+      "toolUrl": "https://veo3.ai",
+      "videoUrl": "https://www.instagram.com/p/DJ7yCoytkQz/",
+      "keywords": [
+        "veo3",
+        "creacion",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 177,
+      "order": 177,
+      "name": "Kits",
+      "description": "Subes un audio y convierte la voz en otra.",
+      "category": "Audio y Música",
+      "domain": "app.kits.ai",
+      "toolUrl": "https://app.kits.ai",
+      "videoUrl": "https://www.instagram.com/p/DKAfUWSyta6/",
+      "keywords": [
+        "kits",
+        "subes",
+        "audio",
+        "convierte",
+        "voz",
+        "otra",
+        "musica"
+      ],
+      "popular": false
+    },
+    {
+      "id": 178,
+      "order": 178,
+      "name": "Woter",
+      "description": "Humanizador de textos de IA.",
+      "category": "Documentos y Escritura",
+      "domain": "woter.ai",
+      "toolUrl": "https://woter.ai",
+      "videoUrl": "https://www.instagram.com/p/DKNpG-kSRCz/",
+      "keywords": [
+        "woter",
+        "humanizador",
+        "textos",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 179,
+      "order": 179,
+      "name": "v0",
+      "description": "Herramienta de VibeCoding",
+      "category": "Programación y Desarrollo",
+      "domain": "v0.app",
+      "toolUrl": "https://v0.app",
+      "videoUrl": "https://www.instagram.com/p/DKPvdo8RWbM/",
+      "keywords": [
+        "vibecoding",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": true
+    },
+    {
+      "id": 180,
+      "order": 180,
+      "name": "TraductorRapaNui",
+      "description": "Traductor al Rapa Nui.",
+      "category": "Utilidades",
+      "domain": "traductorrapanui.cl",
+      "toolUrl": "https://traductorrapanui.cl",
+      "videoUrl": "https://www.instagram.com/p/DKgGUaBsNoq/",
+      "keywords": [
+        "traductorrapanui",
+        "traductor",
+        "rapa",
+        "nui",
+        "utilidades"
+      ],
+      "popular": false
+    },
+    {
+      "id": 181,
+      "order": 181,
+      "name": "Studyable",
+      "description": "Herramienta de estudio con base en texto o imágenes. (Analiza,  responde y explica)",
+      "category": "Imagen",
+      "domain": "studyable.app",
+      "toolUrl": "https://studyable.app",
+      "videoUrl": "https://www.instagram.com/p/DLFvs-Us7aV/",
+      "keywords": [
+        "studyable",
+        "estudio",
+        "texto",
+        "imagenes",
+        "analiza",
+        "responde",
+        "explica",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 182,
+      "order": 182,
+      "name": "Barrioideal",
+      "description": "Analiza propiedades en cuanto a accesibilidad, seguridad, etc.",
+      "category": "Otras",
+      "domain": "barrioideal.com",
+      "toolUrl": "https://barrioideal.com",
+      "videoUrl": "https://www.instagram.com/p/DLm1inTxVsm/",
+      "keywords": [
+        "barrioideal",
+        "analiza",
+        "propiedades",
+        "cuanto",
+        "accesibilidad",
+        "seguridad",
+        "etc",
+        "otras"
+      ],
+      "popular": false
+    },
+    {
+      "id": 183,
+      "order": 183,
+      "name": "ZeroChats",
+      "description": "Automatizador de chats de instagram.",
+      "category": "IA Conversacional",
+      "domain": "zerochats.com",
+      "toolUrl": "https://zerochats.com",
+      "videoUrl": "https://www.instagram.com/p/DLs9So5y5fK/",
+      "keywords": [
+        "zerochats",
+        "automatizador",
+        "chats",
+        "instagram",
+        "conversacional"
+      ],
+      "popular": false
+    },
+    {
+      "id": 184,
+      "order": 184,
+      "name": "Khanmigo",
+      "description": "Crea clases y ofrece herramientas relacionadas a la educación.",
+      "category": "Educación y Estudio",
+      "domain": "khanmigo.ai",
+      "toolUrl": "https://khanmigo.ai",
+      "videoUrl": "https://www.instagram.com/p/DLuzaoxMi6r/",
+      "keywords": [
+        "khanmigo",
+        "clases",
+        "ofrece",
+        "herramientas",
+        "relacionadas",
+        "educacion",
+        "estudio"
+      ],
+      "popular": true
+    },
+    {
+      "id": 185,
+      "order": 185,
+      "name": "Ilisten",
+      "description": "Extensión que genera podcasts de textos en páginas.",
+      "category": "Audio y Música",
+      "domain": "ilisten.ai",
+      "toolUrl": "https://ilisten.ai",
+      "videoUrl": "https://www.instagram.com/p/DL2fhaqs0lh/",
+      "keywords": [
+        "ilisten",
+        "extension",
+        "podcasts",
+        "textos",
+        "paginas",
+        "audio",
+        "musica"
+      ],
+      "popular": false
+    },
+    {
+      "id": 186,
+      "order": 186,
+      "name": "Alison",
+      "description": "Plataforma de cursos online.",
+      "category": "Educación y Estudio",
+      "domain": "alison.com",
+      "toolUrl": "https://alison.com",
+      "videoUrl": "https://www.instagram.com/p/DMF-PJWM4KU/",
+      "keywords": [
+        "alison",
+        "cursos",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 187,
+      "order": 187,
+      "name": "WayGround",
+      "description": "Plataforma que crea quizzes interactivos que pueden ser usados por otros.",
+      "category": "Educación y Estudio",
+      "domain": "wayground.com",
+      "toolUrl": "https://wayground.com",
+      "videoUrl": "https://www.instagram.com/p/DMNKvMwu9Wf/",
+      "keywords": [
+        "wayground",
+        "quizzes",
+        "interactivos",
+        "pueden",
+        "ser",
+        "usados",
+        "otros",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 188,
+      "order": 188,
+      "name": "SellerPic",
+      "description": "Das una foto de un producto y la edita para que se vea profesional.",
+      "category": "Imagen",
+      "domain": "sellerpic.ai",
+      "toolUrl": "https://sellerpic.ai",
+      "videoUrl": "https://www.instagram.com/p/DMbRP4Cy3nh/",
+      "keywords": [
+        "sellerpic",
+        "das",
+        "foto",
+        "producto",
+        "edita",
+        "vea",
+        "profesional",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 189,
+      "order": 189,
+      "name": "Canva",
+      "description": "Plataforma en línea de diseño gráfico.",
+      "category": "Datos y Análisis",
+      "domain": "canva.com",
+      "toolUrl": "https://canva.com",
+      "videoUrl": "https://www.instagram.com/p/DMvX7wLRHtp/",
+      "keywords": [
+        "canva",
+        "linea",
+        "diseno",
+        "grafico",
+        "datos",
+        "analisis"
+      ],
+      "popular": true
+    },
+    {
+      "id": 190,
+      "order": 190,
+      "name": "Genially",
+      "description": "Creación de material didáctico (hasta juegos) para estudiar y aprender.",
+      "category": "Educación y Estudio",
+      "domain": "app.genially.com",
+      "toolUrl": "https://app.genially.com",
+      "videoUrl": "https://www.instagram.com/p/DNl2AYxSyyf/",
+      "keywords": [
+        "genially",
+        "creacion",
+        "material",
+        "didactico",
+        "hasta",
+        "juegos",
+        "estudiar",
+        "aprender",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 191,
+      "order": 191,
+      "name": "EggBun",
+      "description": "Plataforma para aprender coreano.",
+      "category": "Educación y Estudio",
+      "domain": "eggbun.net",
+      "toolUrl": "https://eggbun.net",
+      "videoUrl": "https://www.instagram.com/p/DNoQ__9PpVU/",
+      "keywords": [
+        "eggbun",
+        "aprender",
+        "coreano",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 192,
+      "order": 192,
+      "name": "Apob",
+      "description": "Generación de videos con avatares (puedes crear tus propios avatares).",
+      "category": "Video",
+      "domain": "apob.ai",
+      "toolUrl": "https://apob.ai",
+      "videoUrl": "https://www.instagram.com/p/DNrsBSowHkD/",
+      "keywords": [
+        "apob",
+        "generacion",
+        "videos",
+        "avatares",
+        "propios",
+        "video"
+      ],
+      "popular": true
+    },
+    {
+      "id": 193,
+      "order": 193,
+      "name": "NanoBanana",
+      "description": "Generador de imágenes.",
+      "category": "Imagen",
+      "domain": "aistudio.google.com",
+      "toolUrl": "https://aistudio.google.com/models/nano-banana",
+      "videoUrl": "https://www.instagram.com/p/DN4c1VfgHDg/?img_index=1",
+      "keywords": [
+        "nanobanana",
+        "generador",
+        "imagenes",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 194,
+      "order": 194,
+      "name": "Filmora",
+      "description": "Aplicación de editor de video. También crea videos con base en imágenes.",
+      "category": "Video",
+      "domain": "filmora.wondershare.net",
+      "toolUrl": "https://filmora.wondershare.net",
+      "videoUrl": "https://www.instagram.com/p/DN74-rpAF-m/",
+      "keywords": [
+        "filmora",
+        "aplicacion",
+        "editor",
+        "video",
+        "tambien",
+        "videos",
+        "imagenes"
+      ],
+      "popular": false
+    },
+    {
+      "id": 195,
+      "order": 195,
+      "name": "Toolify",
+      "description": "Plataforma que agrupa modelos de IA",
+      "category": "Otras",
+      "domain": "toolify.ai",
+      "toolUrl": "https://toolify.ai",
+      "videoUrl": "https://www.instagram.com/p/DOIwl3FAGqj/",
+      "keywords": [
+        "toolify",
+        "agrupa",
+        "modelos",
+        "otras"
+      ],
+      "popular": false
+    },
+    {
+      "id": 196,
+      "order": 196,
+      "name": "Google Calendar",
+      "description": "Calendario online gratuito.",
+      "category": "Productividad",
+      "domain": "calendar.google.com",
+      "toolUrl": "https://calendar.google.com",
+      "videoUrl": "https://www.instagram.com/p/DOOEiF-gJp2/",
+      "keywords": [
+        "google",
+        "calendar",
+        "calendario",
+        "gratuito",
+        "productividad"
+      ],
+      "popular": false
+    },
+    {
+      "id": 197,
+      "order": 197,
+      "name": "Printify",
+      "description": "Crea productos y merchandising con branding específico.",
+      "category": "Negocios y Marketing",
+      "domain": "printify.com",
+      "toolUrl": "https://printify.com",
+      "videoUrl": "https://www.instagram.com/p/DOPNz1-AEFT/",
+      "keywords": [
+        "printify",
+        "productos",
+        "merchandising",
+        "branding",
+        "especifico",
+        "negocios",
+        "marketing"
+      ],
+      "popular": false
+    },
+    {
+      "id": 198,
+      "order": 198,
+      "name": "Fonzi",
+      "description": "Plataforma de trabajo para ingenieros de IA.",
+      "category": "Empleo y CV",
+      "domain": "fonzi.ai",
+      "toolUrl": "https://fonzi.ai",
+      "videoUrl": "https://www.instagram.com/p/DOXV4rugAzO/",
+      "keywords": [
+        "fonzi",
+        "trabajo",
+        "ingenieros",
+        "empleo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 199,
+      "order": 199,
+      "name": "Pandora",
+      "description": "Genera branding en empaques y embalajes varios.",
+      "category": "Negocios y Marketing",
+      "domain": "pandora.com",
+      "toolUrl": "https://pandora.com",
+      "videoUrl": "https://www.instagram.com/p/DOZWaPEEuOL/",
+      "keywords": [
+        "pandora",
+        "branding",
+        "empaques",
+        "embalajes",
+        "varios",
+        "negocios",
+        "marketing"
+      ],
+      "popular": false
+    },
+    {
+      "id": 200,
+      "order": 200,
+      "name": "MyStylus",
+      "description": "Resume documentos y genera reportes según parámetros solicitados.",
+      "category": "Datos y Análisis",
+      "domain": "mystylus.ai",
+      "toolUrl": "https://mystylus.ai",
+      "videoUrl": "https://www.instagram.com/p/DObH1A5gMcC/",
+      "keywords": [
+        "mystylus",
+        "resume",
+        "documentos",
+        "reportes",
+        "segun",
+        "parametros",
+        "solicitados",
+        "datos",
+        "analisis"
+      ],
+      "popular": false
+    },
+    {
+      "id": 201,
+      "order": 201,
+      "name": "LoopCV",
+      "description": "Asistente que ayuda a buscar trabajo. Automatiza el enviado masivo de currículum y más.",
+      "category": "IA Conversacional",
+      "domain": "app.loopcv.pro",
+      "toolUrl": "https://app.loopcv.pro",
+      "videoUrl": "https://www.instagram.com/p/DOrfWEBgCvp/",
+      "keywords": [
+        "loopcv",
+        "asistente",
+        "ayuda",
+        "buscar",
+        "trabajo",
+        "automatiza",
+        "enviado",
+        "masivo",
+        "curriculum",
+        "conversacional"
+      ],
+      "popular": false
+    },
+    {
+      "id": 202,
+      "order": 202,
+      "name": "RendAir",
+      "description": "Generador de imágenes y video desde imágenes para rediseñar espacios.",
+      "category": "Video",
+      "domain": "rendair.ai",
+      "toolUrl": "https://rendair.ai",
+      "videoUrl": "https://www.instagram.com/p/DOuPD85gJxX/",
+      "keywords": [
+        "rendair",
+        "generador",
+        "imagenes",
+        "video",
+        "redisenar",
+        "espacios"
+      ],
+      "popular": false
+    },
+    {
+      "id": 203,
+      "order": 203,
+      "name": "Short",
+      "description": "Creador de Shorts con IA.",
+      "category": "Video",
+      "domain": "short.ai",
+      "toolUrl": "https://short.ai",
+      "videoUrl": "https://www.instagram.com/p/DO63_xFgOey/",
+      "keywords": [
+        "short",
+        "creador",
+        "shorts",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 204,
+      "order": 204,
+      "name": "ColoringBook",
+      "description": "Generador de dibujos para colorear",
+      "category": "Imagen",
+      "domain": "coloringbook.ai",
+      "toolUrl": "https://coloringbook.ai",
+      "videoUrl": "https://www.instagram.com/p/DO8LZ10gMr_/",
+      "keywords": [
+        "coloringbook",
+        "generador",
+        "dibujos",
+        "colorear",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 205,
+      "order": 205,
+      "name": "TopView",
+      "description": "Creador de avatares y videos con ellos.",
+      "category": "Video",
+      "domain": "topview.ai",
+      "toolUrl": "https://topview.ai",
+      "videoUrl": "https://www.instagram.com/p/DO__q6kktJr/",
+      "keywords": [
+        "topview",
+        "creador",
+        "avatares",
+        "videos",
+        "ellos",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 206,
+      "order": 206,
+      "name": "Packify",
+      "description": "Creación de embalaje variado con branding personalizado.",
+      "category": "Negocios y Marketing",
+      "domain": "packify.ai",
+      "toolUrl": "https://packify.ai",
+      "videoUrl": "https://www.instagram.com/p/DPD3P56Dhuz/",
+      "keywords": [
+        "packify",
+        "creacion",
+        "embalaje",
+        "variado",
+        "branding",
+        "personalizado",
+        "negocios",
+        "marketing"
+      ],
+      "popular": false
+    },
+    {
+      "id": 207,
+      "order": 207,
+      "name": "Lucita",
+      "description": "Buscador de licitaciones del Estado.",
+      "category": "Negocios y Marketing",
+      "domain": "lucita.app",
+      "toolUrl": "https://lucita.app",
+      "videoUrl": "https://www.instagram.com/p/DPNUV4vAIB7/",
+      "keywords": [
+        "lucita",
+        "buscador",
+        "licitaciones",
+        "estado",
+        "negocios",
+        "marketing"
+      ],
+      "popular": false
+    },
+    {
+      "id": 208,
+      "order": 208,
+      "name": "Reve",
+      "description": "Generador de imágenes para cambiar ropa o accesorios de una imagen.",
+      "category": "Imagen",
+      "domain": "app.reve.com",
+      "toolUrl": "https://app.reve.com",
+      "videoUrl": "https://www.instagram.com/p/DPUorQaDhQS/",
+      "keywords": [
+        "reve",
+        "generador",
+        "imagenes",
+        "cambiar",
+        "ropa",
+        "accesorios",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 209,
+      "order": 209,
+      "name": "Colorzilla",
+      "description": "Extensión que da un cuentagotas al navegador.",
+      "category": "Productividad",
+      "domain": "colorzilla.com",
+      "toolUrl": "https://colorzilla.com",
+      "videoUrl": "https://www.instagram.com/p/DPkUMHrABP2/",
+      "keywords": [
+        "colorzilla",
+        "extension",
+        "cuentagotas",
+        "navegador",
+        "productividad"
+      ],
+      "popular": false
+    },
+    {
+      "id": 210,
+      "order": 210,
+      "name": "ViaSocket",
+      "description": "Plataforma de automatización.",
+      "category": "Productividad",
+      "domain": "viasocket.com",
+      "toolUrl": "https://viasocket.com",
+      "videoUrl": "https://www.instagram.com/p/DPvqyzYgMqp/",
+      "keywords": [
+        "viasocket",
+        "automatizacion",
+        "productividad"
+      ],
+      "popular": false
+    },
+    {
+      "id": 211,
+      "order": 211,
+      "name": "NotebookLM",
+      "description": "Subes tus archivos, enlaces, videos o textos, y puedes preguntar lo que sea sobre ellos.",
+      "category": "Video",
+      "domain": "notebooklm.google",
+      "toolUrl": "https://notebooklm.google",
+      "videoUrl": "https://www.instagram.com/p/DQFRZwRkUuc/",
+      "keywords": [
+        "notebooklm",
+        "subes",
+        "archivos",
+        "enlaces",
+        "videos",
+        "textos",
+        "preguntar",
+        "sea",
+        "sobre",
+        "ellos",
+        "video"
+      ],
+      "popular": true
+    },
+    {
+      "id": 212,
+      "order": 212,
+      "name": "Passline",
+      "description": "Buscador de eventos de todo tipo según el lugar.",
+      "category": "Utilidades",
+      "domain": "home.passline.com",
+      "toolUrl": "https://home.passline.com",
+      "videoUrl": "https://www.instagram.com/p/DRIXw7YkkL8/",
+      "keywords": [
+        "passline",
+        "buscador",
+        "eventos",
+        "todo",
+        "tipo",
+        "segun",
+        "lugar",
+        "utilidades"
+      ],
+      "popular": false
+    },
+    {
+      "id": 213,
+      "order": 213,
+      "name": "BioDigital",
+      "description": "Permite explorar el cuerpo humano en 3D, su funcionamiento, patologías, etc.",
+      "category": "3D y Diseño",
+      "domain": "human.biodigital.com",
+      "toolUrl": "https://human.biodigital.com",
+      "videoUrl": "https://www.instagram.com/p/DRKJxNoAI0s/",
+      "keywords": [
+        "biodigital",
+        "permite",
+        "explorar",
+        "cuerpo",
+        "humano",
+        "funcionamiento",
+        "patologias",
+        "etc",
+        "diseno"
+      ],
+      "popular": false
+    },
+    {
+      "id": 214,
+      "order": 214,
+      "name": "LALAL",
+      "description": "Separador de audio de un video.",
+      "category": "Video",
+      "domain": "lalal.ai",
+      "toolUrl": "https://lalal.ai",
+      "videoUrl": "https://www.instagram.com/p/DRfziV1gJnw/",
+      "keywords": [
+        "lalal",
+        "separador",
+        "audio",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 215,
+      "order": 215,
+      "name": "AI Video Cut",
+      "description": "Generador de videos cortos con IA.",
+      "category": "Video",
+      "domain": "aivideocut.com",
+      "toolUrl": "https://aivideocut.com",
+      "videoUrl": "https://www.instagram.com/p/DRfziV1gJnw/",
+      "keywords": [
+        "video",
+        "cut",
+        "generador",
+        "videos",
+        "cortos"
+      ],
+      "popular": false
+    },
+    {
+      "id": 216,
+      "order": 216,
+      "name": "Grok",
+      "description": "IA generativa multimodal de X (ex Twitter)",
+      "category": "IA Conversacional",
+      "domain": "grok.com",
+      "toolUrl": "https://grok.com",
+      "videoUrl": "https://www.instagram.com/p/DR5ijRoAM7z/",
+      "keywords": [
+        "grok",
+        "generativa",
+        "multimodal",
+        "twitter",
+        "conversacional"
+      ],
+      "popular": true
+    },
+    {
+      "id": 217,
+      "order": 217,
+      "name": "Virtual Animal Project",
+      "description": "Permite explorar el cuerpo de perros, caballos y vacas en modelos 3D.",
+      "category": "3D y Diseño",
+      "domain": "virtualanimalproject.vetmed.vt.edu",
+      "toolUrl": "https://virtualanimalproject.vetmed.vt.edu",
+      "videoUrl": "https://www.instagram.com/p/DSDjUxpEgYC/",
+      "keywords": [
+        "virtual",
+        "animal",
+        "project",
+        "permite",
+        "explorar",
+        "cuerpo",
+        "perros",
+        "caballos",
+        "vacas",
+        "modelos",
+        "diseno"
+      ],
+      "popular": false
+    },
+    {
+      "id": 218,
+      "order": 218,
+      "name": "Lovart",
+      "description": "Agente de diseño para historias que mantiene consistencia de imágenes e historias.",
+      "category": "Imagen",
+      "domain": "lovart.ai",
+      "toolUrl": "https://lovart.ai",
+      "videoUrl": "https://www.instagram.com/p/DSGAy93kbMG/",
+      "keywords": [
+        "lovart",
+        "agente",
+        "diseno",
+        "historias",
+        "mantiene",
+        "consistencia",
+        "imagenes",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 219,
+      "order": 219,
+      "name": "VideoHighlight",
+      "description": "Con un link de youtube, genera una transcripción, traducción y/o resumen, y puedes preguntar.",
+      "category": "Video",
+      "domain": "videohighlight.com",
+      "toolUrl": "https://videohighlight.com",
+      "videoUrl": "https://www.instagram.com/p/DSViB1Zkryf/",
+      "keywords": [
+        "videohighlight",
+        "link",
+        "youtube",
+        "transcripcion",
+        "traduccion",
+        "resumen",
+        "preguntar",
+        "video"
+      ],
+      "popular": false
+    },
+    {
+      "id": 220,
+      "order": 220,
+      "name": "Read",
+      "description": "Asistente de reuniones que transcribe, resume y analiza la conversación.",
+      "category": "Documentos y Escritura",
+      "domain": "fireflies.ai",
+      "toolUrl": "https://fireflies.ai",
+      "videoUrl": "https://www.instagram.com/p/DSsRyMvAL5R/",
+      "keywords": [
+        "read",
+        "asistente",
+        "reuniones",
+        "transcribe",
+        "resume",
+        "analiza",
+        "conversacion",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 221,
+      "order": 221,
+      "name": "Coordina",
+      "description": "Plataforma para organizar la ayuda en catástrofes. Subes y encuentras info de albergues, centros de acopio, etc.",
+      "category": "Productividad",
+      "domain": "coordina.cl",
+      "toolUrl": "https://coordina.cl",
+      "videoUrl": "https://www.instagram.com/p/DTwM6YbgHKP/",
+      "keywords": [
+        "coordina",
+        "organizar",
+        "ayuda",
+        "catastrofes",
+        "subes",
+        "encuentras",
+        "info",
+        "albergues",
+        "centros",
+        "acopio",
+        "etc",
+        "productividad"
+      ],
+      "popular": false
+    },
+    {
+      "id": 222,
+      "order": 222,
+      "name": "Animales Perdidos",
+      "description": "Puedes buscar y reportar mascotas perdidas, así como quienes las han encontrado.",
+      "category": "Utilidades",
+      "domain": "animalesperdidos.cl",
+      "toolUrl": "https://animalesperdidos.cl",
+      "videoUrl": "https://www.instagram.com/p/DT0Li4sgC3M/",
+      "keywords": [
+        "animales",
+        "perdidos",
+        "buscar",
+        "reportar",
+        "mascotas",
+        "perdidas",
+        "asi",
+        "quienes",
+        "han",
+        "encontrado",
+        "utilidades"
+      ],
+      "popular": false
+    },
+    {
+      "id": 223,
+      "order": 223,
+      "name": "Image To Video",
+      "description": "Generador de videso (image-to-video)",
+      "category": "Video",
+      "domain": "imagetovideoai.io",
+      "toolUrl": "https://imagetovideoai.io",
+      "videoUrl": "https://www.instagram.com/p/DUBNpwSgEJr/",
+      "keywords": [
+        "image",
+        "video",
+        "generador",
+        "videso"
+      ],
+      "popular": false
+    },
+    {
+      "id": 224,
+      "order": 224,
+      "name": "PureVPN",
+      "description": "VPN barato y aparentemente confiable.",
+      "category": "Utilidades",
+      "domain": "purevpn.com",
+      "toolUrl": "https://purevpn.com",
+      "videoUrl": "https://www.instagram.com/p/DUJb9DzEdrd/",
+      "keywords": [
+        "purevpn",
+        "vpn",
+        "barato",
+        "aparentemente",
+        "confiable",
+        "utilidades"
+      ],
+      "popular": false
+    },
+    {
+      "id": 225,
+      "order": 225,
+      "name": "Emergent",
+      "description": "Plataforma de creación de productos digitales.",
+      "category": "Programación y Desarrollo",
+      "domain": "app.emergent.sh",
+      "toolUrl": "https://app.emergent.sh",
+      "videoUrl": "https://www.instagram.com/p/DUYw884ESYp/",
+      "keywords": [
+        "emergent",
+        "creacion",
+        "productos",
+        "digitales",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 226,
+      "order": 226,
+      "name": "RentAHuman",
+      "description": "Plataforma para que agentes de IA \"contraten\" humanos.",
+      "category": "Otras",
+      "domain": "rentahuman.ai",
+      "toolUrl": "https://rentahuman.ai",
+      "videoUrl": "https://www.instagram.com/p/DUq-0siEjUg/",
+      "keywords": [
+        "rentahuman",
+        "agentes",
+        "contraten",
+        "humanos",
+        "otras"
+      ],
+      "popular": false
+    },
+    {
+      "id": 227,
+      "order": 227,
+      "name": "Let's Enhance",
+      "description": "Mejora y amplia cualquier imagen con IA.",
+      "category": "Imagen",
+      "domain": "letsenhance.io",
+      "toolUrl": "https://letsenhance.io",
+      "videoUrl": "https://www.instagram.com/p/DUsztfKgDdn/",
+      "keywords": [
+        "let",
+        "enhance",
+        "mejora",
+        "amplia",
+        "cualquier",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 228,
+      "order": 228,
+      "name": "Syntx",
+      "description": "Con una suscripción, te da acceso a más de 90 modelos de IA",
+      "category": "Otras",
+      "domain": "syntx.ai",
+      "toolUrl": "https://syntx.ai",
+      "videoUrl": "https://www.instagram.com/p/DU8RQ2TgFTB/",
+      "keywords": [
+        "syntx",
+        "suscripcion",
+        "acceso",
+        "modelos",
+        "otras"
+      ],
+      "popular": true
+    },
+    {
+      "id": 229,
+      "order": 229,
+      "name": "Curso-inglés",
+      "description": "Plataforma para estudiar inglés.",
+      "category": "Educación y Estudio",
+      "domain": "curso-ingles.com",
+      "toolUrl": "https://curso-ingles.com",
+      "videoUrl": "https://www.instagram.com/p/DVOciJHAOSC/",
+      "keywords": [
+        "curso",
+        "ingles",
+        "estudiar",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    },
+    {
+      "id": 230,
+      "order": 230,
+      "name": "Fathom",
+      "description": "Asistente de reuniones que transcribe, resume y analiza la conversación.",
+      "category": "Documentos y Escritura",
+      "domain": "fathom.ai",
+      "toolUrl": "https://fathom.ai",
+      "videoUrl": "https://www.instagram.com/p/DVuUlg1gI-h/",
+      "keywords": [
+        "fathom",
+        "asistente",
+        "reuniones",
+        "transcribe",
+        "resume",
+        "analiza",
+        "conversacion",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 231,
+      "order": 231,
+      "name": "Claude",
+      "description": "IA multimodal de Anthropic.",
+      "category": "IA Conversacional",
+      "domain": "claude.ai",
+      "toolUrl": "https://claude.ai",
+      "videoUrl": "https://www.instagram.com/p/DVzkiwugDvN/",
+      "keywords": [
+        "claude",
+        "multimodal",
+        "anthropic",
+        "conversacional"
+      ],
+      "popular": true
+    },
+    {
+      "id": 232,
+      "order": 232,
+      "name": "Skipo",
+      "description": "Plataforma para inversiones tokenizadas.",
+      "category": "Negocios y Marketing",
+      "domain": "skipo.com",
+      "toolUrl": "https://skipo.com",
+      "videoUrl": "https://www.instagram.com/p/DV9eu-SkbQL/",
+      "keywords": [
+        "skipo",
+        "inversiones",
+        "tokenizadas",
+        "negocios",
+        "marketing"
+      ],
+      "popular": false
+    },
+    {
+      "id": 233,
+      "order": 233,
+      "name": "Aitmpl",
+      "description": "Bóveda de skills, agentes, y templates gratuitos.",
+      "category": "Otras",
+      "domain": "aitmpl.com",
+      "toolUrl": "https://aitmpl.com",
+      "videoUrl": "https://www.instagram.com/p/DV_sWfWChag/",
+      "keywords": [
+        "aitmpl",
+        "boveda",
+        "skills",
+        "agentes",
+        "templates",
+        "gratuitos",
+        "otras"
+      ],
+      "popular": false
+    },
+    {
+      "id": 234,
+      "order": 234,
+      "name": "GoodBarber",
+      "description": "Plataforma para la creación de apps no-code.",
+      "category": "Programación y Desarrollo",
+      "domain": "goodbarber.com",
+      "toolUrl": "https://goodbarber.com",
+      "videoUrl": "https://www.instagram.com/p/DWBocEtgMOt/",
+      "keywords": [
+        "goodbarber",
+        "creacion",
+        "apps",
+        "code",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 235,
+      "order": 235,
+      "name": "Cotiza Mercado",
+      "description": "Plataforma donde publicas el servicio que necesitas, y otro usuario puede proveerlo.",
+      "category": "Negocios y Marketing",
+      "domain": "cotizamercado.com",
+      "toolUrl": "https://cotizamercado.com",
+      "videoUrl": "https://www.instagram.com/p/DW1vlxTERFb/",
+      "keywords": [
+        "cotiza",
+        "mercado",
+        "donde",
+        "publicas",
+        "servicio",
+        "necesitas",
+        "otro",
+        "usuario",
+        "proveerlo",
+        "negocios",
+        "marketing"
+      ],
+      "popular": false
+    },
+    {
+      "id": 236,
+      "order": 236,
+      "name": "Vercel",
+      "description": "Permite crear, probar y publicar plataformas digitales.",
+      "category": "Programación y Desarrollo",
+      "domain": "vercel.com",
+      "toolUrl": "https://vercel.com",
+      "videoUrl": "https://www.instagram.com/p/DXIhP6SAF4V/",
+      "keywords": [
+        "vercel",
+        "permite",
+        "probar",
+        "publicar",
+        "plataformas",
+        "digitales",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": true
+    },
+    {
+      "id": 237,
+      "order": 237,
+      "name": "GitHub",
+      "description": "Gestor de versiones de código.",
+      "category": "Programación y Desarrollo",
+      "domain": "github.com",
+      "toolUrl": "https://github.com",
+      "videoUrl": "https://www.instagram.com/p/DXNZKGfgKIr/",
+      "keywords": [
+        "github",
+        "gestor",
+        "versiones",
+        "codigo",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": true
+    },
+    {
+      "id": 238,
+      "order": 238,
+      "name": "Pippit",
+      "description": "Convierte selfies en fotos profesionales.",
+      "category": "Imagen",
+      "domain": "pippit.ai",
+      "toolUrl": "https://pippit.ai",
+      "videoUrl": "https://www.instagram.com/p/DXO6O15AJSc/",
+      "keywords": [
+        "pippit",
+        "convierte",
+        "selfies",
+        "fotos",
+        "profesionales",
+        "imagen"
+      ],
+      "popular": false
+    },
+    {
+      "id": 239,
+      "order": 239,
+      "name": "ZenCoder",
+      "description": "Orquestador multiagente para código y trabajo.",
+      "category": "Programación y Desarrollo",
+      "domain": "zencoder.ai",
+      "toolUrl": "https://zencoder.ai",
+      "videoUrl": "https://www.instagram.com/p/DXXqa9BAJzj/",
+      "keywords": [
+        "zencoder",
+        "orquestador",
+        "multiagente",
+        "codigo",
+        "trabajo",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 240,
+      "order": 240,
+      "name": "Chucaw",
+      "description": "Usa datos reales del territorio específico (Chile) para apoyar la toma de decisiones y lidiar con problemas ambientales.",
+      "category": "Datos y Análisis",
+      "domain": "chucaw.net",
+      "toolUrl": "https://chucaw.net",
+      "videoUrl": "https://www.instagram.com/p/DXe0oOjAFNW/",
+      "keywords": [
+        "chucaw",
+        "usa",
+        "datos",
+        "reales",
+        "territorio",
+        "especifico",
+        "chile",
+        "apoyar",
+        "toma",
+        "decisiones",
+        "lidiar",
+        "problemas",
+        "ambientales",
+        "analisis"
+      ],
+      "popular": false
+    },
+    {
+      "id": 241,
+      "order": 241,
+      "name": "AnimeJS",
+      "description": "Bóveda de animaciones increíbles para sitios web.",
+      "category": "Otras",
+      "domain": "animejs.com",
+      "toolUrl": "https://animejs.com",
+      "videoUrl": "https://www.instagram.com/p/DXqPlQxgF0d/",
+      "keywords": [
+        "animejs",
+        "boveda",
+        "animaciones",
+        "increibles",
+        "sitios",
+        "web",
+        "otras"
+      ],
+      "popular": false
+    },
+    {
+      "id": 242,
+      "order": 242,
+      "name": "Typeless",
+      "description": "Herramienta de voz a texto que elimina titubeos, muletillas, y optimiza tu mensaje, traduce, resume, etc.",
+      "category": "Audio y Música",
+      "domain": "typeless.com",
+      "toolUrl": "https://typeless.com",
+      "videoUrl": "https://www.instagram.com/p/DYCWO0ogPwP/",
+      "keywords": [
+        "typeless",
+        "voz",
+        "texto",
+        "elimina",
+        "titubeos",
+        "muletillas",
+        "optimiza",
+        "mensaje",
+        "traduce",
+        "resume",
+        "etc",
+        "audio",
+        "musica"
+      ],
+      "popular": false
+    },
+    {
+      "id": 243,
+      "order": 243,
+      "name": "TryHuntly",
+      "description": "Plataforma para buscar negocios junto a su contacto, reseñas, ubicación y sitio web.",
+      "category": "Negocios y Marketing",
+      "domain": "tryhuntly.com",
+      "toolUrl": "https://tryhuntly.com",
+      "videoUrl": "https://www.instagram.com/p/DYJOqL7gnyi/",
+      "keywords": [
+        "tryhuntly",
+        "buscar",
+        "negocios",
+        "junto",
+        "contacto",
+        "resenas",
+        "ubicacion",
+        "sitio",
+        "web",
+        "marketing"
+      ],
+      "popular": false
+    },
+    {
+      "id": 244,
+      "order": 244,
+      "name": "CarriApp",
+      "description": "Plataforma chilena que muestra historial de precios de mercados y permite comparar precios.",
+      "category": "Programación y Desarrollo",
+      "domain": "carriapp.cl",
+      "toolUrl": "https://carriapp.cl",
+      "videoUrl": "https://www.instagram.com/p/DYSWEYiRBcL/",
+      "keywords": [
+        "carriapp",
+        "chilena",
+        "muestra",
+        "historial",
+        "precios",
+        "mercados",
+        "permite",
+        "comparar",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 245,
+      "order": 245,
+      "name": "Oreate",
+      "description": "Crea presentaciones con IA en minutos.",
+      "category": "Presentaciones",
+      "domain": "oreate.ai",
+      "toolUrl": "https://oreate.ai",
+      "videoUrl": "https://www.instagram.com/p/DZCrkirxUYF/",
+      "keywords": [
+        "oreate",
+        "presentaciones",
+        "minutos"
+      ],
+      "popular": false
+    },
+    {
+      "id": 246,
+      "order": 246,
+      "name": "Omnisend",
+      "description": "Automatiza emails, SMS, carritos abaandonados y seguimiento de clientes.",
+      "category": "Documentos y Escritura",
+      "domain": "omnisend.com",
+      "toolUrl": "https://omnisend.com",
+      "videoUrl": "https://www.instagram.com/p/DZGdO7xAT3W/",
+      "keywords": [
+        "omnisend",
+        "automatiza",
+        "emails",
+        "sms",
+        "carritos",
+        "abaandonados",
+        "seguimiento",
+        "clientes",
+        "documentos",
+        "escritura"
+      ],
+      "popular": false
+    },
+    {
+      "id": 247,
+      "order": 247,
+      "name": "Obsidian",
+      "description": "Organiza tu información (correos, pensamientos, ideas, etc.) y la relaciona entre si.",
+      "category": "Documentos y Escritura",
+      "domain": "obsidian.md",
+      "toolUrl": "https://obsidian.md",
+      "videoUrl": "https://www.instagram.com/p/DZGzKhaAP-4/",
+      "keywords": [
+        "obsidian",
+        "organiza",
+        "informacion",
+        "correos",
+        "pensamientos",
+        "ideas",
+        "etc",
+        "relaciona",
+        "entre",
+        "documentos",
+        "escritura"
+      ],
+      "popular": true
+    },
+    {
+      "id": 248,
+      "order": 248,
+      "name": "Windows Developer Config",
+      "description": "Repositorio de GitHub con el que puedes instalar todo un ecosistema de programación.",
+      "category": "Programación y Desarrollo",
+      "domain": "github.com",
+      "toolUrl": "https://github.com/microsoft/WindowsDeveloperConfig",
+      "videoUrl": "https://www.instagram.com/p/DZbX-uAgY3i/",
+      "keywords": [
+        "windows",
+        "developer",
+        "config",
+        "repositorio",
+        "github",
+        "instalar",
+        "todo",
+        "ecosistema",
+        "programacion",
+        "desarrollo"
+      ],
+      "popular": false
+    },
+    {
+      "id": 249,
+      "order": 249,
+      "name": "Symbolab",
+      "description": "Ayuda a resolver problemas matemáticos desde distintas perspectivas (física, matemática, etc.)",
+      "category": "Educación y Estudio",
+      "domain": "es.symbolab.com",
+      "toolUrl": "https://es.symbolab.com",
+      "videoUrl": "https://www.instagram.com/p/DZdd_XqP4N5/",
+      "keywords": [
+        "symbolab",
+        "ayuda",
+        "resolver",
+        "problemas",
+        "matematicos",
+        "distintas",
+        "perspectivas",
+        "fisica",
+        "matematica",
+        "etc",
+        "educacion",
+        "estudio"
+      ],
+      "popular": false
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './StickyNav.css'
 import Prochi from './Prochi'
 
@@ -8,6 +9,7 @@ const NAV_LINKS = [
   { label: 'Proceso',           id: 'proceso'   },
   { label: 'Por qué elegirnos', id: 'elegirnos' },
   { label: 'Recursos',          id: 'alianzas', caret: true },
+  { label: 'Herramientas',      to: '/herramientas' },
   { label: 'Contacto',          id: 'contacto'  },
 ]
 
@@ -23,12 +25,16 @@ const CalIcon = () => (
 export default function StickyNav() {
   const [solid, setSolid] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const navigate = useNavigate()
 
   useEffect(() => {
     const onScroll = () => setSolid(window.scrollY > 60)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  // Navega a una ruta (to) o hace scroll a una sección (id).
+  const go = (l) => (l.to ? navigate(l.to) : scrollTo(l.id))
 
   return (
     <header className={`snav ${solid ? 'snav--solid' : ''}`}>
@@ -43,7 +49,7 @@ export default function StickyNav() {
         {/* Links desktop */}
         <nav className="snav-links" aria-label="Navegación principal">
           {NAV_LINKS.map(l => (
-            <button key={l.id} className="snav-link" onClick={() => scrollTo(l.id)}>
+            <button key={l.label} className="snav-link" onClick={() => go(l)}>
               {l.label}
               {l.caret && <span className="snav-link__caret">▾</span>}
             </button>
@@ -72,9 +78,9 @@ export default function StickyNav() {
         <div className="snav-drawer">
           {NAV_LINKS.map(l => (
             <button
-              key={l.id}
+              key={l.label}
               className="snav-drawer-link"
-              onClick={() => { scrollTo(l.id); setMenuOpen(false) }}
+              onClick={() => { go(l); setMenuOpen(false) }}
             >
               {l.label}
             </button>
