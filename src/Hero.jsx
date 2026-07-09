@@ -107,7 +107,7 @@ export default function Hero() {
           </div>
 
           <div className="hero__brandname">
-            <span className="hero__wordmark">PROCHECHANDO <b>AI</b></span>
+            <span className="hero__wordmark">PROCHECHANDO<b>.cl</b></span>
             <span className="hero__rule" />
             <p className="hero__tagline">Mientras carga, construimos el futuro.</p>
           </div>

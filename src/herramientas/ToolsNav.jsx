@@ -30,7 +30,7 @@ export default function ToolsNav() {
       <div className="snav-inner">
         <Link to="/" className="snav-brand" aria-label="Ir a Inicio">
           <Prochi size={26} animated={false} className="snav-brand__logo" />
-          PROCHECHANDO<b className="snav-brand-sep">AI</b>
+          PROCHECHANDO<b className="snav-brand-sep">.cl</b>
         </Link>
 
         <nav className="snav-links" aria-label="Navegación de herramientas">

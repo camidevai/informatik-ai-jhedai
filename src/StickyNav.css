@@ -225,7 +225,7 @@
   color: #fff;
 }
 .snav-brand__logo { flex-shrink: 0; }
-.snav-brand-sep { margin-left: 0.3em; color: var(--brand-light); font-weight: 800; }
+.snav-brand-sep { margin-left: 0; color: var(--brand-light); font-weight: 800; }
 
 .snav--solid {
   background: rgba(255, 255, 255, 0.92) !important;

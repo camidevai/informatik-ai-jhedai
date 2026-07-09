@@ -43,7 +43,7 @@ export default function StickyNav() {
         {/* Marca */}
         <span className="snav-brand" onClick={() => scrollTo('equipo')}>
           <Prochi size={26} animated={false} className="snav-brand__logo" />
-          PROCHECHANDO<b className="snav-brand-sep">AI</b>
+          PROCHECHANDO<b className="snav-brand-sep">.cl</b>
         </span>
 
         {/* Links desktop */}

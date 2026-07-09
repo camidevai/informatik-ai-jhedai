@@ -12,7 +12,7 @@ export default function Funnel() {
         </header>
         <div className="funnel-cards">
           <a
-            href="https://calendar.app.google/zbkAEVCiiMvgMVhK9"
+            href="https://calendar.app.google/Audo1ET8DUJypjPN9"
             target="_blank"
             rel="noopener noreferrer"
             className="funnel-card funnel-card--alianza"
@@ -28,7 +28,7 @@ export default function Funnel() {
           </div>
 
           <a
-            href="https://calendar.app.google/dbFyNjc56vKE9WPZ9"
+            href="https://calendar.app.google/Audo1ET8DUJypjPN9"
             target="_blank"
             rel="noopener noreferrer"
             className="funnel-card funnel-card--desarrollo"

@@ -21,7 +21,7 @@ export default function FloatBtn() {
       {/* Mini-menú expandido */}
       <div className={`fab-menu ${open ? 'fab-menu--open' : ''}`} aria-hidden={!open}>
         <a
-          href="https://calendar.app.google/dbFyNjc56vKE9WPZ9"
+          href="https://calendar.app.google/Audo1ET8DUJypjPN9"
           target="_blank"
           rel="noopener noreferrer"
           className="fab-item fab-item--blue"
@@ -35,7 +35,7 @@ export default function FloatBtn() {
         </a>
 
         <a
-          href="https://calendar.app.google/zbkAEVCiiMvgMVhK9"
+          href="https://calendar.app.google/Audo1ET8DUJypjPN9"
           target="_blank"
           rel="noopener noreferrer"
           className="fab-item fab-item--cyan"

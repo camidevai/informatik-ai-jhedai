@@ -46,7 +46,7 @@ export default function QuienesSomos() {
             Construimos IA, no solo <span className="svc-hl">hablamos de ella</span>
           </h2>
           <p className="svc-intro">
-            En PROCHECHANDO AI vivimos la inteligencia artificial todos los días: la probamos,
+            En prochechando.cl vivimos la inteligencia artificial todos los días: la probamos,
             la implementamos y la enseñamos.
           </p>
         </header>

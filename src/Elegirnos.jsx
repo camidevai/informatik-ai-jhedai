@@ -90,7 +90,7 @@ export default function Elegirnos() {
               </div>
 
               <div className="eli-bars">
-                <span className="eli-bars-name">PROCHECHANDO AI</span>
+                <span className="eli-bars-name">prochechando.cl</span>
                 <div className="eli-track"><div className="eli-fill" style={{ width: `${b.us}%` }} /></div>
                 <div className="eli-track eli-track--them"><div className="eli-fill eli-fill--them" style={{ width: `${b.themPct}%` }} /></div>
                 <span className="eli-bars-them">{b.them}</span>

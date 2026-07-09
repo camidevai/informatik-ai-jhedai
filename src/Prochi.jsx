@@ -29,7 +29,7 @@ export default function Prochi({ size = 120, animated = true, wordmark = false, 
         viewBox="0 0 200 200"
         fill="none"
         role="img"
-        aria-label="PROCHI — PROCHECHANDO AI"
+        aria-label="PROCHI — prochechando.cl"
       >
         <defs>
           <linearGradient id="prochiFace" x1="40" y1="60" x2="160" y2="180" gradientUnits="userSpaceOnUse">
@@ -62,7 +62,7 @@ export default function Prochi({ size = 120, animated = true, wordmark = false, 
       </svg>
 
       {wordmark && (
-        <span className="prochi-wordmark">PROCHECHANDO <b>AI</b></span>
+        <span className="prochi-wordmark">PROCHECHANDO<b>.cl</b></span>
       )}
     </span>
   )

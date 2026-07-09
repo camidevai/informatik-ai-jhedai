@@ -17,7 +17,7 @@ export default function HerramientasPage() {
   const { tools, categories, loading, error } = useTools()
 
   useSeo({
-    title: 'Herramientas de IA probadas por expertos | PROCHECHANDO AI',
+    title: 'Herramientas de IA probadas por expertos | prochechando.cl',
     description:
       'Directorio curado de las mejores herramientas de inteligencia artificial, probadas por nuestro equipo. Descúbrelas, aprende a usarlas con videotutoriales e implementa IA en tu empresa.',
   })
@@ -44,14 +44,14 @@ export default function HerramientasPage() {
 
       {/* Footer simple con retorno a Inicio */}
       <footer className="tp-footer">
-        <span className="tp-footer__brand">PROCHECHANDO<b>AI</b></span>
+        <span className="tp-footer__brand">PROCHECHANDO<b>.cl</b></span>
         <nav className="tp-footer__nav">
           <Link to="/" className="tp-footer__link">Inicio</Link>
           <a href="#tp-top5" className="tp-footer__link">Favoritas</a>
           <a href="#tp-catalogo" className="tp-footer__link">Herramientas</a>
           <a href="#tp-educacion" className="tp-footer__link">Aprende</a>
         </nav>
-        <span className="tp-footer__copy">© 2025 PROCHECHANDO AI</span>
+        <span className="tp-footer__copy">© 2025 prochechando.cl</span>
       </footer>
 
       {/* Botón flotante siempre visible para volver a Inicio */}

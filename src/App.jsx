@@ -74,7 +74,7 @@ export default function App() {
         </nav>
 
         <div className="site-footer__legal">
-          <span className="site-footer__copy">© 2025 PROCHECHANDO AI</span>
+          <span className="site-footer__copy">© 2025 prochechando.cl</span>
           <span className="site-footer__divider" />
           <button className="site-footer__link site-footer__link--legal" onClick={() => setLegalPage('terminos')}>Términos de uso</button>
           <button className="site-footer__link site-footer__link--legal" onClick={() => setLegalPage('privacidad')}>Política de privacidad</button>
