@@ -57,6 +57,13 @@
   overflow: hidden;
 }
 
+/* Fondo oscuro para logos blancos que no se ven sobre la tarjeta clara */
+.ali-logo--dark {
+  background: #14122b;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
 /* Logo imagen */
 .ali-logo-img {
   max-width: 100%;
